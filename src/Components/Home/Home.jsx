@@ -16,6 +16,20 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import man from "../../assets/man.png"
+import devices from "../../assets/devices.png"
+// import hours from "../../assets/24.png"
+// import call from "../../team1.png"
+import call from "../../assets/team1.png"
+import online from "../../assets/online.png"
+
+
+
+
+
+
+
+
+
 export default function Home() {
     const [isOpen, setIsOpen] = useState(false);
     const [hasAnimated, setHasAnimated] = useState(false);
@@ -404,7 +418,43 @@ export default function Home() {
                 </div>
 
             </div>
+            <div className="fourth py-7 bg-gray-100">
+                <p className='m-0 py-6 text-center text-4xl font-semibold cairo text-[#339ecc] '>لماذا حلولنا البرمجية هي الأفضل؟</p>
 
+                <div className="why-our-programs my-9 lg:flex justify-evenly w-full">
+
+                    <div className="reason mx-12 lg:mx-0 mt-3 flex flex-col  items-center text-gray-700 lg:w-1/4 h-96 bg-white rounded-xl shadow-lg">
+                        <img className='lg:w-36 w-24 h-24 lg:h-36' src={devices} alt="" />
+                        <p className='text-sm cairo font-medium text-blue-400 m-0 mt-3'>برامج متجاوبة </p>
+                        <p className='text-2xl cairo font-semibold m-0 mt-2 text-blue-950 '>مناسب لجميع الأجهزة</p>
+                        <p className='lg:text-[1.1rem] text-sm  leading-7 text-center kufi font-[350]'>حلول الكود السهل البرمجية تواكب احدث التطورات اولا باول فنحن نوفر تجربة سلسله لعملائنا ويمكنهم متابعة اعمالهم من خلال الجوال واللاب توب</p>
+
+
+                    </div>
+                    <div className="reason mx-12 lg:mx-0 mt-3 flex flex-col  items-center text-gray-700 lg:w-1/4 h-96 bg-white rounded-xl shadow-lg">
+                        <img className='lg:w-36 w-24 h-24 lg:h-36' src={call} alt="" />
+                        <p className='text-sm cairo font-medium text-blue-400 m-0 mt-3'>الدعم الفني
+                        </p>
+                        <p className='lg:text-2xl  cairo font-semibold m-0 mt-2 text-blue-950 '>درع الدعم الفني </p>
+                        <p className='lg:text-[1.1rem] text-sm  px-3 leading-7 text-center kufi font-[350]'> فمن خلال فريق من المحترفين نتابع سير اعمال عملائنا ونوفر الدعم الفنيي فائق الجودة وفريق قادر علي التواصل لفهم استفساراتكم وحلحله جميع العقبات. </p>
+
+
+                    </div>
+                    <div className="reason mx-12 lg:mx-0 mt-3 flex flex-col  items-center text-gray-700 lg:w-1/4 h-96 bg-white rounded-xl shadow-lg">
+                        <img className='lg:w-36 w-24 h-24 lg:h-36' src={online} alt="" />
+                        <p className='text-sm cairo font-medium text-blue-400 m-0 mt-3'>يعمل اونلاين
+                        </p>
+                        <p className='lg:text-2xl cairo font-semibold m-0 mt-2 text-blue-950 '>تواصل دائم </p>
+                        <p className='lg:text-[1.1rem] text-sm  leading-7 text-center kufi font-[350]'> ميزات الكود السهل السحابية تتيح لعملائها التواصل مع بياناتهم والتفاعل معها طوال الوقت لانها متوفرة اونلاين فتمكنهم من استخدامها 24 ساعة طوال ايام الاسبوع</p>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
 
 
         </div>
