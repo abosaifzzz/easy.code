@@ -372,6 +372,14 @@ export default function Home() {
                             playing={isInView} // Auto-play when in view
                             loop={true}
                             controls={false}
+                            config={{
+                                file: {
+                                    attributes: {
+                                        controlsList: 'nodownload', // Disable download button
+                                        playsInline: true, // Prevent full-screen on mobile devices
+                                    },
+                                },
+                            }}
                         />
                     </div>
                     <div dir='rtl' className="second-part mt-5 lg:mt-0 lg:mx-5 mx-1 lg:w-1/2 ">
