@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import { width } from '@fortawesome/free-brands-svg-icons/fa42Group';
@@ -8,10 +8,8 @@ import receipt from "../../assets/receipt.png"
 import custom from "../../assets/customs-clearance.png"
 import exchange from "../../assets/exchange.png"
 import installment from "../../assets/installment.png"
-
-
-
-
+import ReactPlayer from 'react-player'
+import erp from "../../assets/erp.mp4"
 import arrow from "../../assets/up.png"
 import truee from "../../assets/true.png"
 import Slider from "react-slick";
@@ -23,19 +21,44 @@ import man from "../../assets/man.png"
 export default function Home() {
     const [isOpen, setIsOpen] = useState(false);
     const [hasAnimated, setHasAnimated] = useState(false);
+    const playerRef = useRef(null);
+    const [isInView, setIsInView] = useState(false);
 
     useEffect(() => {
-        // Set a timeout to remove the animation class after it has finished
+        // Timer to control animation class application
         const timer = setTimeout(() => {
             setHasAnimated(true);
-        }, 5500); // This will ensure the class is applied on mount
+        }, 5500); // Adjust duration based on animation timing
 
-        // Cleanup the timer if the component unmounts
+        // Cleanup on unmount
         return () => clearTimeout(timer);
     }, []);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                setIsInView(entry.isIntersecting);
+            },
+            {
+                threshold: 0.5, // Video is considered in view if 50% of it is visible
+            }
+        );
+
+        if (playerRef.current) {
+            observer.observe(playerRef.current);
+        }
+
+        return () => {
+            if (playerRef.current) {
+                observer.unobserve(playerRef.current);
+            }
+        };
+    }, []);
+
     const toggleChat = () => {
         setIsOpen(!isOpen);
     };
+
     const settings = {
         dots: false,
         arrows: false,
@@ -46,7 +69,6 @@ export default function Home() {
         slidesToShow: 4,
         slidesToScroll: 4,
         initialSlide: 0,
-
         responsive: [
             {
                 breakpoint: 1024,
@@ -104,7 +126,7 @@ export default function Home() {
 
 
                     </div>
-                    <div className="earning4 -rotate-2 absolute rounded-lg  flex  justify-center items-center  left-0   lg:left-1/3 top-72 mt-9 w-56 h-48 ">
+                    <div className="earning4 -rotate-2 absolute rounded-lg  flex  justify-center items-center  left-0   lg:left-1/3 lg:top-56 top-72 mt-9 w-56 h-48 ">
                         <img className='w-7 h-8 me-2' src={truee} alt="" /> <span className=' rakkas-regular text-blue-950'>تقارير صرف </span>
 
                     </div>
@@ -214,7 +236,7 @@ export default function Home() {
                 </div>
 
                 <div
-                    className="float-button bg-bl200 bg-opacity-60 rounded-full w-16 h-16 m-4 flex items-center justify-center cursor-pointer shadow-xl"
+                    className="float-button bg-[#339ecc]  rounded-full w-16 h-16 m-4 flex items-center justify-center cursor-pointer shadow-xl"
                     onClick={toggleChat}
                 >
                     <svg
@@ -229,9 +251,9 @@ export default function Home() {
                     </svg>
                 </div>
             </div>
-            <div className="second pt-6 bg-[#91a8c8]">
+            <div className="second pt-6 bg-gray-100">
 
-                <p className='m-0 py-6 text-center text-3xl font-semibold kufi text-white '>كل هذا و اكثر بين يديك </p>
+                <p className='m-0 py-6 text-center text-4xl font-semibold cairo text-[#339ecc] '>كل هذا و اكثر بين يديك </p>
                 <div className="slider-container py-7">
                     <Slider {...settings}>
                         <div className=' flex justify-center h-64 items-center gap-3'>
@@ -334,19 +356,47 @@ export default function Home() {
                     </Slider>
                 </div>
                 <div className="browse-our-programs flex justify-center">
-                    <button className='bg-blue-900 text-white p-2 px-4 text-lg kufi font-medium rounded-md my-5'>تصفح برامجنا</button>
+                    <button className=' bg-[#339ecc] text-white p-2 px-4 text-lg kufi font-medium rounded-md my-5'>تصفح برامجنا</button>
 
                 </div>
 
 
             </div>
-            <div className="third bg-white">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia nostrum earum vel repudiandae quo, rem perspiciatis esse voluptatum sunt architecto, saepe ullam dicta! Id eveniet quam est perspiciatis voluptates dolorum reprehenderit maxime hic obcaecati, nisi veritatis a voluptatibus. Vel distinctio quos nobis illum doloremque, error inventore saepe dolore expedita culpa repudiandae a accusamus, laborum esse explicabo in quod nemo ad odit quas ex repellat. Cupiditate vel dolores ratione! Voluptate eveniet nemo veritatis ipsam obcaecati suscipit? Minima, fuga commodi! Blanditiis quaerat eveniet, voluptas nulla repellat non? Voluptas aspernatur aut incidunt, consequatur laborum reiciendis rerum mollitia animi laudantium temporibus consequuntur quasi vel unde et, suscipit iusto eligendi inventore itaque eos, dicta quidem ullam dolor earum. Laborum aut aperiam quasi corrupti ratione, dolor repudiandae exercitationem iure molestias, soluta minus nemo dolore voluptatibus ab a sequi quae architecto dolorem earum harum velit, ea cupiditate! Rem, tempora corrupti, quis ratione perferendis culpa beatae impedit illo consectetur animi, adipisci magnam distinctio natus eius odit soluta laborum unde? Corporis nam expedita inventore doloribus itaque harum cupiditate reiciendis tempora. Blanditiis excepturi nesciunt iste corporis ipsa odit nihil numquam. Repellat, id incidunt unde voluptates eaque exercitationem ea commodi ex pariatur, sapiente nam quod at! Numquam, dolorem repudiandae earum itaque sit debitis vero tenetur eius quam sed nemo, similique optio? Necessitatibus, reprehenderit temporibus! Aperiam error perspiciatis laudantium, unde iste, sint quis quos dicta dolorum culpa similique sed eius sunt commodi repellat autem in qui aut expedita repellendus necessitatibus enim. Qui quae autem quas officiis deserunt repellendus, perferendis laboriosam ipsum quisquam veniam natus accusantium nam! Quae assumenda recusandae veritatis pariatur nostrum alias eaque amet veniam at ab suscipit harum unde, eum iure consequatur deserunt? Ipsum magni ullam suscipit harum incidunt provident laudantium? Labore, animi consequuntur odio consequatur aperiam quaerat laborum blanditiis aspernatur cumque minima perspiciatis eaque eius deleniti consectetur maiores reiciendis dicta atque. Doloremque perspiciatis debitis cumque. Minima dicta temporibus eius voluptatum maxime nostrum amet culpa id, officia nulla fuga ab nihil corrupti veritatis repellat ipsa tempora. Tenetur repudiandae non nobis error recusandae? Aliquam, veniam? Aut fuga provident sequi corporis voluptatibus tempore veniam, porro asperiores explicabo recusandae cumque sapiente. Sunt voluptates ullam velit, amet odit corrupti doloribus dignissimos itaque? Dignissimos non esse rerum sapiente expedita odio ipsum adipisci dolor eligendi exercitationem distinctio nesciunt temporibus maxime illo sunt itaque nisi mollitia voluptates, maiores quo alias delectus quam aut recusandae. Aliquam, at. Cum, vero quidem. Ex corrupti vero ducimus aperiam voluptatem tempora quam earum dolorem veniam iusto provident tenetur ea ullam sed, atque qui neque, facere commodi, molestiae voluptate accusamus. Nam laboriosam iusto ab ipsa earum asperiores voluptas repellendus dicta, deleniti possimus porro velit iure ullam minima odio maiores nulla iste tempora fugit. Esse qui, sit vel eum quia eaque accusamus earum ad exercitationem fugit cumque pariatur ab maxime, nihil sunt est fuga aliquid. Omnis numquam fugit voluptatibus blanditiis neque asperiores nesciunt debitis odit! Suscipit esse ab officia culpa autem pariatur sapiente veritatis dolorem, deserunt omnis doloremque provident quo! Vero deleniti optio nobis animi fuga delectus est? Iure alias tempora voluptatibus explicabo! Quaerat rerum culpa eveniet magni assumenda exercitationem, dicta suscipit sit ab, omnis, impedit sint inventore autem? Distinctio obcaecati voluptatum in aliquid officiis vel impedit vitae molestiae magnam, soluta tenetur quasi molestias. Excepturi distinctio et delectus quos incidunt autem ipsum iure soluta sint velit laudantium at odio facilis beatae quod ad sequi molestias expedita rerum vitae, dolor omnis. Ea natus id, quaerat dolorem ad porro fugit magni est. Atque obcaecati voluptatibus nulla quas soluta ducimus culpa esse libero at ratione nisi quaerat architecto officiis optio ipsa animi voluptates, nihil consectetur, enim deleniti nostrum magni similique distinctio debitis? Soluta nihil blanditiis molestias itaque voluptatibus quidem atque mollitia ipsam, aperiam ab reprehenderit veritatis voluptatum pariatur. Facere repudiandae provident distinctio, dolorem culpa officia ea ex, vel sapiente reprehenderit obcaecati. Aperiam impedit nulla, necessitatibus voluptates error aspernatur! Aliquid aliquam neque accusamus rerum molestias dignissimos quas voluptatibus. At similique dolor recusandae quas, rem quidem ducimus incidunt, quis accusantium praesentium vero vitae. Sunt quibusdam dolores quas ex, ratione numquam quos libero atque, necessitatibus, saepe tempore quo praesentium aliquam doloribus nobis est ullam fugit laboriosam totam excepturi consectetur eaque impedit rerum? Dolore soluta in aliquid nihil esse eligendi natus ex ea quo rem. Nobis aperiam suscipit, dolore optio minus quasi quam ullam aut ipsa, commodi dolor molestias corporis. Atque expedita est fugit ex maxime facere sed explicabo delectus. Corrupti dolorum quo, aperiam doloremque dicta cum omnis consequuntur nostrum rerum asperiores voluptas ipsam obcaecati non odio fuga ut. Itaque modi molestias possimus optio ratione labore sit in, eum earum nihil quibusdam. Ea animi doloribus excepturi eaque, harum ullam laboriosam, nulla consequatur totam tempora debitis vel repellat quia? Sit, nemo unde. Aut laudantium illum omnis commodi quisquam earum, itaque sint ab iure id error dolore facilis soluta dolor cum. Unde veritatis amet voluptatum. Officiis, molestiae quod quia at illo odit amet quisquam dignissimos nihil deleniti maxime et ea incidunt qui cum earum facilis? Corporis non placeat possimus aut, aperiam voluptate excepturi quidem laudantium. Temporibus consequatur amet officia atque ratione minus a iste facere corrupti beatae asperiores libero suscipit dignissimos tempora in repudiandae ipsam nemo, voluptatum modi provident tenetur. Culpa vel exercitationem cumque neque! Quas, aspernatur deleniti fugit ut maiores ea quasi veniam! Molestiae quia sapiente modi sequi cum eius commodi officiis, excepturi facilis. Doloribus cum, commodi magnam minima explicabo deleniti labore similique voluptates vel, quisquam fugit. Tempora voluptate dolorem nisi pariatur, sequi praesentium expedita hic quidem, fuga magni sit dicta placeat sint voluptatem quisquam neque qui alias. Fugiat non quisquam, beatae molestias placeat amet cum numquam iste esse in alias et repellendus laborum inventore quidem temporibus blanditiis. Ipsa alias provident numquam natus doloremque commodi corrupti aliquam quis? Repellat, mollitia omnis numquam facere nemo consequuntur molestias similique maiores. Perspiciatis possimus assumenda corrupti omnis. Beatae consectetur id maxime dolorum earum impedit quos illo eius! Iure praesentium autem incidunt explicabo, voluptatem amet, voluptas quod tempore cumque reprehenderit beatae consequuntur. Nulla eum fuga laudantium suscipit cumque quisquam molestias consequatur explicabo dolorem, iusto libero nam enim, beatae recusandae autem voluptates nesciunt officia. Velit voluptates vitae quam.
+            <div className="third bg-white lg:p-8 p-4">
+                <div className="what-erp lg:flex p-8">
+                    <div className="first-part lg:w-1/2" ref={playerRef}>
+                        <ReactPlayer
+                            url={erp} // path to your video in the public directory
+                            width="100%"
+                            height="100%"
+                            playing={isInView} // Auto-play when in view
+                            loop={true}
+                            controls={false}
+                        />
+                    </div>
+                    <div dir='rtl' className="second-part mt-5 lg:mt-0 lg:mx-5 mx-1 lg:w-1/2 ">
+                        <p className='m-0 lg:text-5xl text-4xl mt-2 cairo font-semibold text-[#339ecc]'>نظام ERP متكامل </p>
+                        <p className='m-0 lg:text-5xl text-4xl mt-4 cairo font-semibold '>  لأدارة جميع أعمالك</p>
+                        <div className="line w-52 ms-2 mt-10  h-1 text-white bg-[#339ecc]">s</div>
+
+                        <p className='lg:text-xl text-lg leading-8 m-0 mt-4 font-[300] alexandria'>تعد برامج الكود السهل المحاسبية برامج متكاملة تعمل علي توفير معاملات الامان لتكن في راحه تامة & حتى يمكنك الإعتماد علينا كليا.</p>
+                        <div className="labels flex gap-4 mt-4">
+                            <p className='m-0 text-sm cairo font-[500] '><span><i className="bg-[#627886] text-white p-1 rounded-full fa-solid fa-check"></i></span> تجربة مجانية</p>
+                            <p className='m-0 text-sm cairo font-[500] '><span><i className="bg-[#627886] text-white p-1 rounded-full fa-solid fa-check"></i></span> أمن</p>
+                            <p className='m-0 text-sm cairo font-[500] '><span><i className="bg-[#627886] text-white p-1 rounded-full fa-solid fa-check"></i></span> سريع </p>
+                            <p className='m-0 text-sm cairo font-[500] '><span><i className="bg-[#627886] text-white p-1 rounded-full fa-solid fa-check"></i></span> زكي</p>
+
+                        </div>
+                        <button className='bg-[#339ecc] p-2 px-4 text-white rounded-md mt-16'>ابدأ الأستخدام الأن</button>
 
 
+
+
+
+                    </div>
+                </div>
 
             </div>
-
 
 
 

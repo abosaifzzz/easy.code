@@ -37,7 +37,7 @@ export default function Login() {
                         <input className='kufi my-2 p-2 rounded-md border border-blue-300' dir='rtl' type="text" placeholder="الأسم بالكامل" />
                         <input className='kufi my-2 p-2 rounded-md border border-blue-300' dir='rtl' type="email" placeholder="البريد الالكنروني " />
                         <input className='kufi my-2 p-2 rounded-md border border-blue-300' dir='rtl' type="password" placeholder="كلمة السر" />
-                        <Link to={"/"}>
+                        <Link to={"/home"}>
                             <button className='submit kufi'>تسجيل الأشتراك المجاني</button>
 
                         </Link>
