@@ -15,8 +15,6 @@ import truee from "../../assets/true.png"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-
 import man from "../../assets/man.png"
 export default function Home() {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,12 +23,10 @@ export default function Home() {
     const [isInView, setIsInView] = useState(false);
 
     useEffect(() => {
-        // Timer to control animation class application
         const timer = setTimeout(() => {
             setHasAnimated(true);
         }, 5500); // Adjust duration based on animation timing
 
-        // Cleanup on unmount
         return () => clearTimeout(timer);
     }, []);
 
@@ -76,26 +72,27 @@ export default function Home() {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                     infinite: true,
-                    dots: true
-                }
+                    dots: true,
+                },
             },
             {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
-                    initialSlide: 2
-                }
+                    initialSlide: 2,
+                },
             },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     };
+
     return (
         <div>
 
@@ -371,7 +368,8 @@ export default function Home() {
                             height="100%"
                             playing={isInView} // Auto-play when in view
                             loop={true}
-                            controls={false}
+                            controls={false} // Ensure controls are hidden
+                            playsinline={true} // Prevents fullscreen on mobile devices
                             config={{
                                 file: {
                                     attributes: {
@@ -380,6 +378,7 @@ export default function Home() {
                                     },
                                 },
                             }}
+                            style={{ pointerEvents: "none" }} // Disables user interaction with the video
                         />
                     </div>
                     <div dir='rtl' className="second-part mt-5 lg:mt-0 lg:mx-5 mx-1 lg:w-1/2 ">
