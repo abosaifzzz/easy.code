@@ -50,11 +50,14 @@ export default function NavBar() {
             className="bg-white  z-10 shadow-lg fixed w-full rounded-b-2xl"
         >
             <div
-                className={`w-4/5   z-10 flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto ${isScrolled ? "py-1" : "py-2"
-                    }`}
+                className={`w-4/5 z-10 flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto ${isScrolled ? "py-1" : "py-2"} transition-all duration-300`}
             >
                 <a href="#" className="flex items-center">
-                    <img src={logo} className="w-24 h-20 mr-3" alt="Landwind Logo" />
+                    <img
+                        src={logo}
+                        className={`${isScrolled ? "lg:w-16 w-10 h-10 lg:h-16" : "lg:w-24 w-14 lg:h-20 h-14"} mr-3 transition-all duration-300`}
+                        alt="Landwind Logo"
+                    />
                 </a>
 
                 <div className="flex items-center lg:order-2">
