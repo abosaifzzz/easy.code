@@ -1,24 +1,17 @@
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo@2x.png";
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const [isClicked, setIsClicked] = useState(false);
-    const [isClicked2, setIsClicked2] = useState(false);
+
 
     const handleToggle = () => {
         setIsOpen(!isOpen);
     };
 
-    const handleDropDown = () => {
-        setIsClicked(!isClicked);
-
-    };
-    const handleDropDown2 = () => {
-        setIsClicked2(!isClicked2);
-    };
 
     const handleNav = () => {
         if (window.scrollY > 50) {
@@ -26,14 +19,6 @@ export default function NavBar() {
         } else {
             setIsScrolled(false);
         }
-    };
-    const handleMouseEnter = () => {
-        setIsClicked(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsClicked(false);
-        setIsClicked2(false); // Optional: close nested dropdown on hover out
     };
 
     useEffect(() => {
@@ -52,13 +37,13 @@ export default function NavBar() {
             <div
                 className={`w-4/5 z-10 flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto ${isScrolled ? "py-1" : "py-2"} transition-all duration-300`}
             >
-                <a href="#" className="flex items-center">
+                <Link className=" flex items-center">
                     <img
                         src={logo}
                         className={`${isScrolled ? "lg:w-16 w-10 h-10 lg:h-16" : "lg:w-24 w-14 lg:h-20 h-14"} mr-3 transition-all duration-300`}
                         alt="Landwind Logo"
                     />
-                </a>
+                </Link>
 
                 <div className="flex items-center lg:order-2">
                     <Link to={"/"}>
@@ -110,109 +95,26 @@ export default function NavBar() {
                         }`}
                     id="mobile-menu-2"
                 >
+
+
+
+
                     <ul
-                        className={` font-medium lg:flex-row lg:mt-0 ${isOpen ? "block" : "flex"
+                        className={`nav-ul font-medium lg:flex-row lg:mt-0 ${isOpen ? "block" : "flex"
                             }`}
                     >
-                        <Link className=" m-0 block w-full me-3  px-4 text-white bg-blue-400 rounded lg:bg-transparent lg:text-black lg:font-medium lg:p-0 dark:text-white"
-                            aria-current="page" >
+                        <li><Link className="menu">الرئيسية</Link> </li>
+                        <li><Link className="menu">نبذة عننا</Link> </li>
+                        <li><Link className="menu">البرامج</Link></li>
+                        <li><Link className="menu">الأنظمة</Link></li>
+                        <li><Link className="menu">اراء عملائنا </Link></li>
+                        <li><Link className="menu">تواصل معنا</Link></li>
 
 
 
 
-                            <p className="nav-item hover:bg-slate-100 rounded-md p-3">الرئيسية</p>
 
-                        </Link>
-                        <li className="w-full">
-                            <a
-                                href="#"
-                                className="block w-full me-3 py-2 px-4 text-white bg-blue-400 rounded lg:bg-transparent lg:text-black lg:font-medium lg:p-0 dark:text-white"
-                                aria-current="page"
-                            >
-                                <p className="nav-item hover:bg-slate-100 rounded-md p-3">المجتمع</p>
-                            </a>
-                        </li>
 
-                        <li
-                            className="w-full"
-                            onMouseEnter={handleMouseEnter}
-                            onMouseLeave={handleMouseLeave}
-                        >
-                            <div
-                                className="relative block w-full me-3 px-4 text-white bg-blue-400 rounded lg:bg-transparent lg:text-black lg:font-medium lg:p-0 dark:text-white"
-                                aria-current="page"
-                            >
-                                <p
-                                    onClick={handleDropDown}
-                                    className="nav-item hover:bg-slate-100 rounded-md p-3 cursor-pointer"
-                                >
-                                    الحسابات
-                                </p>
-
-                                <div
-                                    className={`drop w-40 p-5 rounded-md bg-white shadow-xl absolute top-2/3 mt-3 transition-all duration-300 ease-in-out transform ${isClicked
-                                        ? "opacity-100 translate-y-0"
-                                        : "opacity-0 -translate-y-4 pointer-events-none"
-                                        }`}
-                                >
-                                    <ul>
-                                        <li className="w-full">
-                                            <div
-                                                className="relative block w-full me-3 px-4 text-white bg-blue-400 rounded lg:bg-transparent lg:text-black lg:font-medium lg:p-0 dark:text-white"
-                                                aria-current="page"
-                                            >
-                                                <p
-                                                    onClick={handleDropDown2}
-                                                    className="nav-item hover:bg-slate-100 rounded-md p-3 cursor-pointer"
-                                                >
-                                                    التعريفات
-                                                </p>
-
-                                                <div
-                                                    className={`drop w-44 p-3 rounded-md bg-white shadow-lg bg-opacity-100 absolute -top-1 -right-[165%] mt-3 transition-all duration-300 ease-in-out transform ${isClicked2
-                                                        ? "opacity-100 translate-x-0"
-                                                        : "opacity-0 -translate-x-4 pointer-events-none"
-                                                        }`}
-                                                >
-                                                    <ul>
-                                                        <Link to={"/layout/accounting1"}>
-                                                            <p className="nav-item hover:bg-slate-100 rounded-md p-3">الفترات المحاسبية</p>
-                                                        </Link>
-                                                        <li>
-                                                            <p className="nav-item hover:bg-slate-100 rounded-md p-3">شجرة الحسابات</p>
-                                                        </li>
-                                                        <li>
-                                                            <p className="nav-item hover:bg-slate-100 rounded-md p-3">شجرة مراكز التكلفة</p>
-                                                        </li>
-                                                    </ul>
-                                                    <i className="absolute -left-1 top-0 fa-solid fa-chevron-left"></i>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li className="nav-item hover:bg-slate-100 rounded-md p-3">العمليات</li>
-                                    </ul>
-                                    <i className="absolute -top-2 fa-solid fa-chevron-up"></i>
-                                </div>
-                            </div>
-                        </li>
-                        <li className="w-full">
-                            <a
-                                href="#"
-                                className="block w-full me-3 py-2 px-4 text-white bg-blue-400 rounded lg:bg-transparent lg:text-black lg:font-medium lg:p-0 dark:text-white"
-                                aria-current="page"
-                            >
-                                <p className="nav-item hover:bg-slate-100 rounded-md p-3">الأسعار</p>
-                            </a>
-                        </li>
-                        <li className="w-full">
-                            <a
-                                href="#"
-                                className="block w-full me-3 py-2 px-4 text-white bg-blue-400 rounded lg:bg-transparent lg:text-black lg:font-medium lg:p-0 dark:text-white"
-                                aria-current="page"
-                            >
-                                <p className="nav-item hover:bg-slate-100 rounded-md p-3">التواصل</p>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './App.css'
 import Layout from './Components/Layout/Layout'
 import Home from './Components/Home/Home'
-import AboutUs from './Components/AboutIs/AboutUs';
+import AboutUs from './Components/AboutUs/AboutUs';
 import Login from './Components/Login-register/Login';
 import Accounting1 from './Components/Accounting1/Accounting1';
 import Layout2 from './Components/Layout2/Layout2';
