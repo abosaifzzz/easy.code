@@ -223,6 +223,7 @@
 
 .earning2 {
   animation: slideInFromTopLeft 0.6s ease-out forwards;
+  rotate: 6deg;
 }
 
 .earning3 {
@@ -231,6 +232,7 @@
 
 .earning4 {
   animation: slideInFromTopRight 0.6s ease-out forwards;
+  rotate: -3deg;
 }
 @keyframes slideInFromBottom {
   0% {
@@ -301,7 +303,6 @@
 }
 .rakkas-regular {
   font-family: "Rakkas", serif;
-  font-size: 2.3rem;
   font-weight: 400;
   font-style: normal;
 }

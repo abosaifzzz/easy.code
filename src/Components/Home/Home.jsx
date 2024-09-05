@@ -135,37 +135,34 @@ export default function Home() {
                         <li></li>
                     </ul>
 
-                    <div className="earning1 -rotate-12 absolute rounded-lg  flex  justify-center items-center   left-10  lg:left-64 top-44 lg:top-1/2 mt-9 w-56 h-48 ">
+                    <div className="earning1 -rotate-12 absolute rounded-lg  flex  justify-center items-center   left-28  lg:left-64 top-60 lg:top-1/2 mt-9 w-56 h-48 ">
                         <img className="w-7 h-8 me-2" src={arrow} alt="" />{" "}
-                        <span className=" rakkas-regular text-blue-950">ارباح اليوم </span>
+                        <span className=" rakkas-regular lg:text-[2.3rem] text-[2rem] text-blue-950">ارباح اليوم </span>
                     </div>
-                    <div className="earning2 rotate-6 absolute rounded-lg  flex  justify-center items-center  right-1   lg:right-64 top-80 lg:top-80 mt-9 text-sm w-56 lg:h-48 ">
-                        <span className=" rakkas-regular  text-blue-950">
+                    <div className="earning2 absolute rounded-lg  flex  justify-center items-center  right-0   lg:right-96 bottom-1/3 lg:bottom-52 mt-9 text-sm w-56 lg:h-48 ">
+                        <span className=" rakkas-regular lg:text-[2.3rem] text-[1.6rem] text-blue-950">
                             % معدل الانتاج ۱۲۰{" "}
                         </span>
                     </div>
-                    <div className="earning3 rotate-6 absolute rounded-lg  lg:flex hidden justify-center items-center     right-1/3 top-56 mt-9 w-56 h-48 ">
-                        <span className=" rakkas-regular text-blue-950"> عميل جديد </span>
-                        <span className=" rakkas-regular text-blue-950 ms-2"> ۳٥ </span>
-                    </div>
-                    <div className="earning4 -rotate-2 absolute rounded-lg  flex  justify-center items-center  left-0   lg:left-1/3 lg:top-56 top-72 mt-9 w-56 h-48 ">
+
+                    <div className="earning4 -rotate-2 absolute rounded-lg  flex  justify-center items-center  left-0   lg:left-1/3 lg:top-56 top-80 mt-9 w-56 h-48 ">
                         <img className="w-7 h-8 me-2" src={truee} alt="" />{" "}
-                        <span className=" rakkas-regular text-blue-950">تقارير صرف </span>
+                        <span className=" rakkas-regular lg:text-[2.3rem] text-[1.6rem] text-blue-950">تقارير صرف </span>
                     </div>
 
                     <div
                         className={`flex flex-col justify-center pt-40 ${hasAnimated ? "" : "fade-in-scale"
                             }`}
                     >
-                        <p className="lg:mb-6 m-0   lg:text-5xl md:text-4xl text-lg lg:font-normal font-medium px-3 text-center hala">
+                        <p className="lg:mb-6 m-0   lg:text-5xl md:text-4xl text-lg lg:font-normal font-semibold px-3 text-center hala">
                             ندير عملياتك، نرتب بياناتك، ونزيد إنتاجيتك
                         </p>
-                        <h1 className="text-center alexandria lg:text-5xl md:text-4xl text-2xl">
+                        <h1 className="text-center alexandria lg:text-5xl md:text-4xl lg:font-normal font-semibold text-2xl">
                             ! بسهولة وكفاءة
                         </h1>
                     </div>
                     <div className="img flex justify-center absolute bottom-0 animate-fromBottom">
-                        <img className="lg:w-5/6 w-96 h-full" src={man} alt="" />
+                        <img className="lg:w-5/6  w-96 h-full" src={man} alt="" />
                     </div>
                 </div>
             </div>
@@ -397,7 +394,7 @@ export default function Home() {
                     </button>
                 </div>
             </div>
-            <div className="third bg-white lg:p-8 p-4">
+            <div className="third bg-white lg:p-8 p-2">
                 <div className="what-erp lg:flex p-8">
                     <div className="first-part lg:w-1/2" ref={playerRef}>
                         <ReactPlayer
@@ -476,7 +473,7 @@ export default function Home() {
                 </p>
 
                 <div className="why-our-programs my-9 lg:flex md:flex-row flex flex-col md:gap-3   md:justify-evenly items-center w-full">
-                    <div className="reason lg:mx-12  mt-3 flex flex-col  items-center text-gray-700 lg:w-1/4 md:w-1/4 w-1/2  bg-white rounded-xl shadow-lg">
+                    <div className="reason lg:mx-12  mt-3 flex flex-col  items-center text-gray-700 lg:w-1/4 md:w-1/4 w-2/3  bg-white rounded-xl shadow-lg">
                         <img className="lg:w-36 w-24 h-24 lg:h-36" src={call} alt="" />
                         <p className="text-sm cairo font-medium text-blue-400 m-0 mt-3">
                             الدعم الفني{" "}
@@ -491,7 +488,7 @@ export default function Home() {
                             جميع العقبات.
                         </p>
                     </div>
-                    <div className="reason lg:mx-12  mt-3 flex flex-col  items-center text-gray-700 lg:w-1/4 md:w-1/4 w-1/2  bg-white rounded-xl shadow-lg">
+                    <div className="reason lg:mx-12  mt-3 flex flex-col  items-center text-gray-700 lg:w-1/4 md:w-1/4 w-2/3  bg-white rounded-xl shadow-lg">
                         <img className="lg:w-36 w-24 h-24 lg:h-36" src={devices} alt="" />
                         <p className="text-sm cairo font-medium text-blue-400 m-0 mt-3">
                             درع الدعم الفني{" "}
@@ -505,7 +502,7 @@ export default function Home() {
                             توب
                         </p>
                     </div>
-                    <div className="reason lg:mx-12  mt-3 flex flex-col  items-center text-gray-700 lg:w-1/4 md:w-1/4 w-1/2  bg-white rounded-xl shadow-lg">
+                    <div className="reason lg:mx-12  mt-3 flex flex-col  items-center text-gray-700 lg:w-1/4 md:w-1/4 w-2/3  bg-white rounded-xl shadow-lg">
                         <img className="lg:w-36 w-24 h-24 lg:h-36" src={online} alt="" />
                         <p className="text-sm cairo font-medium text-blue-400 m-0 mt-3">
                             يعمل اونلاين{" "}
@@ -532,7 +529,7 @@ export default function Home() {
                     </p>
                     <p
                         dir="rtl"
-                        className="text-gray-100 font-[200] alexandria md:text-lg text-[1rem] leading-7 lg:pe-72 md:pe-14 pt-5"
+                        className="text-gray-100 font-[300] alexandria md:text-lg text-[1rem] leading-7 lg:pe-72 md:pe-14 pt-5"
                     >
                         ﻣﺆﺳﺴــﺔ اﻟﻜﻮد اﻟﺴــﻬﻞ ﻟﺘﻘﻨﻴﻪ ﻧﻈﻢ اﻟﻤﻌﻠﻮﻣﺎت ﺗﺄﺳﺴــﺖ ﻓﻰ 2004 وﻫــﻲ
                         ﻣــﻦ اﻟﻤﺆﺳﺴــﺎت اﻟﻤﺘﺨﺼﺼــﺔ ﻓــﻰ ﺗﺼﻤﻴــﻢ و اعداد أﻧﻈﻤــﺔ وﺑﺮاﻣــﺞ
@@ -608,13 +605,13 @@ export default function Home() {
                     <div className="p-4 mt-4  bg-white  rounded-md">
                         {activeTab === "final-bussiness" && (
                             <div>
-                                <p className="alexandria md:text-4xl text-2xl font-semibold text-blue-600">
+                                <p className="alexandria md:text-4xl text-3xl font-semibold text-blue-600">
                                     برنامج الفاينال بيزنس
                                 </p>
-                                <p className="md:font-semibold md:text-base font-medium  text-[0.7rem] kufi  m-0 text-gray-500">
+                                <p className="md:font-semibold md:text-base font-medium  text-[0.8rem]  kufi  m-0 text-gray-500">
                                     احد اهم و اقدم حلولنا البرمجية في المملكة العربية السعودية
                                 </p>
-                                <p className="md:text-lg text-sm m-0 mt-2 cairo md:font-medium font-semibold lg:me-96 md:me-12 leading-6  md:leading-8">
+                                <p className="md:text-lg text-[1.1rem] m-0 mt-2 cairo font-medium  lg:me-96 md:me-12 leading-6  md:leading-8">
                                     برنامج شامل لإدارة كافة معاملاتك المالية، من الحسابات والمخازن
                                     إلى التخليص الجمركي والمصانع وإدارة البيتومين وشؤون الموظفين.
                                     يتضمن أيضًا نقاط البيع وتطبيقات موبايل، مع إمكانية استخراج
@@ -631,15 +628,15 @@ export default function Home() {
                         )}
                         {activeTab === "cloud-bussiness" && (
                             <div>
-                                <p className="alexandria md:text-4xl text-2xl font-semibold text-blue-600">
+                                <p className="alexandria md:text-4xl text-3xl font-semibold text-blue-600">
                                     برنامج كلاود بيزنس
                                 </p>
-                                <p className="md:font-semibold md:text-base font-medium  text-[0.7rem] kufi  m-0 text-gray-500">
+                                <p className="md:font-semibold md:text-base font-medium  text-[0.8rem]  kufi  m-0 text-gray-500">
                                     {" "}
                                     يدير فروعك فى انحاء المملكه والعالم لتعمل من اى مكان ولا يشترط
                                     شبكه داخليه فقط انترنت
                                 </p>
-                                <p className="md:text-lg text-sm m-0 mt-2 cairo md:font-medium font-semibold lg:me-96 md:me-12 leading-6  md:leading-8">
+                                <p className="md:text-lg text-[1.1rem] m-0 mt-2 cairo font-medium  lg:me-96 md:me-12 leading-6  md:leading-8">
                                     نظام إدارة متكامل عبر الإنترنت يتيح سهولة في الوصول وإدارة
                                     البيانات بفعالية وكفاءة عالية. يتميز بصلاحيات دقيقة وقوية
                                     للتحكم الكامل في الوصول، مع إمكانية تعديل الأسعار وخصائصها حسب
@@ -701,7 +698,7 @@ export default function Home() {
                                 <div className="">
                                     <div className="side-1  md:flex gap-3   ">
                                         <div className="question md:w-1/2">
-                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[600] mt-3 lg:text-xl text-lg">
+                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[700] mt-3 lg:text-xl text-lg">
                                                 كيف يمكنني الاشتراك في برامج ايزي كود؟
                                             </p>
                                             <p className=" m-0 mt-3 messiri  lg:text-lg md:text-base text-[1rem] font-[400]">
@@ -710,7 +707,7 @@ export default function Home() {
                                             </p>
                                         </div>
                                         <div className="question md:w-1/2 ">
-                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[600] mt-3 lg:text-xl text-lg">
+                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[700] mt-3 lg:text-xl text-lg">
                                                 {" "}
                                                 هل يمكنني تجربة البرنامج قبل الشراء؟
                                             </p>
@@ -723,7 +720,7 @@ export default function Home() {
                                     </div>
                                     <div className="side-2 mt-6 md:flex gap-3   ">
                                         <div className="question md:w-1/2">
-                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[600] mt-3 lg:text-xl text-lg">
+                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[700] mt-3 lg:text-xl text-lg">
                                                 {" "}
                                                 هل يمكنني إلغاء الاشتراك في أي وقت؟
                                             </p>
@@ -732,7 +729,7 @@ export default function Home() {
                                             </p>
                                         </div>
                                         <div className="question md:w-1/2">
-                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[600] mt-3 lg:text-xl text-lg">
+                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[700] mt-3 lg:text-xl text-lg">
                                                 {" "}
                                                 ما هي تكاليف الاشتراك في برنامج إيزي كود؟                                            </p>
                                             <p className=" m-0 mt-3 messiri  lg:text-lg md:text-base text-[1rem] font-[400]">
@@ -745,7 +742,7 @@ export default function Home() {
                                 <div className="z-[2]">
                                     <div className="side-1  md:flex gap-3   ">
                                         <div className="question md:w-1/2">
-                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[600] mt-3 lg:text-xl text-lg">
+                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[700] mt-3 lg:text-xl text-lg">
                                                 هل ايزي كود هيفدني في ظل وجود اكثر من فرع لشركتي؟
                                             </p>
                                             <p className=" m-0 mt-3 messiri  lg:text-lg md:text-base text-[1rem] font-[400]">
@@ -753,7 +750,7 @@ export default function Home() {
                                             </p>
                                         </div>
                                         <div className="question md:w-1/2 ">
-                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[600] mt-3 lg:text-xl text-lg">
+                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[700] mt-3 lg:text-xl text-lg">
                                                 {" "}
                                                 هل استطيع استخدام البرنامج في حالة انقطاع خدمة الانترنت في أحد الفروع؟
                                             </p>
@@ -764,7 +761,7 @@ export default function Home() {
                                     </div>
                                     <div className="side-2 mt-6 md:flex gap-3   ">
                                         <div className="question md:w-1/2">
-                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[600] mt-3 lg:text-xl text-lg">
+                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[700] mt-3 lg:text-xl text-lg">
                                                 {" "}
                                                 اريد تقارير محاسبية لكل فرع علي حدا هل متوفر؟
                                             </p>
@@ -780,7 +777,7 @@ export default function Home() {
                                 <div className="">
                                     <div className="side-1  md:flex gap-3   ">
                                         <div className="question md:w-1/2">
-                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[600] mt-3 lg:text-xl text-lg">
+                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[700] mt-3 lg:text-xl text-lg">
                                                 ما هي اللغات التي تدعمها برامج ايزي كود؟
 
                                             </p>
@@ -791,7 +788,7 @@ export default function Home() {
                                             </p>
                                         </div>
                                         <div className="question md:w-1/2 ">
-                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[600] mt-3 lg:text-xl text-lg">
+                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[700] mt-3 lg:text-xl text-lg">
                                                 {" "}
                                                 هل يمكنني ضبط البرنامج ليتناسب مع احتياجات شركتي؟
                                             </p>
@@ -803,7 +800,7 @@ export default function Home() {
                                     </div>
                                     <div className="side-2 mt-6 md:flex gap-3   ">
                                         <div className="question md:w-1/2">
-                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[600] mt-3 lg:text-xl text-lg">
+                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[700] mt-3 lg:text-xl text-lg">
                                                 {" "}
                                                 هل يتطلب برنامج إيزي كود أي مهارات تقنية خاصة؟
                                             </p>
@@ -814,7 +811,7 @@ export default function Home() {
                                             </p>
                                         </div>
                                         <div className="question md:w-1/2">
-                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[600] mt-3 lg:text-xl text-lg">
+                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[700] mt-3 lg:text-xl text-lg">
                                                 {" "}
                                                 كيف يمكنني البدء باستخدام برنامج إيزي كود؟
                                             </p>
@@ -830,7 +827,7 @@ export default function Home() {
                                 <div className="">
                                     <div className="side-1  md:flex gap-3   ">
                                         <div className="question md:w-1/2">
-                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[600] mt-3 lg:text-xl text-lg">
+                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[700] mt-3 lg:text-xl text-lg">
                                                 هل يتوفر دعم فني للبرنامج؟
 
                                             </p>
@@ -842,7 +839,7 @@ export default function Home() {
                                             </p>
                                         </div>
                                         <div className="question md:w-1/2 ">
-                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[600] mt-3 lg:text-xl text-lg">
+                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[700] mt-3 lg:text-xl text-lg">
                                                 {" "}
                                                 كيف يمكنني التواصل مع فريق الدعم؟
 
@@ -855,7 +852,7 @@ export default function Home() {
                                     </div>
                                     <div className="side-2 mt-6 md:flex gap-3   ">
                                         <div className="question md:w-1/2">
-                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[600] mt-3 lg:text-xl text-lg">
+                                            <p className="cairo m-0 lg:font-[700] md:font-[500] font-[700] mt-3 lg:text-xl text-lg">
                                                 {" "}
                                                 هل يتم تحديث البرنامج بانتظام؟
 
