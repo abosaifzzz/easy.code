@@ -32,7 +32,7 @@ function App() {
       path: "/",
       element: <Layout />,
       children: [
-        { path: "home", element: <Home /> },
+        { path: "/home", element: <Home /> },
         { path: "about", element: <AboutUs /> },
         { path: "acounting1", element: <Accounting1 /> },
 
