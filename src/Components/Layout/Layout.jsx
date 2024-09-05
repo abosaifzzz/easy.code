@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import NavBar from '../NavBar/NavBar'
 import { Outlet } from "react-router-dom";
 import Loading from '../Loading/Loading';
+import Footer from '../Footer/Footer';
 
 
 export default function Layout() {
@@ -24,8 +25,8 @@ export default function Layout() {
         <NavBar></NavBar>
         <div className="">
             <Outlet></Outlet>
-
         </div>
+        <Footer></Footer>
     </>
     )
 }

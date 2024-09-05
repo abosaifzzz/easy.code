@@ -815,4 +815,8 @@ footer{
   background: linear-gradient(90deg, rgba(180,228,249,1) 0%, rgba(206,249,255,1) 53%, rgba(236,254,255,1) 100%);
  }
 
- 
+ /* .footer{
+
+  background-image: url("/src/assets/footer-bg.png");
+  background-repeat:no-repeat
+ } */

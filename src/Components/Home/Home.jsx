@@ -46,7 +46,7 @@ export default function Home() {
             : "text-[#20617c] bg-white"
         } `;
     const questionClasses = (questionName) =>
-        `cursor-pointer py-2 px-4   md:text-xl text-[1.1rem] messiri font-[500] ${activeQuestion === questionName
+        `cursor-pointer py-2 px-2   md:text-xl text-[1rem] messiri font-[500] ${activeQuestion === questionName
             ? "border-b-2 border-[#20617c]"
             : "text-[#20617c] "
         } `;
@@ -135,7 +135,7 @@ export default function Home() {
                         <li></li>
                     </ul>
 
-                    <div className="earning1 -rotate-12 absolute rounded-lg  flex  justify-center items-center   left-28  lg:left-64 top-60 lg:top-1/2 mt-9 w-56 h-48 ">
+                    <div className="earning1 -rotate-12 absolute rounded-lg  flex  justify-center items-center   left-28  lg:left-64 top-64 lg:top-1/2 mt-9 w-56 h-48 ">
                         <img className="w-7 h-8 me-2" src={arrow} alt="" />{" "}
                         <span className=" rakkas-regular lg:text-[2.3rem] text-[2rem] text-blue-950">ارباح اليوم </span>
                     </div>
@@ -145,7 +145,7 @@ export default function Home() {
                         </span>
                     </div>
 
-                    <div className="earning4 -rotate-2 absolute rounded-lg  flex  justify-center items-center  left-0   lg:left-1/3 lg:top-56 top-80 mt-9 w-56 h-48 ">
+                    <div className="earning4 -rotate-2 absolute rounded-lg  flex  justify-center items-center  left-0   lg:left-1/3 lg:top-56 top-72 mt-9 w-56 h-48 ">
                         <img className="w-7 h-8 me-2" src={truee} alt="" />{" "}
                         <span className=" rakkas-regular lg:text-[2.3rem] text-[1.6rem] text-blue-950">تقارير صرف </span>
                     </div>
@@ -154,10 +154,10 @@ export default function Home() {
                         className={`flex flex-col justify-center pt-40 ${hasAnimated ? "" : "fade-in-scale"
                             }`}
                     >
-                        <p className="lg:mb-6 m-0   lg:text-5xl md:text-4xl text-lg lg:font-normal font-semibold px-3 text-center hala">
+                        <p className="lg:mb-6 m-0   lg:text-5xl md:text-4xl text-[0.9rem] lg:font-normal font-bold px-3 text-center hala">
                             ندير عملياتك، نرتب بياناتك، ونزيد إنتاجيتك
                         </p>
-                        <h1 className="text-center alexandria lg:text-5xl md:text-4xl lg:font-normal font-semibold text-2xl">
+                        <h1 className="text-center alexandria lg:text-5xl md:text-4xl text-[1.3rem] lg:font-normal font-semibold text-2xl">
                             ! بسهولة وكفاءة
                         </h1>
                     </div>
@@ -281,7 +281,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="second pt-6 bg-gray-100">
-                <p className="m-0 py-6 text-center text-4xl font-semibold cairo text-[#339ecc] ">
+                <p className="m-0 py-6 text-center md:text-4xl text-2xl font-semibold cairo text-[#339ecc] ">
                     كل هذا و اكثر بين يديك{" "}
                 </p>
                 <div className="slider-container py-7">
@@ -420,10 +420,10 @@ export default function Home() {
                         dir="rtl"
                         className="second-part mt-5 lg:mt-0 lg:mx-5 mx-1 lg:w-1/2 "
                     >
-                        <p className="m-0 lg:text-5xl text-4xl mt-2 cairo font-semibold text-[#339ecc]">
+                        <p className="m-0 lg:text-5xl text-3xl mt-2 cairo font-semibold text-[#339ecc]">
                             نظام ERP متكامل{" "}
                         </p>
-                        <p className="m-0 lg:text-5xl text-4xl mt-4 cairo font-semibold ">
+                        <p className="m-0 lg:text-5xl text-3xl mt-4 cairo font-semibold ">
                             {" "}
                             لأدارة جميع أعمالك
                         </p>
@@ -435,7 +435,7 @@ export default function Home() {
                             تعد برامج الكود السهل المحاسبية برامج متكاملة تعمل علي توفير
                             معاملات الامان لتكن في راحه تامة & حتى يمكنك الإعتماد علينا كليا.
                         </p>
-                        <div className="labels flex gap-4 mt-4">
+                        <div className="labels flex md:gap-4 gap-0.5 mt-4">
                             <p className="m-0 text-sm cairo font-[500] ">
                                 <span>
                                     <i className="bg-[#627886] text-white p-1 rounded-full fa-solid fa-check"></i>
@@ -523,7 +523,7 @@ export default function Home() {
                 <div className="why-easy md:w-2/3 w-full">
                     <p
                         dir="rtl"
-                        className=" md:text-[2.8rem] text-3xl pt-5 text-white cairo font-semibold"
+                        className=" md:text-[2.8rem] text-2xl pt-5 text-white cairo font-semibold"
                     >
                         لماذا سأختار ايزي كود ؟
                     </p>
@@ -542,7 +542,7 @@ export default function Home() {
                         dir="rtl"
                         className="message md:flex-row flex flex-col items-center gap-3"
                     >
-                        <div className="view lg:w-1/3 w-4/5  rounded-xl lg:p-8 md:p-4 p-5 border border-blue-400 ">
+                        <div className="view lg:w-1/3 w-full  rounded-xl lg:p-8 md:p-4 p-5 border border-blue-400 ">
                             <i className="lg:text-5xl text-3xl text-blue-400 fa-solid fa-eye"></i>
                             <p className="lg:text-3xl md:text-xl text-4xl m-0 py-2 text-white cairo font-semibold">
                                 {" "}
@@ -555,7 +555,7 @@ export default function Home() {
                                 2030
                             </p>
                         </div>
-                        <div className="our-message lg:w-1/3 w-4/5  rounded-xl lg:p-8 md:p-4 p-5 bg-blue-500 ">
+                        <div className="our-message lg:w-1/3 w-full rounded-xl lg:p-8 md:p-4 p-5 bg-blue-500 ">
                             <i className="lg:text-5xl md:text-3xl text-3xl text-[#1a4e64] fa-solid fa-spa"></i>
                             <p className="lg:text-3xl md:text-xl text-4xl m-0 py-2 text-white cairo font-semibold">
                                 {" "}
@@ -605,7 +605,7 @@ export default function Home() {
                     <div className="p-4 mt-4  bg-white  rounded-md">
                         {activeTab === "final-bussiness" && (
                             <div>
-                                <p className="alexandria md:text-4xl text-3xl font-semibold text-blue-600">
+                                <p className="alexandria md:text-4xl text-2xl font-semibold text-blue-600">
                                     برنامج الفاينال بيزنس
                                 </p>
                                 <p className="md:font-semibold md:text-base font-medium  text-[0.8rem]  kufi  m-0 text-gray-500">
@@ -628,7 +628,7 @@ export default function Home() {
                         )}
                         {activeTab === "cloud-bussiness" && (
                             <div>
-                                <p className="alexandria md:text-4xl text-3xl font-semibold text-blue-600">
+                                <p className="alexandria md:text-4xl text-2xl font-semibold text-blue-600">
                                     برنامج كلاود بيزنس
                                 </p>
                                 <p className="md:font-semibold md:text-base font-medium  text-[0.8rem]  kufi  m-0 text-gray-500">
