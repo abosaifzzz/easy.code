@@ -10,6 +10,9 @@ import exchange from "../../assets/exchange.png";
 import installment from "../../assets/installment.png";
 import ReactPlayer from "react-player";
 import erp from "../../assets/erp.mp4";
+import screen from "../../assets/screen.mp4";
+
+
 import arrow from "../../assets/up.png";
 import truee from "../../assets/true.png";
 import Slider from "react-slick";
@@ -36,7 +39,10 @@ export default function Home() {
     const [isOpen, setIsOpen] = useState(false);
     const [hasAnimated, setHasAnimated] = useState(false);
     const playerRef = useRef(null);
+    const playerRef2 = useRef(null); // Second video ref
+
     const [isInView, setIsInView] = useState(false);
+    const [isInView2, setIsInView2] = useState(false); // Second video state
     const [activeTab, setActiveTab] = useState("final-bussiness");
     const [activeQuestion, setActiveQuestion] = useState("subscribe");
 
@@ -68,14 +74,28 @@ export default function Home() {
                 threshold: 0.5, // Video is considered in view if 50% of it is visible
             }
         );
+        const observer2 = new IntersectionObserver(
+            ([entry]) => {
+                setIsInView2(entry.isIntersecting);
+            },
+            {
+                threshold: 0.5, // Video 2 is considered in view if 50% is visible
+            }
+        );
 
         if (playerRef.current) {
             observer.observe(playerRef.current);
+        }
+        if (playerRef2.current) {
+            observer2.observe(playerRef2.current);
         }
 
         return () => {
             if (playerRef.current) {
                 observer.unobserve(playerRef.current);
+            }
+            if (playerRef2.current) {
+                observer2.unobserve(playerRef2.current);
             }
         };
     }, []);
@@ -516,6 +536,42 @@ export default function Home() {
                             24 ساعة طوال ايام الاسبوع
                         </p>
                     </div>
+                </div>
+            </div>
+            <div className="fifth">
+                <p className="m-0 py-6 text-center lg:text-4xl md:text-3xl text-2xl font-semibold cairo text-[#339ecc] ">
+                    من نحن ؟
+                </p>
+
+                <div className="we w-full md:flex p-8 py-16 ">
+
+                    <div dir="rtl" className="left md:w-1/2 p-5 ">
+                        <p className="cairo font-bold text-xl">عن "ايزي كود"</p>
+                        <p className="kufi text-[1.1rem] leading-7 font-medium md:w-5/6">شركة "إيزي كود" هي شركة متخصصة في تقديم حلول برمجية متكاملة وابتكارية تهدف إلى تبسيط العمليات التجارية وتحسين الكفاءة الرقمية للشركات. تسعى "إيزي كود" إلى تطوير تطبيقات برمجية تلبي احتياجات العملاء عبر توفير حلول ذكية ومرنة تساعد على تعزيز الأداء وتحقيق أهداف النمو. تتضمن خدمات الشركة تصميم وتطوير مواقع الويب، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، وغيرها من الأنظمة المخصصة التي تسهم في التحول الرقمي للمؤسسات بمختلف قطاعاتها. تعتمد الشركة على أحدث التقنيات والمعايير العالمية لضمان جودة وفعالية الحلول المقدمة.</p>
+
+                    </div>
+                    <div className="right md:w-1/2" ref={playerRef2}>
+                        <ReactPlayer
+                            url={screen}
+                            width="100%"
+                            height="100%"
+                            playing={isInView2}
+                            loop={true}
+                            controls={false}
+                            playsinline={true}
+                            config={{
+                                file: {
+                                    attributes: {
+                                        controlsList: "nodownload",
+                                        playsInline: true,
+                                    },
+                                },
+                            }}
+                            style={{ pointerEvents: "none" }}
+                        />
+                    </div>
+
+
                 </div>
             </div>
 

@@ -103,8 +103,8 @@ export default function NavBar() {
                         className={`nav-ul font-medium lg:flex-row lg:mt-0 ${isOpen ? "block" : "flex"
                             }`}
                     >
-                        <li><Link className="menu">الرئيسية</Link> </li>
-                        <li><Link className="menu">نبذة عننا</Link> </li>
+                        <li><Link to={'/home'} className="menu">الرئيسية</Link> </li>
+                        <li><Link to={"/about"} className="menu">نبذة عننا</Link> </li>
                         <li><Link className="menu">البرامج</Link></li>
                         <li><Link className="menu">الأنظمة</Link></li>
                         <li><Link className="menu">اراء عملائنا </Link></li>

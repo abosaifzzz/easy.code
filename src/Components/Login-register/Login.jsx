@@ -72,10 +72,10 @@ export default function Login() {
                                 <p className='alexandria font-medium m-0 px-9 text-2xl text-blue-900  '>لن تكون بعيد عن اعمالك ابدا
                                 </p>
                                 <p className='px-9 m-0 pt-4 kufi font-medium leading-8 text-[#75799D] text-[18px]'>حلول الكود السهل التقنية استطاعت بكفائة إقامة جسر دائم بينك وبين مشروعك.</p>
-                                <p className='px-9 m-0  kufi text-gray-600 font-medium text-[16px] pt-4' ><i class="text-blue-900 pe-2 fa-solid fa-cash-register"></i>نقاط بيع مرنة   </p>
-                                <p className='px-9 m-0  kufi text-gray-600 font-medium text-[16px] pt-4' ><i class="text-blue-900  pe-2 fa-solid fa-desktop"></i>شاشات سهله الإستخدام
+                                <p className='px-9 m-0  kufi text-gray-600 font-medium text-[16px] pt-4' ><i className="text-blue-900 pe-2 fa-solid fa-cash-register"></i>نقاط بيع مرنة   </p>
+                                <p className='px-9 m-0  kufi text-gray-600 font-medium text-[16px] pt-4' ><i className="text-blue-900  pe-2 fa-solid fa-desktop"></i>شاشات سهله الإستخدام
                                 </p>
-                                <p className='px-9 m-0  kufi text-gray-600 font-medium text-[16px] pt-4' ><i class="text-blue-900  pe-2 fa-solid fa-boxes-packing"></i>المخازن وحركة المخزون
+                                <p className='px-9 m-0  kufi text-gray-600 font-medium text-[16px] pt-4' ><i className="text-blue-900  pe-2 fa-solid fa-boxes-packing"></i>المخازن وحركة المخزون
                                 </p>
 
                             </div>
