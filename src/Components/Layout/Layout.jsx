@@ -22,11 +22,16 @@ export default function Layout() {
         return <Loading />;
     }
     return (<>
-        <NavBar></NavBar>
-        <div className="">
-            <Outlet></Outlet>
+
+        <div className="flex flex-col min-h-screen">
+
+            <NavBar></NavBar>
+            <div className="flex-grow">
+                <Outlet></Outlet>
+            </div>
+            <Footer></Footer>
         </div>
-        <Footer></Footer>
+
     </>
     )
 }
