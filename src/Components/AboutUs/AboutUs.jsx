@@ -5,10 +5,24 @@ import qoutes2 from "../../assets/qoutes2.png";
 import systems from "../../assets/systems.png";
 import systems2 from "../../assets/systems2.png";
 import dot from "../../assets/dot.png";
+import shape3 from "../../assets/shape3.png";
+import programming from "../../assets/programming.png";
+import callcenter from "../../assets/callcenter.png";
+import customerservice from "../../assets/customerservice.png";
+
+
+
+
 
 export default function AboutUs() {
     const [activeTab, setActiveTab] = useState("suppliers-accounts");
+    const [activeTab2, setActiveTab2] = useState("human-resources");
 
+    const tabClasses2 = (tabName2) =>
+        `cursor-pointer py-2 px-4   md:text-2xl text-[1rem] cairo font-medium ${activeTab2 === tabName2
+            ? "border-b-2 border-[#20617c]"
+            : "text-[#20617c] bg-white"
+        } `;
     const tabClasses = (tabName) =>
         `cursor-pointer py-2 px-4   md:text-2xl text-[1rem] cairo font-medium ${activeTab === tabName
             ? "border-b-2 border-[#20617c]"
@@ -23,11 +37,15 @@ export default function AboutUs() {
                     </div>
                     <div
                         dir="rtl"
-                        className="right flex justify-center items-center md:w-1/2"
+                        className="right flex flex-col justify-center items-center md:w-1/2"
                     >
-                        <p className="lg:text-5xl text-2xl cairo font-bold">
+                        <p className="lg:text-5xl text-2xl text-blue-950 cairo font-[650]">
                             Easy Code - أيزي كود
                         </p>
+                        <div className="line lg:w-96 md:w-72     h-1 text-white bg-[#339ecc]"></div>
+
+                        <div className="line lg:w-96 md:w-72     h-1 text-white bg-[#339ecc]"></div>
+
                     </div>
                     <div className="left md:flex hidden lg:w-1/2 md:h-2/3">
                         <img src={home} alt="" />
@@ -53,7 +71,10 @@ export default function AboutUs() {
                     </div>
                 </div>
 
-                <div dir="rtl" className="third lg:px-28 md:px-16 px-4">
+                <div dir="rtl" className="third relative lg:px-28 md:px-16 px-4">
+                    <div className="shape3 absolute -left-20 md:top-1/4 top-1/2">
+                        <img className="lg:w-4/5 w-1/2" src={shape3} alt="" />
+                    </div>
                     <p className="md:text-3xl text-xl cairo text-center font-bold text-[#339ecc]">
                         الرؤية و الرسالة
                     </p>
@@ -63,7 +84,8 @@ export default function AboutUs() {
                     </p>
                     <p className="lg:text-xl md:text-lg text-[0.8rem] text-gray-700 m-0 mb-4 md:leading-9 messiri lg:font-[400] md:font-[500] font-medium lg:w-4/5">
                         رؤيتنا أن نكون الرواد في تقديم حلول ERP المتكاملة التي تساهم في
-                        تطوير الأعمال السعودية. نسعى لتحقيق ذلك من خلال تقديم برامج مبتكرة
+                        تطوير الأعمال الس
+                        عودية. نسعى لتحقيق ذلك من خلال تقديم برامج مبتكرة
                         تعزز من الكفاءة التشغيلية وتدعم التحول الرقمي، بما يتوافق مع رؤية
                         المملكة 2030. نحن ملتزمون بتقديم حلول تقنية متقدمة تلبي احتياجات
                         السوق المحلي وتساعد الشركات على تحقيق أهدافها بكفاءة وفعالية. نهدف
@@ -82,7 +104,8 @@ export default function AboutUs() {
                     </p>
                     <p className="lg:text-xl md:text-lg text-[0.8rem] text-gray-700 m-0 mb-4 md:leading-9 messiri lg:font-[400] md:font-[500] font-medium lg:w-4/5">
                         نحن في أيزي كود نقدم حلولاً مناسبة لمختلف الشركات، بغض النظر عن
-                        اختلاف احتياجاتهم أو قدراتهم المالية. نحن ملتزمون بتقديم حلول برمجية
+                        اختلاف احتياجاتهم
+                        أو قدراتهم المالية. نحن ملتزمون بتقديم حلول برمجية
                         مصممة خصيصًا لتلبية احتياجات عملائنا الفردية، مما يتيح لهم الاستفادة
                         القصوى من التكنولوجيا المتقدمة لتحقيق أهدافهم. فريقنا المتخصص يعمل
                         على فهم متعمق لاحتياجات كل عميل، مما يمكننا من تقديم حلول مخصصة
@@ -100,12 +123,12 @@ export default function AboutUs() {
                 </div>
 
                 <div className="fourth md:p-8 p-2 md:flex bg-blue-200 bg-opacity-20  w-full">
-                    <div className="left px-4 ">
+                    <div className="left lg:w-1/2 px-4 ">
                         <img className="lg:w-4/5" src={systems} alt="" />
                     </div>
                     <div
                         dir="rtl"
-                        className="right  flex flex-col justify-center lg:p-10 md:w-1/2"
+                        className="right  flex flex-col justify-center  lg:p-10 lg:w-1/2"
                     >
                         <p className="cairo lg:text-5xl md:text-2xl text-xl text-blue-900 font-bold lg:font-semibold">
                             المواصفات العامة للأنظمة
@@ -113,7 +136,8 @@ export default function AboutUs() {
                         <div className="line lg:w-96 md:w-72 w-64    h-1 text-white bg-[#339ecc]"></div>
                         <p className="lg:text-2xl md:text-base text-[1.1rem] messiri">
                             تهدف جميع الأنظمة إلى تسجيل ومتابعة ومراقبة حركة الشركة أو المصنع
-                            أو المؤسسة في مختلف مجالات العمل من خلال بيانات سحابية، وكذلك شبكة
+                            أو المؤسسة في مخت
+                            لف مجالات العمل من خلال بيانات سحابية، وكذلك شبكة
                             كمبيوتر تدعم العمليات. هذه الأنظمة تعمل بواسطة برامج متكاملة تغطي
                             كافة الاحتياجات التشغيلية، مع الالتزام بمعايير قانون العمل في
                             المملكة العربية السعودية.
@@ -208,10 +232,10 @@ export default function AboutUs() {
                         dir="rtl"
                         className="right flex flex-col justify-center lg:p-6 p-3 lg:w-1/2 md:w-2/3"
                     >
-                        <p className="cairo lg:text-4xl md:text-2xl text-lg text-blue-900 font-bold md:font-semibold">
+                        <p className="cairo lg:text-4xl md:text-2xl text-[1.1rem] text-blue-900 font-bold md:font-semibold">
                             ﻟﻤﺎذا اﻟﻜﻮد اﻟﺴﻬﻞ ﻟﺘﻘﻨﻴﻪ ﻧﻈﻢ اﻟﻤﻌﻠﻮﻣﺎت
                         </p>
-                        <div className="line lg:w-96 md:w-72  w-64   h-1 text-white bg-[#339ecc]"></div>
+                        <div className="line lg:w-96 md:w-72     h-1 text-white bg-[#339ecc]"></div>
                         <div className="why-reason flex gap-2  mt-5">
                             <span>
                                 <img className="w-11" src={qoutes} alt="" />
@@ -299,6 +323,8 @@ export default function AboutUs() {
                                     <p className="lg:text-3xl text-2xl font-semibold text-blue-900 kufi">
                                         حسابات المورديين
                                     </p>
+                                    <div className="line lg:w-96 md:w-72 w-64    h-1 text-white bg-[#339ecc]"></div>
+
                                     <div className="information mt-3 md:flex gap-3">
                                         <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
                                             <img className="w-8" src={dot} alt="" />
@@ -345,6 +371,8 @@ export default function AboutUs() {
                                     <p className="lg:text-3xl text-2xl font-semibold text-blue-900 kufi">
                                         حسابات العملاء
                                     </p>
+                                    <div className="line lg:w-96 md:w-72 w-64    h-1 text-white bg-[#339ecc]"></div>
+
                                     <div className="information mt-3 md:flex gap-3">
                                         <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
                                             <img className="w-8" src={dot} alt="" />
@@ -387,9 +415,11 @@ export default function AboutUs() {
                             )}
                             {activeTab === "finance-accounts" && (
                                 <>
-                                    <p className="text-3xl m-0 font-semibold text-blue-900 kufi">
+                                    <p className="text-3xl  font-semibold text-blue-900 kufi">
                                         الحسابات المالية                                    </p>
-                                    <p className="md:w-2/3 md:text-lg text-base cairo font-medium">النظام مصمم ليتلاءم مع المعايير المحاسبية المتعارف عليها، ويلبي جميع الاستخدامات المحاسبية بمرونة وسرعة و اهم عناصر النظام ما يلي :
+                                    <div className="line lg:w-96 md:w-72 w-64    h-1 text-white bg-[#339ecc]"></div>
+
+                                    <p className="md:w-2/3 md:text-lg text-base cairo font-[650]">النظام مصمم ليتلاءم مع المعايير المحاسبية المتعارف عليها، ويلبي جميع الاستخدامات المحاسبية بمرونة وسرعة و اهم عناصر النظام ما يلي :
                                     </p>
                                     <div className="information mt-3 md:flex gap-3">
                                         <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
@@ -439,9 +469,11 @@ export default function AboutUs() {
                             )}
                             {activeTab === "storage-accounts" && (
                                 <>
-                                    <p className="text-3xl m-0 font-semibold text-blue-900 kufi">
+                                    <p className="text-3xl  font-semibold text-blue-900 kufi">
                                         نظام المخازن                                    </p>
-                                    <p className="md:w-2/3 md:text-lg text-base cairo font-medium"> ﻳﺴــﻤﺢ اﻟﻨﻈــﺎم ﺑﻌــﺪد ﻻﻧﻬﺎﺋــﻲ
+                                    <div className="line lg:w-96 md:w-72 w-64    h-1 text-white bg-[#339ecc]"></div>
+
+                                    <p className="md:w-2/3 md:text-lg text-base cairo font-[650]"> ﻳﺴــﻤﺢ اﻟﻨﻈــﺎم ﺑﻌــﺪد ﻻﻧﻬﺎﺋــﻲ
                                         ﻣــﻦ اﻷﺻﻨﺎف ﻛﻤﺎ ﻳﻤﻜﻦ ﺗﺼﻨﻴﻒ
                                         اﻷﺻﻨﺎف إﻟﻰ ﻣﺠﻤﻮﻋﺎت ﻣﺨﺰﻧية ﻃﺒﻘﺎ
                                         ﻟﻄﺒﻴﻌﺔ ﻛﻞ ﺻﻨﻒ وﻳﻤﻜﻦ اﻟﺘﺤﺪﻳﺪ ﻓﻲ
@@ -487,6 +519,253 @@ export default function AboutUs() {
                             )}
                         </div>
                     </div>
+                </div>
+                <div className="eaghtth   lg:p-12 md:p-8 lg:px-24 md:px-7 p-3 flex flex-col items-center">
+                    <p className="m-0 py-6 text-center md:text-4xl text-2xl font-semibold cairo text-[#339ecc] ">
+                        انظمة اخري تنتجها المؤسسة{" "}
+                    </p>
+                    <p dir="rtl" className="cairo text-center m-0 mt-1 md:text-base text-sm font-medium">المستوصفات - ادارة المطاعم - ادارة التخليص الجمركي - ادارة العقارات - الاستقدام - ادارة الارشفة الالكترونية</p>
+                    <p dir="rtl" className="cairo text-center m-0 mt-1 md:text-base text-sm font-medium">الحكومة الألكترونية - التأهيل الطبي للمعاقين - ادارة النوادي - ادارة البحث و التحري - ادارة البلديات</p>
+
+                    <div dir="rtl" className="w-full">
+                        <div className="flex border-b justify-center border-gray-200 py-3  ">
+                            <div
+                                className={tabClasses2("human-resources")}
+                                onClick={() => setActiveTab2("human-resources")}
+                            >
+                                شئون الموظفين
+                            </div>
+                            <div
+                                className={tabClasses2("salaries")}
+                                onClick={() => setActiveTab2("salaries")}
+                            >
+                                الاجور و المرتبات
+                            </div>
+
+                        </div>
+
+                        <div className="p-4 mt-4  bg-white  rounded-md">
+                            {activeTab2 === "human-resources" && (
+                                <>
+                                    <p className="lg:text-3xl text-2xl font-semibold text-blue-900 kufi">
+                                        نظام شئون الموظفين
+                                    </p>
+                                    <div className="line lg:w-96 md:w-72 w-64    h-1 text-white bg-[#339ecc]"></div>
+
+                                    <div className="information mt-3 md:flex gap-3">
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            ﺗﺴﺠﻴﻞ وﺍﺣﺘﺴﺎب اﻟﺤﻀﻮر وﺍﻻﻧصراف
+
+                                        </div>
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            ﺗﺴﺠﻴﻞ وﺍﺣﺘﺴﺎب اﻻﺟﺎزات اﻻﻋﺘﻴﺎدﻳﺔ
+
+                                        </div>
+                                    </div>
+                                    <div className="information mt-3 md:flex gap-3">
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            ﺗﺴﺠﻴﻞ ﺑﻴﺎﻧﺎت اﻹﻗﺎﻣﺔ وﻣﺘﺎﺑﻌﺔ ﺗﺠﺪﻳﺪﻫﺎ
+
+                                        </div>
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            ﺗﺴﺠﻴﻞ وﺍﺣﺘﺴﺎب اﻻﺟﺎزات اﻟﻤﺮﺿﻴﺔ
+                                        </div>
+                                    </div>
+                                    <div className="information mt-3 md:flex gap-3">
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            ﺗﺴﺠﻴﻞ وﺍﺣﺘﺴﺎب اﻟﺴﻨﻮﻳﺔ
+
+                                        </div>
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            ﺗﺴﺠﻴﻞ اﻟﺘﺄﺧﻴﺮات
+
+                                        </div>
+                                    </div>
+                                    <div className="information mt-3 md:flex gap-3">
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            ﺗﺴﺠﻴﻞ إﺿﺎﻓﻲ ﺳﺎﻋﺎت اﻟﻌﻤﻞ
+
+                                        </div>
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            ﺗﺴﺠﻴﻞ اﺟﺎزات اﻟﺤﺞ
+
+                                        </div>
+                                    </div>
+                                    <div className="information mt-3 md:flex gap-3">
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            ﺗﺴﺠﻴﻞ اﺟﺎزات اﻟﺰواج
+                                        </div>
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            ﺗﺴﺠﻴﻞ وﺍﺣﺘﺴﺎب اﻻﺟﺎزات اﻟﻐﻴﺮ ﻣﺪﻓﻮﻋﺔ
+
+                                        </div>
+                                    </div>
+                                    <div className="information mt-3 md:flex gap-3">
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            ﺗﺴﺠﻴﻞ ﻣﺄﻣﻮرﻳﺎت اﻟﻌﻤﻞ اﻟﺨﺎرﺟﻴﺔ
+
+
+                                        </div>
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            ﺗﺴــﺠﻴﻞ وﺍﺣﺘﺴــﺎب ﻓﺘــﺮات اﻟﺴــﻤﺎح اﻟﺨﺎﺻــﺔ ﺑﺎﻟﺤﻀﻮر وﺍﻻﻧﺼﺮاف
+
+
+                                        </div>
+                                    </div>
+                                    <div className="information mt-3 md:flex gap-3">
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            ﺗﺴــﺠﻴﻞ ﺑﻴﺎﻧــﺎت ﺟــﻮاﺯات اﻟﺴــﻔﺮ وﻣﺘﺎﺑﻌــﺔ
+                                            ﺗﺠﺪﻳﺪﻫﺎ
+
+                                        </div>
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            ﺗﺴــﺠﻴﻞ ﺑﻴﺎﻧــﺎت اﻟﺘﺄﻣﻴﻨــﺎت اﻻﺟﺘﻤﺎﻋﻴــﺔ وﻣﺘﺎﺑﻌــﺔ
+                                            ﺗﺠﺪﻳﺪﻫﺎ
+
+                                        </div>
+                                    </div>
+                                </>
+                            )}
+                            {activeTab2 === "salaries" && (
+                                <>
+                                    <p className="lg:text-3xl text-2xl font-semibold text-blue-900 kufi">
+                                        نظام الاجور و المرتبات
+                                    </p>
+                                    <div className="line lg:w-96 md:w-72 w-64    h-1 text-white bg-[#339ecc]"></div>
+                                    <div className="information mt-3 md:flex gap-3">
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            يتيح النظام تعدد فترات القبض خلال الشهر.
+
+                                        </div>
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            يتيح النظام استخراج أنواع الأجر الأساسية والبدلات بدون حد أقصى، مع تعريف أسلوب التعامل (شهري / نسبة / يومي / ساعة).
+
+                                        </div>
+                                    </div>
+                                    <div className="information mt-3 md:flex gap-3">
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            يتيح النظام استخراج الاستقطاعات بدون حد أقصى، مع تعريف أسلوب التعامل (شهري / نسبة / يومي / ساعة).
+
+                                        </div>
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            يتيح النظام تطبيق أكثر من نظام تأمين حسب نوع التأمين.
+
+                                        </div>
+                                    </div>
+                                    <div className="information mt-3 md:flex gap-3">
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            يقوم النظام بعمل التسوية الضريبية سنوياً أو عند ترك العامل للخدمة.
+
+                                        </div>
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            يقدم النظام تقارير شهرية وسنوية لمتابعة الأجور والضرائب والتأمينات وحركة العمالة.
+
+                                        </div>
+                                    </div>
+                                    <div className="information mt-3 md:flex gap-3">
+                                        <div className="info-details md:w-1/2 mt-6 cairo md:text-lg text-base flex gap-1  items-center">
+                                            <img className="w-8" src={dot} alt="" />
+                                            يقوم النظام بمتابعة بيانات جوازات السفر والإقامة وتجديدها، والتأمين الاجتماعي والصحي، وتفويضات الزيارة، وتأشيرات الخروج والعودة، والإجراءات الخاصة بمكتب العمل والجوازات.
+
+
+
+
+
+
+
+                                        </div>
+
+                                    </div>
+                                </>
+                            )}
+
+                        </div>
+                    </div>
+                </div>
+                <div className="nineth bg-blue-200 bg-opacity-20 py-12 flex flex-col items-center p-6 ">
+                    <p className="text-4xl cairo font-semibold text-blue-950 ">اقسام ايزي كود</p>
+
+                    <div className="sections w-full md:flex">
+                        <div className="section mt-3 md:w-1/3   flex flex-col justify-center items-center">
+                            <div className="section-img md:w-2/3 md:h-2/3 w-1/2 h-1/2 overflow-hidden shadow-lg bg-white rounded-full">
+                                <img className="w-full h-full" src={callcenter} alt="" />
+
+                            </div>
+                            <p className="m-0 mt-3  kufi font-medium text-blue-900   ">فريق دعم فني </p>
+                            <p className="m-0 mt-3 cairo text-lg font-bold">دعم فني مميز</p>
+                            <p className="m-0 mt-3 text-center w-4/5 text-gray-600 text-lg font-medium messiri">ﻳﻘــﺪم دﻋﻤــﺎ ﻓﻨﻴــﺎ ﻣﺘﺨﺼﺼــﺎ ﻟﻠﻌﻤــﻼء،
+                                ﻣﺴــﺎﻋﺪﺗﻬﻢ ﻓــﻲ ﺣــﻞ اﻟﻤﺸــﺎﻛﻞ
+                                اﻟﺘﻘﻨﻴــﺔ وﺗﻮﻓﻴــﺮ إﺭﺷــﺎدﺎﺗ وﺣﻠــﻮل
+                                ﻓﻮرﻳــﺔ ﻟﻀﻤـ ـﺎن اﺳــﺘﺨﺪﺎﻣ ﺳــﻠﺲ وﻓﻌــﺎل
+                                ﻟﻸﻧﻈﻤﺔ اﻟﻤﺤﺎﺳﺒﻴﺔ. </p>
+
+
+
+                        </div>
+                        <div className="section mt-3 md:w-1/3   flex flex-col justify-center items-center">
+                            <div className="section-img md:w-2/3 md:h-2/3 w-1/2 h-1/2 overflow-hidden shadow-lg bg-white rounded-full">
+                                <img className="w-full h-full" src={customerservice} alt="" />
+
+                            </div>
+                            <p className="m-0 mt-3  kufi font-medium text-blue-900   "> خدمة عملاء </p>
+                            <p className="m-0 mt-3 cairo text-lg font-bold"> متاحة 24 ساعة</p>
+                            <p className="m-0 mt-3 text-center w-4/5 text-gray-600 text-lg font-medium messiri">
+                                ﻓﺮﻳــﻖ ﺧﺪﻣــﺔ اﻟﻌﻤــﻼء ﻓــﻲ إﻳــﺰي ﻛــﻮد
+                                ﻳﻘــﺪم اﻟﺪﻋــﻢ اﻟﻔﻨــﻲ وﺍﻻﺳﺘﺸــﺎرﺎﺗ
+                                اﻟﻤﺤﺎﺳــﺒﻴﺔ ﻟﺘﺤﻘﻴــﻖ رﺿــﺎ اﻟﻌﻤــﻼء
+                                وﺗﺠﺮﺑﺔ ﻣﻤﺘﺎزﺔ.
+
+                            </p>
+
+
+
+                        </div>
+                        <div className="section mt-3 md:w-1/3   flex flex-col justify-center items-center">
+                            <div className="section-img md:w-2/3 md:h-2/3 w-1/2 h-1/2 overflow-hidden shadow-lg bg-white rounded-full">
+                                <img className="w-full h-full" src={programming} alt="" />
+
+                            </div>
+                            <p className="m-0 mt-3  kufi font-medium text-blue-900   "> تحديثات و اضافات مستمرة </p>
+                            <p className="m-0 mt-3 cairo text-lg font-bold">فريق مبرمجين</p>
+                            <p className="m-0 mt-3 text-center w-4/5 text-gray-600 text-lg font-medium messiri">
+                                ﻓﺮﻳــﻖ ﻣﺘﺨﺼــﺺ ﻓــﻲ ﺗﻄﻮﻳــﺮ ﺣﻠــﻮل
+                                ﺑﺮﻣﺠﻴــﺔ ﻣﺒﺘﻜــﺮة وﻣﺘﻘﺪﻣــﺔ. ﻳﻬــﺪف
+                                اﻟﻔﺮﻳــﻖ إﻟــﻰ ﺗﻠﺒﻴــﺔ اﺣﺘﻴﺎﺟــﺎت اﻟﻌﻤــﻼء
+                                وﺗﺤﺴﻴﻦ أﺩﺍء اﻷﻧﻈﻤﺔ اﻟﻤﺤﺎﺳﺒﻴﺔ.
+                            </p>
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
                 </div>
             </div>
         </>
