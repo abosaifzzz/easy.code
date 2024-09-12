@@ -72,7 +72,7 @@ export default function AboutUs() {
                 </div>
 
                 <div dir="rtl" className="third relative lg:px-28 md:px-16 px-4">
-                    <div className="shape3 absolute -left-20 md:top-1/4 top-1/2">
+                    <div className="shape3 absolute -left-40 lg:-left-20 md:top-1/4 top-1/2">
                         <img className="lg:w-4/5 w-1/2" src={shape3} alt="" />
                     </div>
                     <p className="md:text-3xl text-xl cairo text-center font-bold text-[#339ecc]">
@@ -765,6 +765,80 @@ export default function AboutUs() {
 
 
 
+
+                </div>
+                <div dir="rtl" className="tenth flex flex-col justify-center items-center">
+                    <p className="text-4xl cairo font-semibold">تواصل معنا</p>
+                    <div className="contact w-4/5 mx-auto mb-7 rounded-lg p-5 bg-blue-200 bg-opacity-20">
+                        <p className="almarai font-semibold text-2xl">فريق ايزي كود في خدمتك علي مدار الـ24 ساعة</p>
+                        <div className="name-email flex gap-3">
+                            <div className="name w-1/2">
+                                <div className="name-label mb-2  kufi text-xl">
+                                    الأسم <span className="text-3xl cairo font-semibold text-blue-600">*</span>
+                                </div>
+                                <input className="w-full h-10 rounded-md border border-gray-400  0" type="text" />
+                            </div>
+                            <div className="email w-1/2">
+                                <div className="name-label  mb-2 kufi text-xl">
+                                    البريد الالكتروني <span className="text-3xl cairo font-semibold text-blue-600">*</span>
+                                </div>
+                                <input className="w-full  h-10 rounded-md border border-gray-400  " type="email" />
+                            </div>
+
+                        </div>
+                        <div className="address-phone  mt-3 flex gap-3">
+                            <div className="address w-1/2">
+                                <div className="address-label mb-2  ">
+                                    <span className="kufi text-xl">رقم الهاتف</span> <span className="text-3xl cairo font-semibold text-blue-600">*</span>
+                                </div>
+                                <input className="w-full h-10 rounded-md border border-gray-400  0" type="text" />
+                            </div>
+                            <div className="phone w-1/2">
+                                <div className="phone-label  mb-2 kufi text-xl">
+                                    <span className="kufi text-xl">العنوان</span> <span className="text-3xl cairo font-semibold text-blue-600">*</span>
+                                </div>
+                                <input className="w-full  h-10 rounded-md border border-gray-400  " type="email" />
+                            </div>
+
+                        </div>
+                        <div className="message">
+                            <div className="message-label mb-2 mt-3">
+                                <span className="kufi text-xl">أخبرنا بكل ما تريد</span>
+                            </div>
+                            <input className="h-28 w-full  rounded-md border border-gray-400" type="text" name="" id="" />
+
+                        </div>
+
+                        <button type="submit"
+                            className="relative float-end flex items-center px-8 py-3 overflow-hidden cairo text-lg font-medium transition-all bg-blue-500 shadow-2xl mt-6 rounded-md group"
+                        >
+                            <span
+                                className="absolute top-0 right-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-blue-700 rounded group-hover:-mr-4 group-hover:-mt-4"
+                            >
+                                <span
+                                    className="absolute top-0 right-0 w-5 h-5 rotate-45 shadow-xl translate-x-1/2 -translate-y-1/2 bg-white"
+                                ></span>
+                            </span>
+                            <span
+                                className="absolute bottom-0 rotate-180 left-0 inline-block w-4 h-4 transition-all duration-500 ease-in-out bg-blue-700 rounded group-hover:-ml-4 group-hover:-mb-4"
+                            >
+                                <span
+                                    className="absolute top-0 right-0 w-5 h-5 shadow-2xl rotate-45 translate-x-1/2 -translate-y-1/2 bg-white"
+                                ></span>
+                            </span>
+                            <span
+                                className="absolute bottom-0 left-0 w-full h-full transition-all duration-500 ease-in-out delay-200 -translate-x-full bg-blue-600 rounded-md group-hover:translate-x-0"
+                            ></span>
+                            <span
+                                className="relative w-full text-left text-lg text-white transition-colors duration-200 ease-in-out group-hover:text-white"
+                            >ارسل الأن</span>
+
+                        </button>
+
+
+
+
+                    </div>
 
                 </div>
             </div>
