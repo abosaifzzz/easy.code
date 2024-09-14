@@ -10,6 +10,7 @@ import Accounting1 from './Components/Accounting1/Accounting1';
 import Layout2 from './Components/Layout2/Layout2';
 import Accounting2 from './Components/Accounting2/Accounting2';
 import NotFound from './Components/NotFound/NotFound';
+import Programs from './Components/Programs/Programs';
 
 
 function App() {
@@ -35,6 +36,8 @@ function App() {
         { path: "/home", element: <Home /> },
         { path: "about", element: <AboutUs /> },
         { path: "acounting1", element: <Accounting1 /> },
+        { path: "programs", element: <Programs /> },
+
 
       ],
     },

@@ -23,7 +23,7 @@ export default function Login() {
 
             </div>
 
-            <div className={`container w-3/5 h-4/5 p-7 ${isRightPanelActive ? 'right-panel-active' : ''}`} id="container">
+            <div className={`container lg:block hidden w-3/5 h-4/5 p-7 ${isRightPanelActive ? 'right-panel-active' : ''}`} id="container">
                 <div className="form-container sign-up-container">
                     <form action="#">
                         <h6 className='text-2xl'>!انشئ حساب جديد
@@ -108,7 +108,26 @@ export default function Login() {
                     </div>
                 </div>
             </div>
+            <div className="login-xs rounded-xl h-4/5 lg:hidden block z-20 ">
 
+                <form action="#">
+                    <h6 className='text-2xl'>!انشئ حساب جديد
+                    </h6>
+                    <div className="social-container">
+                        <a href="#" className="social"><i className="fab fa-facebook-f"></i></a>
+                        <a href="#" className="social"><i className="fab fa-google-plus-g"></i></a>
+                        <a href="#" className="social"><i className="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <span className='kufi font-semibold mb-3 text-sm'>أو قم بأستخدام بريدك الالكتروني </span>
+                    <input className='kufi my-2 p-2 rounded-md border border-blue-300' dir='rtl' type="text" placeholder="الأسم بالكامل" />
+                    <input className='kufi my-2 p-2 rounded-md border border-blue-300' dir='rtl' type="email" placeholder="البريد الالكنروني " />
+                    <input className='kufi my-2 p-2 rounded-md border border-blue-300' dir='rtl' type="password" placeholder="كلمة السر" />
+                    <Link to={"/home"}>
+                        <button className='submit kufi'>تسجيل الأشتراك المجاني</button>
+
+                    </Link>
+                </form>
+            </div>
 
 
         </div>

@@ -100,15 +100,15 @@ export default function NavBar() {
 
 
                     <ul
-                        className={`nav-ul font-medium lg:flex-row lg:mt-0 ${isOpen ? "block" : "flex"
+                        className={`nav-ul font-medium flex lg:flex-row flex-col items-start lg:mt-0 ${isOpen ? "block" : "flex"
                             }`}
                     >
-                        <li><Link to={'/home'} className="menu">الرئيسية</Link> </li>
-                        <li><Link to={"/about"} className="menu">نبذة عننا</Link> </li>
-                        <li><Link className="menu">البرامج</Link></li>
-                        <li><Link className="menu">الأنظمة</Link></li>
-                        <li><Link className="menu">اراء عملائنا </Link></li>
-                        <li><Link className="menu">تواصل معنا</Link></li>
+                        <li><Link to={'/home'} className="menu text-xl cairo font-medium ">الرئيسية</Link> </li>
+                        <li><Link to={"/about"} className="menu text-xl cairo font-medium ">نبذة عننا</Link> </li>
+                        <li><Link to={"/programs"} className="menu text-xl cairo font-medium ">البرامج</Link></li>
+                        <li><Link className="menu text-xl cairo font-medium ">الأنظمة</Link></li>
+                        <li><Link className="menu text-xl cairo font-medium ">اراء عملائنا </Link></li>
+                        <li><Link className="menu text-xl cairo font-medium ">تواصل معنا</Link></li>
 
 
 

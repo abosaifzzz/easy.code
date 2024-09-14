@@ -11,8 +11,6 @@ import installment from "../../assets/installment.png";
 import ReactPlayer from "react-player";
 import erp from "../../assets/erp.mp4";
 import screen from "../../assets/screen.mp4";
-
-
 import arrow from "../../assets/up.png";
 import truee from "../../assets/true.png";
 import Slider from "react-slick";
@@ -20,7 +18,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import man from "../../assets/man.png";
 import workers2 from "../../assets/workers2.png";
-
 import devices from "../../assets/devices.png";
 // import hours from "../../assets/24.png"
 // import call from "../../team1.png"
@@ -35,8 +32,6 @@ import shape from "../../assets/shape.png";
 import shape3 from "../../assets/shape3.png";
 import shape4 from "../../assets/shape4.png";
 import shape5 from "../../assets/shape5.png";
-
-
 export default function Home() {
     const [isOpen, setIsOpen] = useState(false);
     const [hasAnimated, setHasAnimated] = useState(false);
@@ -930,32 +925,32 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="eaghtth px-7">
+            <div className="eaghtth md:px-7 px-1">
                 <div className="card mb-4 mt-7 flex flex-col justify-center items-center">
 
 
                     <div className="loader lg:h-20 md:h-9 h-9  mt-6">
                         <div className="words">
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-xl md:text-3xl text-blue-400 font-[650] cairo">طـبـيــة</span>
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-xl md:text-3xl text-blue-400 font-[650] cairo">طـبـيــة</span>
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-xl md:text-3xl text-blue-400 font-[650] cairo">تكنولوجية</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">طـبـيــة</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">طـبـيــة</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">تكنولوجية</span>
 
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-xl md:text-3xl text-blue-400 font-[650] cairo">مقاولات</span>
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-xl md:text-3xl text-blue-400 font-[650] cairo">لوجستية</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">مقاولات</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">لوجستية</span>
 
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-xl md:text-3xl text-blue-400 font-[650] cairo">تجارية</span>
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-xl md:text-3xl text-blue-400 font-[650] cairo">عقارات</span>
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-xl md:text-3xl text-blue-400 font-[650] cairo">صناعية</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">تجارية</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">عقارات</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">صناعية</span>
 
                         </div>
-                        <span className="lg:text-5xl text-xl m-0 md:text-3xl font-[650] text-[#339ecc] cairo ">ايا كان مجال عمل شركتك</span>
+                        <span className="lg:text-5xl text-[1.3rem] m-0 md:text-3xl font-[650] text-[#339ecc] cairo ">ايا كان مجال عمل شركتك</span>
 
                     </div>
-                    <p className="lg:text-xl md:text-lg text-sm text-center m-0 font-bold text-gray-500 messiri">برامج ايزي كود المحاسبية تناسب جميع مجالات العمل المختلفة</p>
-                    <p className="text-blue-800 cairo cursor-pointer m-0 mt-2 lg:text-lg md:text-lg text-sm font-bold underline underline-offset-8"><i className="underline underline-offset-8 fa-solid fa-arrow-left"></i> تصفح برامجنا الأن</p>
+                    <p className="lg:text-xl md:text-lg text-base text-center m-0 font-bold text-gray-500 messiri">برامج ايزي كود المحاسبية تناسب جميع مجالات العمل المختلفة</p>
+                    <p className="text-blue-800 cairo cursor-pointer m-0 mt-2 lg:text-lg md:text-lg text-base font-bold underline underline-offset-8"><i className="underline underline-offset-8 fa-solid fa-arrow-left"></i> تصفح برامجنا الأن</p>
                 </div>
 
-                <img className="w-full" src={workers2} alt="" />
+                <img className="w-full md:h-full h-60" src={workers2} alt="" />
 
 
 
