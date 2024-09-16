@@ -931,8 +931,8 @@ export default function Home() {
 
                     <div className="loader lg:h-20 md:h-9 h-9  mt-6">
                         <div className="words">
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">طـبـيــة</span>
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">طـبـيــة</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">تجـاريـة</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">تجـاريـة</span>
                             <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">تكنولوجية</span>
 
                             <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">مقاولات</span>

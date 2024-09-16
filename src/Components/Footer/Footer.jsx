@@ -6,7 +6,7 @@ export default function Footer() {
         <div dir='rtl' className='footer relative bg-[#3D3D3F] border-t-4  text-white border-blue-500 p-12'>
             <img className='absolute md:w-1/4 w-1/2  left-0 bottom-0' src={footerShape} alt="" />
             <div className="footer-data w-full p-6 flex lg:flex-row flex-col  lg:gap-3 md:gap-5">
-                <div className="footer-col w-1/4">
+                <div className="footer-col md:w-1/4">
                     <img src={footerLogo} alt="" />
                     <p className='cairo font-medium'>تأسست على يد نخبة من المتخصصين المحترفين لتبدأ نشاطها وتقدم خدمات مميزة على مستوى المملكة العربية السعودية</p>
                     <div className="socials flex gap-7">
@@ -31,7 +31,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="footer-col w-1/4">
+                <div className="footer-col md:w-1/4">
                     <p className='m-0 cairo text-2xl font-[500]'>الروابط السريعة </p>
                     <p className='m-0 mt-4 messiri cursor-pointer  text-lg text-gray-300 hover:text-white font-[50]'>من نحن؟</p>
                     <p className='m-0 mt-4 messiri cursor-pointer  text-lg text-gray-300 hover:text-white font-[50]'>الأسئلة الشائعة</p>
@@ -39,7 +39,7 @@ export default function Footer() {
                     <p className='m-0 mt-4 messiri cursor-pointer  text-lg text-gray-300 hover:text-white font-[50]'>التعريف</p>
 
                 </div>
-                <div className="footer-col w-1/4">
+                <div className="footer-col md:w-1/4">
                     <p className='m-0 cairo text-2xl font-[500]'>خريطة الموقع </p>
                     <p className='m-0 mt-4 messiri cursor-pointer  text-lg text-gray-300 hover:text-white font-[50]'>برامج ايزي كود</p>
                     <p className='m-0 mt-4 messiri cursor-pointer  text-lg text-gray-300 hover:text-white font-[50]'>برنامج الفاينال بيزنس</p>
@@ -50,7 +50,7 @@ export default function Footer() {
 
                 </div>
 
-                <div className="footer-col  flex flex-wrap w-1/4">
+                <div className="footer-col  flex flex-wrap md:w-1/4">
                     <div className="ticket  w-1/2"><p className='cairo text-3xl  m-0 font-bold'>+1000</p>
                         <p className='m-0 mt-1 text-[1.1rem] text-gray-200'>عميل </p></div>
                     <div className="ticket w-1/2"><p className='cairo  m-0 text-3xl font-bold'>+12500</p>

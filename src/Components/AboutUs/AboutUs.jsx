@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import home from "../../assets/home.png";
 import qoutes from "../../assets/qoutes.png";
 import qoutes2 from "../../assets/qoutes2.png";
@@ -9,6 +9,7 @@ import shape3 from "../../assets/shape3.png";
 import programming from "../../assets/programming.png";
 import callcenter from "../../assets/callcenter.png";
 import customerservice from "../../assets/customerservice.png";
+import Loading from "../Loading/Loading";
 
 
 
@@ -17,6 +18,19 @@ import customerservice from "../../assets/customerservice.png";
 export default function AboutUs() {
     const [activeTab, setActiveTab] = useState("suppliers-accounts");
     const [activeTab2, setActiveTab2] = useState("human-resources");
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 1000); // 2 seconds delay for the loading spinner
+
+        return () => clearTimeout(timer); // Cleanup the timer
+    }, []);
+
+    if (isLoading) {
+        return <Loading />;
+    }
 
     const tabClasses2 = (tabName2) =>
         `cursor-pointer py-2 px-4   md:text-2xl text-[1rem] cairo font-medium ${activeTab2 === tabName2
@@ -524,7 +538,7 @@ export default function AboutUs() {
                     <p className="m-0 py-6 text-center md:text-4xl text-2xl font-semibold cairo text-[#339ecc] ">
                         انظمة اخري تنتجها المؤسسة{" "}
                     </p>
-                    <p dir="rtl" className="cairo text-center m-0 mt-1 md:text-base text-sm font-medium">المستوصفات - ادارة المطاعم - ادارة التخليص الجمركي - ادارة العقارات - الاستقدام - ادارة الارشفة الالكترونية</p>
+                    <p dir="rtl" className="cairo text-center m-0 mt-1 md:text-base text-sm font-medium">ادارة المطاعم - ادارة التخليص الجمركي - ادارة العقارات - الاستقدام - ادارة الارشفة الالكترونية</p>
                     <p dir="rtl" className="cairo text-center m-0 mt-1 md:text-base text-sm font-medium">الحكومة الألكترونية - التأهيل الطبي للمعاقين - ادارة النوادي - ادارة البحث و التحري - ادارة البلديات</p>
 
                     <div dir="rtl" className="w-full">
@@ -770,15 +784,15 @@ export default function AboutUs() {
                 <div dir="rtl" className="tenth flex flex-col justify-center items-center">
                     <p className="text-4xl cairo font-semibold">تواصل معنا</p>
                     <div className="contact w-4/5 mx-auto mb-7 rounded-lg p-5 bg-blue-200 bg-opacity-20">
-                        <p className="almarai font-semibold text-2xl">فريق ايزي كود في خدمتك علي مدار الـ24 ساعة</p>
-                        <div className="name-email flex gap-3">
-                            <div className="name w-1/2">
-                                <div className="name-label mb-2  kufi text-xl">
+                        <p className="almarai font-semibold text-lg md:text-2xl">فريق ايزي كود في خدمتك علي مدار الـ24 ساعة</p>
+                        <div className="name-email md:flex gap-3">
+                            <div className=" md:w-1/2">
+                                <div className="name-label kufi text-xl mb-2">
                                     الأسم <span className="text-3xl cairo font-semibold text-blue-600">*</span>
                                 </div>
                                 <input className="w-full h-10 rounded-md border border-gray-400  0" type="text" />
                             </div>
-                            <div className="email w-1/2">
+                            <div className="email md:w-1/2">
                                 <div className="name-label  mb-2 kufi text-xl">
                                     البريد الالكتروني <span className="text-3xl cairo font-semibold text-blue-600">*</span>
                                 </div>
@@ -786,14 +800,14 @@ export default function AboutUs() {
                             </div>
 
                         </div>
-                        <div className="address-phone  mt-3 flex gap-3">
-                            <div className="address w-1/2">
+                        <div className="address-phone  mt-3 md:flex gap-3">
+                            <div className="address md:w-1/2">
                                 <div className="address-label mb-2  ">
                                     <span className="kufi text-xl">رقم الهاتف</span> <span className="text-3xl cairo font-semibold text-blue-600">*</span>
                                 </div>
                                 <input className="w-full h-10 rounded-md border border-gray-400  0" type="text" />
                             </div>
-                            <div className="phone w-1/2">
+                            <div className="phone md:w-1/2">
                                 <div className="phone-label  mb-2 kufi text-xl">
                                     <span className="kufi text-xl">العنوان</span> <span className="text-3xl cairo font-semibold text-blue-600">*</span>
                                 </div>
