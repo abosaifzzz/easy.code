@@ -4,6 +4,23 @@ import client from "../../assets/programs-icons/client.png"
 import buyes from "../../assets/programs-icons/buyes.png"
 import drayeb from "../../assets/programs-icons/drayeb.gif"
 import dot from "../../assets/programs-icons/dot.png"
+import windows from "../../assets/windows.png"
+import modules from "../../assets/modules.png"
+import responsive from "../../assets/responsive.png"
+import finance from "../../assets/finance.png"
+import periods from "../../assets/periods.png"
+import invoice from "../../assets/invoice.png"
+import shapes from "../../assets/shapes.png"
+import shape6 from "../../assets/shape6.svg"
+import salaries from "../../assets/salaries.png"
+import reports from "../../assets/reports.png"
+
+
+
+
+
+
+
 
 
 
@@ -173,7 +190,7 @@ export default function Programs() {
             </div>
             <div className="drayeb bg-blue-200  bg-opacity-20 p-4 flex">
                 <div className="drayeb-data lg:w-1/2 md:w-2/3 w-full md:p-11 p-8">
-                    <p className='text-5xl m-0 messiri text-blue-500'>الضرائب</p>
+                    <p className='text-5xl m-0 cairo font-bold text-blue-500'>الضرائب</p>
                     <p className='cairo text-blue-950 m-0 mt-4 lg:text-lg text-base font-bold '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> اعدادات الضرايب للعملاء و المورديين و تحديد طبيعة كل منهما سواء داخلي او مصدر مستورد او دول مجلس تعاون خليجي لان النظام يحسب كل فئة بطريقة مختلفة حسب النظام السعودي
                     </p>
                     <p className='cairo text-blue-950 m-0 mt-4 lg:text-lg text-base font-bold '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> تحديد نسبة الضريبة لكل صنف و كذلك الاصناف المعفاة
@@ -199,43 +216,67 @@ export default function Programs() {
 
 
             </div>
-            <div className="public">
+            <div className="public relative">
                 <p className='md:text-4xl text-2xl font-semibold text-center text-blue-500 cairo'>نبذة عامة عن البرنامج</p>
-                <div className="public-data px-9 ">
-                    <p className='messiri md:font-[1000] font-medium text-gray-600 md:text-lg text-base '>لا تكتمل الأنشطة التجارية دون نظام مبيعات فعال يدعم النمو ويساهم في زيادة الأرباح. يُعد برنامج الكلاود بيزنس برنامج مبيعات شامل، يسهل عمليات البيع ويوفر مزايا مثل قوائم الأسعار المتنوعة، وخصومات التأمين. كما يتيح إدارة فريق المبيعات من خلال متابعة العملاء وتقييم الأداء لضمان صرف العمولات. بالإضافة إلى ذلك، تقدم ايزي كود ميزات تسويقية مثل الخصومات و العروض،</p>
-                    <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> البرنامج عبارة عن Desktop Application يعمل علي نظام Windows بجميع اصداراته و يعمل كشبكة داخلية او اون لاين Cloud & Client Server
-                    </p>
-                    <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> يعمل بنظام قواعد البيانات SQL Server الذي يتيح الامان التام للبيانات و سرعة الوصول اليها
-                    </p>
-                    <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> نظام صلاحيات دقيق و قوي للتحكم في الخيارات المتاحة لكل مستخدم بالنسبة لكل فرع في الفروع علي حدي او علي الشركة بأكملها
-                    </p>
+                <div className="shape absolute -bottom-16 z-[-1]"><img src={shape6} alt="" /></div>
+                <div className="public-data  ">
+                    <p className='messiri px-9 md:font-[1000] font-medium text-gray-600 md:text-lg text-base '>لا تكتمل الأنشطة التجارية دون نظام مبيعات فعال يدعم النمو ويساهم في زيادة الأرباح. يُعد برنامج الكلاود بيزنس برنامج مبيعات شامل، يسهل عمليات البيع ويوفر مزايا مثل قوائم الأسعار المتنوعة، وخصومات التأمين. كما يتيح إدارة فريق المبيعات من خلال متابعة العملاء وتقييم الأداء لضمان صرف العمولات. بالإضافة إلى ذلك، تقدم ايزي كود ميزات تسويقية مثل الخصومات و العروض،</p>
 
-                    <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span>صلاحيات المستخدم في تغير السعر و اعلي نسبة خصم للمستخدمين
-                    </p>
+                    <div className="first px-9 w-full md:flex">
+                        <div className="img md:w-1/2 flex justify-center"><img className='w-4/5' src={windows} alt="" /></div>
+                        <div className="data md:w-1/2 flex flex-col justify-center">
+                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> البرنامج عبارة عن Desktop Application يعمل علي نظام Windows بجميع اصداراته و يعمل كشبكة داخلية او اون لاين Cloud & Client Server
+                            </p>
+                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> يعمل بنظام قواعد البيانات SQL Server الذي يتيح الامان التام للبيانات و سرعة الوصول اليها
+                            </p>
+                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> نظام صلاحيات دقيق و قوي للتحكم في الخيارات المتاحة لكل مستخدم بالنسبة لكل فرع في الفروع علي حدي او علي الشركة بأكملها
+                            </p>
+                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span>صلاحيات المستخدم في تغير السعر و اعلي نسبة خصم للمستخدمين
+                            </p>
 
-                    <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> صلاحيات المستخدم لفترة محددة او مستديمة
-                    </p>
 
-                    <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> جميع الـ Modules مترابطة تلقائيا و يمكنك التعامل مع كل Module علي حدي
-                    </p>
+                        </div>
 
-                    <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> البرنامج Fully Responsive حيث يمكنك التعامل معه عن طريق جميع احجام الشاشات (موبايل - تابلت - لابتوب )
-                    </p>
+                    </div>
+                    <div className="second px-9 bg-blue-200 bg-opacity-20    w-full md:flex">
+                        <div className="img md:w-1/2 md:hidden flex justify-center"><img className='w-4/5' src={modules} alt="" /></div>
 
-                    <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> يمكنك عمل Export لجميع الملفات الي Excel PDF
-                    </p>
-                    <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> ادارة محترفة و دقيقة للفروع بحيث يمكنك متابعة العمليات التي تتم علي الفروع المختلفة من اي مكان بالعالم
-                    </p>
-                    <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> ارسال ايميلات و كذلك ارشفة كامل المستندات
-                    </p>
-                    <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span>عمل فواتير مخزنية و فواتير خدمية و فواتير التصريف (الأمانات - الأرساليات)
-                    </p>
-                    <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> امكانية البيع شامل الضريبة او احتساب الضريبة بعد سعر البيع ايهما شئت
-                    </p>
-                    <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> امكانية العمل في حالة انقطاع خدمة الانترنت و كذلك نقل البيانات في حالة رجوع الخدمة
-                    </p>
-                    <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> الاضافات و الخصومات يمكن استخدامها في شتي انواع النظام
-                    </p>
+                        <div className="data md:w-1/2 flex flex-col justify-center">
+                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> جميع الـ Modules مترابطة تلقائيا و يمكنك التعامل مع كل Module علي حدي
+                            </p>
+                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> امكانية العمل في حالة انقطاع خدمة الانترنت و كذلك نقل البيانات في حالة رجوع الخدمة
+                            </p>
+                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> ارسال ايميلات و كذلك ارشفة كامل المستندات
+                            </p>
+                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> الاضافات و الخصومات يمكن استخدامها في شتي انواع النظام
+                            </p>
+                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> صلاحيات المستخدم لفترة محددة او مستديمة
+                            </p>
+                        </div>
+                        <div className="img md:w-1/2  hidden md:flex justify-center"><img className='w-4/5' src={modules} alt="" /></div>
+
+                    </div>
+
+                    <div className="third my-7 px-9 w-full md:flex">
+                        <div className="img md:w-1/2 flex justify-start "><img className='w-full ' src={responsive} alt="" /></div>
+                        <div className="data md:w-1/2 flex flex-col justify-center ">
+                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> البرنامج Fully Responsive حيث يمكنك التعامل معه عن طريق جميع احجام الشاشات (موبايل - تابلت - لابتوب )
+                            </p>
+
+                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> يمكنك عمل Export لجميع الملفات الي Excel PDF
+                            </p>
+                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> ادارة محترفة و دقيقة للفروع بحيث يمكنك متابعة العمليات التي تتم علي الفروع المختلفة من اي مكان بالعالم
+                            </p>
+
+                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span>عمل فواتير مخزنية و فواتير خدمية و فواتير التصريف (الأمانات - الأرساليات)
+                            </p>
+                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> امكانية البيع شامل الضريبة او احتساب الضريبة بعد سعر البيع ايهما شئت
+                            </p>
+
+
+                        </div>
+
+                    </div>
 
 
 
@@ -244,7 +285,136 @@ export default function Programs() {
                 </div>
 
             </div>
+            <div className="public-accounting w-full relative overflow-hidden ">
+                <div className="shapes absolute md:-right-16 -right-10 z-[-1] w-1/4 top-1/2"><img src={shapes} alt="" /></div>
+                <div className="shapes absolute md:-left-16 left-0 z-[-1] w-1/4 top-3/4"><img src={shapes} alt="" /></div>
 
+                <div className="heroo md:flex p-8 bg-blue-200 bg-opacity-20 mt-9">
+                    <div className="hero-img md:w-1/2 md:hidden flex justify-center">
+
+                        <img className='lg:w-4/5 w-3/5  ' src={finance} alt="" />
+                    </div>
+                    <div className="hero-data flex flex-col justify-center md:w-1/2">
+                        <p className='lg:text-4xl text-2xl cairo font-bold text-blue-500'>الحسابات العامة  و مراكز التكلفة </p>
+                        <p className='lg:text-2xl text-lg messiri'>الحسابات العامة ومراكز التكلفة يمثلان أساسًا مهمًا في أي نظام مالي متكامل. يهدف هذا الجزء إلى توفير أدوات لإدارة ومتابعة الحسابات الرئيسية والفرعية للشركة بشكل دقيق ومنظم، مع تخصيص مراكز تكلفة تساهم في توزيع المصروفات والإيرادات على المشاريع والأنشطة المختلفة. سيمكنك هذا النظام من التحكم الكامل في العمليات المالية وتحليل الأداء المالي بطريقة مبسطة وفعالة، مما يسهل عملية اتخاذ القرارات الاستراتيجية بناءً على بيانات موثوقة ودقيقة.</p>
+
+                    </div>
+                    <div className="hero-img md:w-1/2 md:flex hidden justify-center">
+
+                        <img className='w-4/5 ' src={finance} alt="" />
+                    </div>
+                </div>
+                <div className="third my-12 px-9 w-full md:flex">
+                    <div className="img md:w-1/2 flex justify-center "><img className='w-1/2  ' src={periods} alt="" /></div>
+                    <div className="data md:w-1/2 flex flex-col justify-center ">
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إنشاء عدد غير محدود من الفترات المالية والتعامل معها بسهولة بغض النظر عن الفترة المحددة.
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إمكانية ترقيم القيود والسندات (منفصل أو متصل) على مستوى كل فترة أو جميع الفترات.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إغلاق الفترات المالية شهريًا أو سنويًا تلقائيًا دون الحاجة إلى تدخل المستخدم.
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span>دليل حسابات متوافق مع متطلبات الهيئة المالية.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إمكانية تعديل آخر رقم في دليل الحسابات حسب حجم الشركة وعدد العملاء وضخامة دليل الحسابات.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> تقسيم دليل الحسابات النهائي إلى رئيسي، فرعي، وعمليات.
+                        </p>
+
+
+                    </div>
+
+
+                </div>
+                <div className="fourth my-12 px-9 w-full md:flex">
+                    <div className="data md:w-1/2 flex flex-col justify-center ">
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إنشاء عدد غير محدود من الفترات المالية والتعامل معها بسهولة بغض النظر عن الفترة المحددة.
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إمكانية ترقيم القيود والسندات (منفصل أو متصل) على مستوى كل فترة أو جميع الفترات.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إغلاق الفترات المالية شهريًا أو سنويًا تلقائيًا دون الحاجة إلى تدخل المستخدم.
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span>دليل حسابات متوافق مع متطلبات الهيئة المالية.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إمكانية تعديل آخر رقم في دليل الحسابات حسب حجم الشركة وعدد العملاء وضخامة دليل الحسابات.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> تقسيم دليل الحسابات النهائي إلى رئيسي، فرعي، وعمليات.
+                        </p>
+
+
+                    </div>
+                    <div className="img md:w-1/2 flex justify-center "><img className='w-4/5 ' src={invoice} alt="" /></div>
+
+
+
+                </div>
+                <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="img md:w-1/2 flex justify-center "><img className='w-full' src={salaries} alt="" /></div>
+
+                    <div className="data md:w-1/2 flex flex-col justify-center ">
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إدارة سندات القبض والصرف ومتابعتها سواء للبنوك أو للخزائن أو الحسابات الجارية وغيرها
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إدارة العمليات المحاسبية تلقائيًا من خلال إنشاء القيود وترحيلها وتوزيعها على مراكز التكلفة المختلفة.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> العمل على عدد غير محدود من العملات وتغيير قيمها لكل سجل بشكل ديناميكي.
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span>تطبيق سياسة توزيع المراكز وتحديد مراكز التكلفة.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إنشاء قيد واحد لجميع الحركات اليومية أو قيد لكل مستند بشكل منفصل.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إنشاء قيد واحد للحركة المالية يشمل: (قيود المبيعات، قيود المشتريات، قيود الحركة المالية، ترحيل القيود اليومية، إلغاء ترحيل القيود)، مع إمكانية تنفيذ هذه العمليات يوميًا أو أسبوعيًا أو حسب الحاجة لتوفير الوقت والجهد.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إنشاء قيد لكل مستند، حيث يتم إنشاء سجل تلقائي لكل قيد يومي من الفواتير (مبيعات، مشتريات، سندات قبض، سندات صرف) في الصناديق أو البنوك أو الحسابات الجارية وغيرها.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إنشاء قيود دورية بشكل دوري ومنظم.
+
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إنشاء عدد غير محدود من حسابات البنوك والصناديق والمصروفات والحسابات الجارية، وإنشاء سندات قبض وصرف لكل منها بدقة واحترافية.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> تقارير ضخمة ومفصلة عن العمليات المالية والمستندية.
+                        </p>
+
+                    </div>
+
+
+
+                </div>
+                <div className="fourth my-12 px-9 w-full md:flex">
+                    <div className="img md:w-1/2 md:hidden flex justify-center "><img className='w-full ' src={reports} alt="" /></div>
+
+                    <div className="data md:w-1/2 flex flex-col justify-center ">
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> الحصول على تقارير مستندية مفصلة ومقارنتها بالتقارير المحاسبية، حيث يمكن العمل بالسياسة المستندية والمالية معًا.
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> تقديم عدد كبير من التقارير المتخصصة، الإجمالية والتفصيلية، التي تغطي كافة أجزاء البرنامج، مما يتيح اتخاذ القرارات المناسبة في الوقت المناسب.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> تقارير الحركة المالية تشمل: (كشوف الحسابات، أرصدة الحسابات، تقارير سندات القبض والصرف، وتقارير الحركة المالية).
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span>تقارير الحسابات العامة تشمل: (تقارير المراجعة، التقارير الختامية، تقارير مراكز التكلفة).
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> تقارير الأرباح والخسائر وقائمة الدخل.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إجراء جرد دوري ومستمر مع إنشاء قيودهما باحترافية
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span>  إعداد النظام للتحكم الكامل بجميع أجزائه والعمل بسهولة وسلاسة.
+                        </p>
+
+
+
+                    </div>
+                    <div className="img md:w-1/2 md:flex hidden justify-center "><img className='w-full ' src={reports} alt="" /></div>
+
+
+
+                </div>
+
+            </div>
 
 
         </div>
