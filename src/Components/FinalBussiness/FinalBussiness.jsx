@@ -5,6 +5,8 @@ import buyes from "../../assets/programs-icons/buyes.png"
 import drayeb from "../../assets/programs-icons/drayeb.gif"
 import dot from "../../assets/programs-icons/dot.png"
 import windows from "../../assets/windows.png"
+import reportss from "../../assets/reportss.png"
+
 import modules from "../../assets/modules.png"
 import responsive from "../../assets/responsive.png"
 import finance from "../../assets/finance.png"
@@ -18,22 +20,8 @@ import customers from "../../assets/customers.png"
 import supervise from "../../assets/supervise.png"
 import qr from "../../assets/qr.png"
 import saudi from "../../assets/saudi.png"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-export default function Programs() {
-    return (<>
+export default function FinalBussiness() {
+    return (
         <div dir='rtl' className="programs mt-36">
 
             <div className="e-card w-5/6 md:h-80 playing">
@@ -46,7 +34,7 @@ export default function Programs() {
 
                 <div className="infotop text-white">
 
-                    <p className='lg:text-8xl md:text-6xl text-3xl p-4 cairo font-semibold'>كلاود بيزنس</p>
+                    <p className='lg:text-8xl md:text-6xl text-3xl p-4 cairo font-semibold'>فـاينال بيــزنس</p>
                     <p className='md:text-xl text-lg lg:w-1/2 md:w-2/3 font-medium text-slate-300 px-4 messiri'>يدير فروعك فى انحاء المملكه والعالم لتعمل من اى مكان ولا يشترط شبكه داخليه فقط انترنت</p>
                     <br />
                 </div>
@@ -493,18 +481,19 @@ export default function Programs() {
 
                 <div className="third my-12 px-9 w-full md:flex">
                     <div className="data md:w-1/2 flex flex-col justify-center ">
-                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إدارة العملاء بشكل احترافي: إمكانية إدارة العملاء بطرق متقدمة واحترافية.
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> تعريف العميل كمورد و عميل في نفس الوقت
                         </p>
 
-                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> ختيار العميل: إمكانية تحديد ما إذا كان العميل محليًا أو دوليًا، مع احتساب الضرائب المناسبة بناءً على هذا الاختيار.
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إمكانية إنشاء عميل رئيسي مع عملاء فرعيين (مثال: العثيم رئيسي وفرعي العثيم فرع العليا، العثيم فرع الشفا).
                         </p>
-                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> تصنيفات العملاء: تنظيم العملاء ضمن تصنيفات مختلفة حسب الحاجة.
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> اتاحة الكثير من طرق دفع العملاء
                         </p>
 
-                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> أنشطة العملاء: متابعة الأنشطة المختلفة التي يقوم بها العملاء.
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> ربط العميل بقائمة سعر محددة من قوائم النظام المنشأة.
+
 
                         </p>
-                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> قنوات التسويق: إمكانية ربط العملاء بقنوات التسويق المختلفة.
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> تقارير العملاء على مستوى الشركة أو الفرع.
 
                         </p>
 
@@ -516,13 +505,46 @@ export default function Programs() {
 
 
                 </div>
+                <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="img md:w-1/2 flex justify-center "><img className='w-4/5' src={reportss} alt="" /></div>
 
+                    <div className="data md:w-1/2 flex flex-col justify-center ">
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> تقرير فواتير العملاء.
+
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> تقرير مرتجعات العملاء.
+
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> صافي المبيعات والمرتجعات.
+
+
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> مبيعات العملاء من الأصناف (تجميعي وتفصيلي).
+
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span>تقرير تسديدات الفواتير.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span>أعمار الديون لفواتير المبيعات.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span>كشف حساب العميل حسب العملة.
+                            .
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span>أرصدة العملاء.
+                            .
+                        </p>
+
+
+                    </div>
+
+
+
+                </div>
 
             </div>
 
 
         </div>
-
-    </>
     )
 }

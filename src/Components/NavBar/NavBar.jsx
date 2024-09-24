@@ -6,7 +6,19 @@ import React, { useState, useEffect } from "react";
 export default function NavBar() {
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isDropdownVisible, setDropdownVisible] = useState(false);
 
+    // Function to toggle visibility on hover or click
+    const handleDropdownToggle = () => {
+        setDropdownVisible(!isDropdownVisible);
+    };
+
+    // Function to close the dropdown (if you want to close on hover leave)
+    const closeDropdown = () => {
+        if (isDropdownVisible) {
+            setDropdownVisible(false);
+        }
+    };
 
     const handleToggle = () => {
         setIsOpen(!isOpen);
@@ -96,16 +108,52 @@ export default function NavBar() {
                     id="mobile-menu-2"
                 >
 
-
-
-
                     <ul
                         className={`nav-ul font-medium flex lg:flex-row flex-col items-start lg:mt-0 ${isOpen ? "block" : "flex"
                             }`}
                     >
-                        <li><Link to={'/home'} className="menu text-xl cairo font-medium ">الرئيسية</Link> </li>
-                        <li><Link to={"/about"} className="menu text-xl cairo font-medium ">نبذة عننا</Link> </li>
-                        <li><Link to={"/programs"} className="menu text-xl cairo font-medium ">البرامج</Link></li>
+                        <li><Link to={'/home'} onClick={handleToggle} className="menu text-xl cairo font-medium ">الرئيسية</Link> </li>
+                        <li><Link to={"/about"} onClick={handleToggle} className="menu text-xl cairo font-medium ">نبذة عننا</Link> </li>
+                        <li
+                            className="relative group"
+                            onMouseEnter={handleDropdownToggle}
+                            onMouseLeave={handleDropdownToggle}
+                            onClick={handleDropdownToggle}
+                        >
+                            <Link
+                                to="/programs"
+                                className="menu text-xl cairo font-medium flex items-center cursor-pointer"
+                            >
+                                البرامج
+                                <i
+                                    className={`fas fa-chevron-down ml-2 transition-transform duration-300 ease-in-out ${isDropdownVisible ? 'rotate-180' : 'rotate-0'
+                                        }`}
+                                ></i>
+                            </Link>
+
+                            {/* Dropdown Menu */}
+                            <div
+                                className={`programs-drop-down absolute lg:w-48 w-72 h-fit -bottom-16  lg:-bottom-11 sm:top-full z-10 bg-white rounded-b-md shadow-lg transform transition-all duration-300 ease-in-out ${isDropdownVisible
+                                    ? 'opacity-100 visible translate-y-0'
+                                    : 'opacity-0 invisible translate-y-3'
+                                    }`}
+                            >
+                                <ul>
+                                    <li onClick={handleDropdownToggle} className="hover:bg-slate-100 cursor-pointer cairo font-[650] rounded-b-md px-5 py-3">
+                                        <Link to={'final'}>
+                                            الفــاينال بــيـزنــس
+                                        </Link>
+                                    </li>
+                                    <li onClick={handleDropdownToggle} className="hover:bg-slate-100 cursor-pointer cairo font-[650] rounded-b-md px-5 py-3">
+                                        <Link to={'cloud'}>
+                                            الــكـلاود بــيـزنــس
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+
                         <li><Link className="menu text-xl cairo font-medium ">الأنظمة</Link></li>
                         <li><Link className="menu text-xl cairo font-medium ">اراء عملائنا </Link></li>
                         <li><Link className="menu text-xl cairo font-medium ">تواصل معنا</Link></li>
