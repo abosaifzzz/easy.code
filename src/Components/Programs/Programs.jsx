@@ -14,6 +14,14 @@ import shapes from "../../assets/shapes.png"
 import shape6 from "../../assets/shape6.svg"
 import salaries from "../../assets/salaries.png"
 import reports from "../../assets/reports.png"
+import customers from "../../assets/customers.png"
+import supervise from "../../assets/supervise.png"
+import qr from "../../assets/qr.png"
+import saudi from "../../assets/saudi.png"
+
+
+
+
 
 
 
@@ -225,7 +233,7 @@ export default function Programs() {
                     <div className="first px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center"><img className='w-4/5' src={windows} alt="" /></div>
                         <div className="data md:w-1/2 flex flex-col justify-center">
-                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> البرنامج عبارة عن Desktop Application يعمل علي نظام Windows بجميع اصداراته و يعمل كشبكة داخلية او اون لاين Cloud & Client Server
+                            <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> البرنامج عبارة عن Web/Desktop Application يعمل علي نظام Windows بجميع اصداراته و يعمل كشبكة داخلية او اون لاين Cloud & Client Server
                             </p>
                             <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> يعمل بنظام قواعد البيانات SQL Server الذي يتيح الامان التام للبيانات و سرعة الوصول اليها
                             </p>
@@ -413,6 +421,102 @@ export default function Programs() {
 
 
                 </div>
+
+            </div>
+            <div className="clients">
+                <div className="clients-hero w-full lg:flex bg-blue-200 bg-opacity-20">
+                    <div className="hero-img flex justify-center lg:w-1/2">
+                        <img className='lg:w-4/5' src={customers} alt="" />
+                    </div>
+
+                    <div className="hero-data flex flex-col justify-center lg:w-1/2">
+                        <p className='text-5xl font-semibold cairo m-0 text-blue-400'>العملاء</p>
+                        <p className='text-xl font-medium pe-14 kufi'>في هذا القسم، سيتم تقديم نظام إدارة العملاء الذي يتيح للشركات تنظيم بيانات العملاء بسهولة وكفاءة. يشمل النظام تصنيفات العملاء، قنوات التسويق، وطرق الدفع، مع إمكانية تخصيص الضرائب وفقًا لموقع العميل سواء كان محليًا أو دوليًا.
+
+                            كما يدعم النظام إنشاء عميل رئيسي مع فروع متعددة، وربط العملاء تلقائيًا بدليل الحسابات. بالإضافة إلى ذلك، يمكن استخراج تقارير شاملة عن العملاء تشمل الفواتير، المرتجعات، وأرصدة الحسابات، مما يساعد في تحسين إدارة العلاقة مع العملاء بشكل عام.</p>
+                    </div>
+
+
+
+                </div>
+                <div className="third my-12 px-9 w-full md:flex">
+                    <div className="data md:w-1/2 flex flex-col justify-center ">
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إدارة العملاء بشكل احترافي: إمكانية إدارة العملاء بطرق متقدمة واحترافية.
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> ختيار العميل: إمكانية تحديد ما إذا كان العميل محليًا أو دوليًا، مع احتساب الضرائب المناسبة بناءً على هذا الاختيار.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> تصنيفات العملاء: تنظيم العملاء ضمن تصنيفات مختلفة حسب الحاجة.
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> أنشطة العملاء: متابعة الأنشطة المختلفة التي يقوم بها العملاء.
+
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> قنوات التسويق: إمكانية ربط العملاء بقنوات التسويق المختلفة.
+
+                        </p>
+
+
+
+                    </div>
+                    <div className="img md:w-1/2 flex justify-center "><img className='w-4/5  ' src={supervise} alt="" /></div>
+
+
+
+                </div>
+                <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="img md:w-1/2 flex justify-center "><img className='w-3/5' src={qr} alt="" /></div>
+
+                    <div className="data md:w-1/2 flex flex-col justify-center ">
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> QR Code للعملاء: توفير رمز استجابة سريع (QR) يحتوي على بيانات العنوان الوطني والرقم الضريبي للعميل.
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> تحديد مستوى العميل: إمكانية ربط العميل على مستوى الشركة بأكملها أو على مستوى فرع محدد، بناءً على الاختيار.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> ربط العميل بقائمة أسعار محددة: إمكانية ربط العميل بقائمة أسعار معينة من القوائم المتاحة في النظام.
+
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> كشف حساب العميل: كشف حساب تجميعي وتفصيلي، تقرير تسديدات الفواتير، أعمار الديون لفواتير المبيعات، وكشف حساب العميل حسب العملة، بالإضافة إلى أرصدة العملاء.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> ربط العملاء بدليل الحسابات تلقائيًا: إمكانية ربط العميل تلقائيًا بدليل الحسابات المناسب له.
+
+                        </p>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+                <div className="third my-12 px-9 w-full md:flex">
+                    <div className="data md:w-1/2 flex flex-col justify-center ">
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> إدارة العملاء بشكل احترافي: إمكانية إدارة العملاء بطرق متقدمة واحترافية.
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> ختيار العميل: إمكانية تحديد ما إذا كان العميل محليًا أو دوليًا، مع احتساب الضرائب المناسبة بناءً على هذا الاختيار.
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> تصنيفات العملاء: تنظيم العملاء ضمن تصنيفات مختلفة حسب الحاجة.
+                        </p>
+
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> أنشطة العملاء: متابعة الأنشطة المختلفة التي يقوم بها العملاء.
+
+                        </p>
+                        <p className='cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] '><span><i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>    </span> قنوات التسويق: إمكانية ربط العملاء بقنوات التسويق المختلفة.
+
+                        </p>
+
+
+
+                    </div>
+                    <div className="img md:w-1/2 flex justify-center "><img className='w-4/5  ' src={saudi} alt="" /></div>
+
+
+
+                </div>
+
 
             </div>
 

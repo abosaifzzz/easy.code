@@ -18,6 +18,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import man from "../../assets/man.png";
 import workers2 from "../../assets/workers2.png";
+import saudiman from "../../assets/saudiman2.png";
 import devices from "../../assets/devices.png";
 // import hours from "../../assets/24.png"
 // import call from "../../team1.png"
@@ -179,7 +180,7 @@ export default function Home() {
                         </h1>
                     </div>
                     <div className="img flex justify-center absolute bottom-0 animate-fromBottom">
-                        <img className="lg:w-5/6  w-96 h-full" src={man} alt="" />
+                        <img className="lg:w-11/12  w-96 h-full" src={saudiman} alt="" />
                     </div>
                 </div>
             </div>
