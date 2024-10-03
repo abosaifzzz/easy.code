@@ -154,9 +154,9 @@ export default function NavBar() {
                         </li>
 
 
-                        <li><Link className="menu text-xl cairo font-medium ">الأنظمة</Link></li>
+                        <li><Link to={'systems'} className="menu text-xl cairo font-medium ">الأنظمة</Link></li>
                         <li><Link className="menu text-xl cairo font-medium ">اراء عملائنا </Link></li>
-                        <li><Link className="menu text-xl cairo font-medium ">تواصل معنا</Link></li>
+                        <li><Link to={'contact'} className="menu text-xl cairo font-medium ">تواصل معنا</Link></li>
 
 
 

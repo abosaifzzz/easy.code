@@ -13,6 +13,8 @@ import NotFound from './Components/NotFound/NotFound';
 // import Programs from './Components/Programs/Programs';
 import CloudBussiness from './Components/CloudBussiness/CloudBussiness';
 import FinalBussiness from './Components/FinalBussiness/FinalBussiness';
+import Systems from './Components/Systems/Systems';
+import ContactUs from './Components/Contact/ContactUs';
 
 
 function App() {
@@ -40,6 +42,8 @@ function App() {
         { path: "acounting1", element: <Accounting1 /> },
         { path: "cloud", element: <CloudBussiness /> },
         { path: "final", element: <FinalBussiness /> },
+        { path: "systems", element: <Systems /> },
+        { path: "contact", element: <ContactUs /> },
 
 
       ],

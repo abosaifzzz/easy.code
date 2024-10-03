@@ -19,6 +19,8 @@ import "slick-carousel/slick/slick-theme.css";
 import man from "../../assets/man.png";
 import workers2 from "../../assets/workers2.png";
 import saudiman from "../../assets/saudiman2.png";
+import shp from "../../assets/shp.png";
+
 import devices from "../../assets/devices.png";
 // import hours from "../../assets/24.png"
 // import call from "../../team1.png"
@@ -536,7 +538,8 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="fifth">
+            <div className="fifth relative">
+                <div className="shape absolute left-96 top-14 z-[-1] opacity-30 "><img className="" src={shp} alt="" /></div>
                 <p className="m-0 py-6 text-center lg:text-4xl md:text-3xl text-2xl font-semibold cairo text-[#339ecc] ">
                     من نحن ؟
                 </p>
