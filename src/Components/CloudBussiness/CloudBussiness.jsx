@@ -982,7 +982,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                         <div className="img md:w-1/2 flex justify-center ">
-                            <img className="w-4/5  " src={invoices} alt="" />
+                            <img className="w-4/5  " src={invoices2} alt="" />
                         </div>
                     </div>
                     <div className="fivth my-12 px-9 w-full md:flex">
@@ -1264,7 +1264,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                         <div className="img md:w-1/2 flex justify-center ">
-                            <img className="w-4/5  " src={invoices} alt="" />
+                            <img className="w-4/5  " src={invoices2} alt="" />
                         </div>
                     </div>
                     <div className="fivth my-12 px-9 w-full md:flex">
