@@ -7,7 +7,7 @@ import dot from "../../assets/programs-icons/dot.png";
 import windows from "../../assets/windows.png";
 import reportss from "../../assets/reportss.png";
 import suppliers from "../../assets/suppliers.png";
-import invoic from "../../assets/invoic.png";
+// import invoic from "../../assets/invoic.png";
 
 import sup from "../../assets/sup.png";
 import sup2 from "../../assets/sup2.png";
@@ -986,7 +986,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                         <div className="img md:w-1/2 flex justify-center ">
-                            <img className="w-4/5  " src={invoic} alt="" />
+                            <img className="w-4/5  " src={invoices2} alt="" />
                         </div>
                     </div>
                     <div className="fivth my-12 px-9 w-full md:flex">
