@@ -7,6 +7,8 @@ import dot from "../../assets/programs-icons/dot.png";
 import windows from "../../assets/windows.png";
 import reportss from "../../assets/reportss.png";
 import suppliers from "../../assets/suppliers.png";
+import invoic from "../../assets/invoic.png";
+
 import sup from "../../assets/sup.png";
 import sup2 from "../../assets/sup2.png";
 import sup3 from "../../assets/sup3.png";
@@ -25,8 +27,8 @@ import warehouse4 from "../../assets/warehouse4.png";
 import warehouse5 from "../../assets/warehouse5.png";
 import warehouse6 from "../../assets/warehouse6.png";
 import sales from "../../assets/saless.png";
-// import invoices from "../../assets/invoices.png";
-import invoices2 from "../../assets/invoices2.png";
+// import  from "../../assets/.png";
+// import 2 from "../../assets/2.png";
 import price from "../../assets/price.png";
 import report from "../../assets/report.png";
 import representative from "../../assets/representative.png";
@@ -36,6 +38,8 @@ import responsive from "../../assets/responsive.png";
 import finance from "../../assets/finance.png";
 import periods from "../../assets/periods.png";
 import invoice from "../../assets/invoice.png";
+import invoices2 from "../../assets/invoices2.png";
+
 import shapes from "../../assets/shapes.png";
 import represent from "../../assets/represent.png";
 import shape6 from "../../assets/shape6.svg";
@@ -982,7 +986,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                         <div className="img md:w-1/2 flex justify-center ">
-                            <img className="w-4/5  " src={invoices2} alt="" />
+                            <img className="w-4/5  " src={invoic} alt="" />
                         </div>
                     </div>
                     <div className="fivth my-12 px-9 w-full md:flex">
@@ -1264,7 +1268,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                         <div className="img md:w-1/2 flex justify-center ">
-                            <img className="w-4/5  " src={invoices2} alt="" />
+                            <img className="w-4/5  " src={sales} alt="" />
                         </div>
                     </div>
                     <div className="fivth my-12 px-9 w-full md:flex">

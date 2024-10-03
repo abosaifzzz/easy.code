@@ -6,8 +6,15 @@ import budget from "../../assets/budget.png";
 import boxes from "../../assets/boxes.png";
 import receipt from "../../assets/receipt.png";
 import custom from "../../assets/customs-clearance.png";
+
 import exchange from "../../assets/exchange.png";
+import shepo from "../../assets/shepo.png";
+
 import installment from "../../assets/installment.png";
+import shepa from "../../assets/shepa.png";
+import tree from "../../assets/tree.png";
+
+
 import ReactPlayer from "react-player";
 import erp from "../../assets/erp.mp4";
 import screen from "../../assets/screen.mp4";
@@ -19,7 +26,7 @@ import "slick-carousel/slick/slick-theme.css";
 import man from "../../assets/man.png";
 import workers2 from "../../assets/workers2.png";
 import saudiman from "../../assets/saudiman2.png";
-import shp from "../../assets/shp.png";
+// import shp from "../../assets/shp.png";
 
 import devices from "../../assets/devices.png";
 // import hours from "../../assets/24.png"
@@ -539,7 +546,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="fifth relative">
-                <div className="shape absolute left-96 top-14 z-[-1] opacity-30 "><img className="" src={shp} alt="" /></div>
+                <div className="shape absolute left-96 top-14 z-[-1] opacity-30 "><img className="" src={shepa} alt="" /></div>
                 <p className="m-0 py-6 text-center lg:text-4xl md:text-3xl text-2xl font-semibold cairo text-[#339ecc] ">
                     من نحن ؟
                 </p>
@@ -636,10 +643,14 @@ export default function Home() {
                     />
                 </div>
             </div>
-            <div className="sixth  relative md:p-12 md:px-24 p-3 flex flex-col items-center">
+            <div className="sixth overflow-hidden  relative md:p-12 md:px-24 p-3 flex flex-col items-center">
                 <div className="shape3 absolute left-0 md:top-1/4 top-1/2">
                     <img className="lg:w-4/5 w-1/2" src={shape3} alt="" />
                 </div>
+                <div className="shape3 absolute -bottom-10 -right-32">
+                    <img className="lg:w-4/5 w-1/2" src={shepo} alt="" />
+                </div>
+
                 <p className="m-0 py-6 text-center md:text-4xl text-3xl font-semibold cairo text-[#339ecc] ">
                     برامجنا المحاسبية{" "}
                 </p>
