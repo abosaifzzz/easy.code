@@ -25,7 +25,7 @@ import warehouse4 from "../../assets/warehouse4.png";
 import warehouse5 from "../../assets/warehouse5.png";
 import warehouse6 from "../../assets/warehouse6.png";
 import sales from "../../assets/saless.png";
-// import invoices from "../../assets/invoices.png";
+import invoices from "../../assets/invoices.png";
 import invoices2 from "../../assets/invoices2.png";
 import price from "../../assets/price.png";
 import report from "../../assets/report.png";
