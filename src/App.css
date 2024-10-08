@@ -51,6 +51,15 @@
 /* Home */
 .hero{
   height: 100vb;
+  margin-top: 20px;
+  background-image: url('../src/assets/suadibg5.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; 
+  
+  background-size: cover;
+ 
+
 }
 @keyframes animate {
   0%{
@@ -73,8 +82,9 @@
   left: 0;
   margin: 0;
   padding: 0;
-  background: #ffffff;
-  overflow: hidden;
+  background: rgb(243,244,246);
+  background: linear-gradient(0deg, rgba(243,244,246,1) 0%, rgba(90,186,220,0.6559873949579832) 15%, rgba(1,127,174,0.40948879551820727) 30%);
+    overflow: hidden;
 }
 .background li {
   position: absolute;
@@ -82,7 +92,7 @@
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(0, 158, 249, 0.186);
+  background: rgba(169, 223, 255, 0.323);
   animation: animate 18s linear infinite;
 }
 
@@ -362,6 +372,281 @@
     transform: translateY(-400%);
   }
 }
+/* From Uiverse.io by Spacious74 */ 
+.laptop {
+  transform: scale(0.8);
+}
+.screen {
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 2px #c8cacb, inset 0 0 0 10px #000;
+  /* height: 618px;
+  width: 918px; */
+  margin: 0 auto;
+  padding: 9px 9px 23px 9px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: linear-gradient(
+    15deg,
+    #3f51b1 0%,
+    #5a55ae 13%,
+    #7b5fac 25%,
+    #8f6aae 38%,
+    #a86aa4 50%,
+    #cc6b8e 62%,
+    #f18271 75%,
+    #f3a469 87%,
+    #f7c978 100%
+  ); */
+  /* background-image: url(/src/assets/screeen.png);  */
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: white; */
+   background-size: contain;
+  transform-style: preserve-3d;
+  transform: perspective(1900px) rotateX(-88.5deg);
+  transform-origin: 50% 100%;
+  animation: open 4s 1 forwards; /* Play once and remain open */
+}
+@keyframes open {
+  0% {
+    transform: perspective(1900px) rotateX(-88.5deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateX(0deg);
+  }
+}
+.screen::before {
+  content: "";
+  width: 518px;
+  height: 12px;
+  position: absolute;
+  /* background: linear-gradient(#979899, transparent); */
+  top: -3px;
+  transform: rotateX(90deg);
+  border-radius: 5px 5px;
+}
+/* 
+.text {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px #fff;
+} */
+.header {
+  width: 100px;
+  height: 12px;
+  position: absolute;
+  background-color: #000;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  border-radius: 0 0 6px 6px;
+}
+.screen::after {
+  background: linear-gradient(to bottom, #272727, #0d0d0d);
+  border-radius: 0 0 20px 20px;
+  bottom: 2px;
+  content: "";
+  height: 24px;
+  left: 2px;
+  position: absolute;
+  width: 514px;
+}
+/* .keyboard {
+  background: radial-gradient(circle at center, #e2e3e4 85%, #a9abac 100%);
+  border: solid #a0a3a7;
+  border-radius: 2px 2px 12px 12px;
+  border-width: 1px 2px 0 2px;
+  box-shadow: inset 0 -2px 8px 0 #6c7074;
+  height: 24px;
+  margin-top: -10px;
+  position: relative;
+  width: 620px;
+  z-index: 9;
+}
+.keyboard::after {
+  background: #e2e3e4;
+  border-radius: 0 0 10px 10px;
+  box-shadow: inset 0 0 4px 2px #babdbf;
+  content: "";
+  height: 10px;
+  left: 50%;
+  margin-left: -60px;
+  position: absolute;
+  top: 0;
+  width: 120px;
+}
+.keyboard::before {
+  background: 0 0;
+  border-radius: 0 0 3px 3px;
+  bottom: -2px;
+  box-shadow: -270px 0 #272727, 250px 0 #272727;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -10px;
+  position: absolute;
+  width: 40px;
+} */
+
+.card-shape {
+  width: 200px;
+  height: 200px;
+  transition: all 0.2s;
+  /* position: relative; */
+  cursor: pointer;
+}
+
+.card-shape-inner {
+  width: inherit;
+  height: inherit;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+}
+
+.card-shape:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+
+.circle {
+  /* width: 100px;s
+  height: 100px; */
+  /* background: repeating-linear-gradient(48deg, #3023ae 0%, #ff0099 100%); */
+  border-radius: 50% 50% 85% 65% / 50% 65% 85% 80%;
+  /* border-radius: 100%; */
+  position: absolute;
+  animation: move-up6 2s ease-in infinite alternate-reverse;
+}
+
+.circle:nth-child(1) {
+  top: -25px;
+  left: -25px;
+}
+
+.circle:nth-child(2) {
+  bottom: -25px;
+  right: -25px;
+  animation-name: move-down1;
+}
+
+@keyframes move-up6 {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes move-down1 {
+  to {
+    transform: translateY(10px);
+  }
+}
+
+/* From Uiverse.io by Bodyhc */ 
+.ag-courses_item {
+  margin: auto;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #08607d;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+}
+
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  color: #121212;
+}
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+.ag-courses-item_title {
+  min-height: 57px;
+  margin: 0 0 30px;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date-box {
+  font-size: 18px;
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date {
+  font-weight: bold;
+  color: #f9e534;
+  -webkit-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+.ag-courses-item_bg {
+  height: 130px;
+  width: 100px;
+  background-color: #4FB8ED;
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+
+.start {
+  /* display: inline-block;h1 */
+  direction: rtl;
+  border-radius: 7px;
+  border: none;
+  background: #168dc9;
+  color: white;
+  font-family: inherit;
+  text-align: center;
+  box-shadow: 0px 14px 56px -11px #94ddf7;
+  /* padding: 1em; */
+  transition: all 0.4s;
+  cursor: pointer;
+  }
+  
+  .start span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+  }
+  
+  .start span:after {
+  content: 'مجاناّ';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0px;
+  transition: 0.7s;
+  }
+  
+  .start:hover span {
+  padding-left: 2.5em;
+  }
+  
+  .start:hover span:after {
+  opacity: 4;
+  left: 0;
+  }
 
 /* close Home */
 .kufi {
@@ -541,15 +826,16 @@
 }
 
 
-h1 {
-  color: black;
-  height: 100px;
+.easy {
+  color: white;
+  height: 70px;
   font-family: "Alexandria", sans-serif;
   font-weight: 400;
 }
 
-h1 {
-  background: linear-gradient(to right, hsl(0, 0%, 15%) 0, hsl(192, 62%, 56%) 10%, hsl(218, 66%, 16%) 20%);
+.easy {
+  
+  background: linear-gradient(to right, hsl(0, 0%, 100%) 0, hsl(192, 62%, 56%) 10%, hsl(0, 0%, 100%) 20%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shine 3s infinite linear;

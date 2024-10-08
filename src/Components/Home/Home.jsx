@@ -9,6 +9,16 @@ import custom from "../../assets/customs-clearance.png";
 
 import exchange from "../../assets/exchange.png";
 import shepo from "../../assets/shepo.png";
+import chart from "../../assets/chart.png";
+import presentage from "../../assets/presentage.png";
+import storagee from "../../assets/storagee.png";
+import periods from "../../assets/periods.png";
+import erp1 from "../../assets/erp1.png";
+
+
+
+
+
 
 import installment from "../../assets/installment.png";
 import shepa from "../../assets/shepa.png";
@@ -18,6 +28,8 @@ import tree from "../../assets/tree.png";
 import ReactPlayer from "react-player";
 import erp from "../../assets/erp.mp4";
 import screen from "../../assets/screen.mp4";
+import screen1 from "../../assets/screen.png";
+
 import arrow from "../../assets/up.png";
 import truee from "../../assets/true.png";
 import Slider from "react-slick";
@@ -151,8 +163,8 @@ export default function Home() {
 
     return (
         <div>
-            <div className="hero bg-gray-500 relative">
-                <div className="background text flex flex-col items-center">
+            <div className="hero  relative">
+                <div className="background  relative text flex flex-col items-center">
                     <ul>
                         <li></li>
                         <li></li>
@@ -162,7 +174,7 @@ export default function Home() {
                         <li></li>
                     </ul>
 
-                    <div className="earning1 -rotate-12 absolute rounded-lg  flex  justify-center items-center   left-28  lg:left-64 top-64 lg:top-1/2 mt-9 w-56 h-48 ">
+                    {/* <div className="earning1 -rotate-12 absolute rounded-lg  flex  justify-center items-center   left-28  lg:left-64 top-64 lg:top-1/2 mt-9 w-56 h-48 ">
                         <img className="w-7 h-8 me-2" src={arrow} alt="" />{" "}
                         <span className=" rakkas-regular lg:text-[2.3rem] text-[2rem] text-blue-950">ارباح اليوم </span>
                     </div>
@@ -175,22 +187,73 @@ export default function Home() {
                     <div className="earning4 -rotate-2 absolute rounded-lg  flex  justify-center items-center  left-0   lg:left-1/3 lg:top-56 top-72 mt-9 w-56 h-48 ">
                         <img className="w-7 h-8 me-2" src={truee} alt="" />{" "}
                         <span className=" rakkas-regular lg:text-[2.3rem] text-[1.6rem] text-blue-950">تقارير صرف </span>
-                    </div>
+                    </div> */}
 
                     <div
                         className={`flex flex-col justify-center pt-40 ${hasAnimated ? "" : "fade-in-scale"
                             }`}
                     >
-                        <p className="lg:mb-6 m-0   lg:text-5xl md:text-4xl text-[0.9rem] lg:font-normal font-bold px-3 text-center hala">
+                        <p className="lg:mb-6 m-0 text-white  lg:text-5xl md:text-4xl text-[0.9rem] lg:font-normal font-bold px-3 text-center hala">
                             ندير عملياتك، نرتب بياناتك، ونزيد إنتاجيتك
                         </p>
-                        <h1 className="text-center alexandria lg:text-5xl md:text-4xl text-[1.3rem] lg:font-normal font-semibold text-2xl">
+                        <h1 className="easy text-center text-white alexandria lg:text-5xl md:text-4xl text-[1.3rem] lg:font-normal font-semibold text-2xl">
                             ! بسهولة وكفاءة
                         </h1>
+                        <div className="start-button w-full flex justify-center ">
+                            <button dir="rtl" className="start text-center p-2 px-4" ><span className="cairo text-lg">أبدأ الأستخدام </span></button>
+
+                        </div>
+
                     </div>
-                    <div className="img flex justify-center absolute bottom-0 animate-fromBottom">
+                    {/* <div className="card-shape z-30 absolute top-2/3 right-64">
+                        <div className="circle w-1/2 h-1/2 relative flex justify-center items-center bg-white shadow-md z-10">
+
+                            <span className="z-10 text-4xl font-semibold">12</span>
+                            <div className="circles absolute top-4 right-5 flex gap-1">
+                                <div className="ci w-7 h-7 rounded-full flex justify-center items-center text-slate-400  bg-cyan-200"><i className="fa-solid fa-share"></i></div>
+                                <div className="ci w-7 h-7 rounded-full flex justify-center items-center text-slate-400  bg-cyan-300"><i className="fa-solid fa-share rotate-180"></i></div>
+
+                            </div>
+                        </div>
+                        <div className="circle w-1/2 h-1/2 z-10"> <img className="" src={storagee} /> </div>
+                        <div className="card-shape-inner flex justify-center items-center">
+                            <img className="w-5/6" src={chart} alt="" />
+
+
+                        </div>
+                    </div>
+                    <div dir="rtl" className="ag-courses_item z-10 2xl:w-1/5 xl:w-1/6 rounded-lg absolute top-1/3 right-2/3">
+                        <a className="ag-courses-item_link" href="#">
+                            <div className="ag-courses-item_bg"></div>
+                            <div className="ag-courses-item_title">
+                                <div className="first flex justify-between items-center "><p className="cairo 2xl:text-2xl 2xl:text-red-500  xl:text-xl xl:text-green-400 lg:text-base font-semibold">المبلغ الأجمالي:</p>
+
+                                    <div className="arr w-9 h-9 rounded-full flex justify-center items-center border">
+                                        <i className="fa-solid fa-angle-left"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div className="ag-courses-item_date-box">
+                                <span className="cairo 2xl:text-2xl text-blue-100   ">SAR </span><span className="cairo text-3xl font-semibold " >680.</span><span className="cairo text-2xl text-blue-100">000 </span>
+                            </div>
+                        </a>
+                    </div> */}
+
+                    <div className="laptop   absolute 2xl:-bottom-40 xl:-bottom-40 lg:-bottom-40 md:-bottom-60 sm:-bottom-64 -bottom-52 ">
+                        <img className="2xl:hidden xl:hidden lg:hidden md:block" src={periods} alt="" />
+                        <div className="screen 2xl:block xl:block lg:block md:hidden  sm:hidden hidden 2xl:w-[890px] 2xl:h-[600px] xl:w-[1050px] xl:h-[600px] lg:w-[1050px] lg:h-[700px] md:w-[780px] md:h-[700px]">
+                            {/* <div className="header"><img src={screen} alt="" /></div> */}
+                            <img className="rounded-md" src={erp1} alt="" />
+
+                        </div>
+                        <div className="keyboard"></div>
+                    </div>
+
+                    {/* <div className="img w-4/5 absolute -bottom-1/2"><img src={screen1} alt="" /></div> */}
+                    {/* <div className="img flex justify-center absolute bottom-0 animate-fromBottom">
                         <img className="lg:w-11/12  w-96 h-full" src={saudiman} alt="" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
@@ -314,8 +377,8 @@ export default function Home() {
                 <div className="slider-container py-7">
                     <Slider {...settings}>
                         <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full flex justify-center items-center  rounded-lg">
-                                <div className="slide-card w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
+                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
+                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
                                     <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
                                         <img className="w-fit h-fit" src={budget} alt="" />
                                     </div>
@@ -324,8 +387,8 @@ export default function Home() {
                             </div>
                         </div>
                         <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full flex justify-center items-center  rounded-lg">
-                                <div className="slide-card w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
+                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
+                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
                                     <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
                                         <img className="w-fit h-fit" src={boxes} alt="" />
                                     </div>
@@ -334,8 +397,8 @@ export default function Home() {
                             </div>
                         </div>{" "}
                         <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full flex justify-center items-center  rounded-lg">
-                                <div className="slide-card w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
+                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
+                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
                                     <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
                                         <img className="w-fit h-fit" src={receipt} alt="" />
                                     </div>
@@ -344,8 +407,8 @@ export default function Home() {
                             </div>
                         </div>{" "}
                         <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full flex justify-center items-center  rounded-lg">
-                                <div className="slide-card w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
+                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
+                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
                                     <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
                                         <img className="w-fit h-fit" src={custom} alt="" />
                                     </div>
@@ -354,8 +417,8 @@ export default function Home() {
                             </div>
                         </div>{" "}
                         <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full flex justify-center items-center  rounded-lg">
-                                <div className="slide-card w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
+                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
+                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
                                     <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
                                         <img className="w-fit h-fit" src={exchange} alt="" />
                                     </div>
@@ -364,8 +427,8 @@ export default function Home() {
                             </div>
                         </div>
                         <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full flex justify-center items-center  rounded-lg">
-                                <div className="slide-card w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
+                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
+                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
                                     <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
                                         <img className="w-fit h-fit" src={connect} alt="" />
                                     </div>
@@ -374,8 +437,8 @@ export default function Home() {
                             </div>
                         </div>
                         <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full flex justify-center items-center  rounded-lg">
-                                <div className="slide-card w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
+                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
+                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
                                     <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
                                         <img className="w-fit h-fit" src={warehouse} alt="" />
                                     </div>
@@ -384,8 +447,8 @@ export default function Home() {
                             </div>
                         </div>
                         <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full flex justify-center items-center  rounded-lg">
-                                <div className="slide-card w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
+                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
+                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
                                     <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
                                         <img className="w-fit h-fit" src={customer} alt="" />
                                     </div>
@@ -394,8 +457,8 @@ export default function Home() {
                             </div>
                         </div>
                         <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full flex justify-center items-center  rounded-lg">
-                                <div className="slide-card w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
+                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
+                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
                                     <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
                                         <img className="w-fit h-fit" src={sales} alt="" />
                                     </div>
@@ -404,8 +467,8 @@ export default function Home() {
                             </div>
                         </div>
                         <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full flex justify-center items-center  rounded-lg">
-                                <div className="slide-card w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
+                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
+                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
                                     <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
                                         <img className="w-fit h-fit" src={truck} alt="" />
                                     </div>

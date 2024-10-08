@@ -130,18 +130,18 @@ export default function Accounting1() {
             <div className="first-content lg:flex  w-full mt-24 h-fit gap-4">
                 <div className="right lg:w-1/2 mt-2 rounded-xl p-6  bg-white   shadow-md">
                     <div className="code">
-                        <label className='block' htmlFor="code">الكود: </label>
+                        <label className='block cairo font-semibold text-lg' htmlFor="code">الكود: </label>
                         <input className='h-10 input-form bg-slate-50 w-72' type="text" name="code" id="" />
 
                     </div>
                     <div className="name w-full flex gap-3 items-center">
                         <div className='w-1/2'>
-                            <label className='block' htmlFor="arabic-name">الأسم باللغة العربية </label>
+                            <label className='block cairo font-semibold text-lg' htmlFor="arabic-name">الأسم باللغة العربية </label>
                             <input className='h-10 input-form bg-slate-50 ' type="text" name="code" id="" />
 
                         </div>
                         <div className='w-1/2'>
-                            <label className='block' htmlFor="english-name">الأسم باللغة الانجليزية </label>
+                            <label className='block cairo font-semibold text-lg' htmlFor="english-name">الأسم باللغة الانجليزية </label>
                             <input dir='ltr' className='h-10 input-form bg-slate-50  ' type="text" name="code" id="" />
 
                         </div>
@@ -151,9 +151,9 @@ export default function Accounting1() {
                 <div className="left lg:w-1/2 mt-2  rounded-xl p-6 bg-white shadow-md">
 
                     <div className="date  gap-4">
-                        <div className="start flex w-full  gap-2">
+                        <div className="start1 flex w-full  gap-2">
                             <div className='w-1/2 '>
-                                <label className="block" htmlFor="startDateMilady">من تاريخ </label>
+                                <label className="block cairo font-semibold text-lg" htmlFor="startDateMilady">من تاريخ </label>
                                 <DatePicker
                                     selected={startMiladyDate}
                                     onChange={handleStartMiladyChange}
@@ -162,7 +162,7 @@ export default function Accounting1() {
                                 />
                             </div>
                             <div className='w-1/2'>
-                                <label className="block" htmlFor="startDateHijri">هجري</label>
+                                <label className="block cairo font-semibold text-lg" htmlFor="startDateHijri">هجري</label>
                                 <input
 
                                     type="text"
@@ -178,7 +178,7 @@ export default function Accounting1() {
                         <div className="end flex gap-2 w-full">
 
                             <div className='w-1/2'>
-                                <label className="block" htmlFor="endDateMilady">الي تاريخ </label>
+                                <label className="block cairo font-semibold text-lg" htmlFor="endDateMilady">الي تاريخ </label>
                                 <DatePicker
                                     selected={endMiladyDate}
                                     onChange={handleEndMiladyChange}
@@ -187,7 +187,7 @@ export default function Accounting1() {
                                 />
                             </div>
                             <div className='w-1/2'>
-                                <label className="block" htmlFor="endDateHijri"> هجري</label>
+                                <label className="block cairo font-semibold text-lg" htmlFor="endDateHijri"> هجري</label>
                                 <input
                                     type="text"
                                     value={endHijriDate}

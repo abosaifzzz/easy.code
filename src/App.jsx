@@ -25,11 +25,11 @@ function App() {
       element: <Login />,
     },
     {
-      path: "/layout",
+      path: "/",
       element: <Layout2 />,
       children: [
-        { path: "/layout/accounting1", element: <Accounting1 /> },
-        { path: "/layout/accounting2", element: <Accounting2 /> },
+        { path: "accounting1", element: <Accounting1 /> },
+        { path: "accounting2", element: <Accounting2 /> },
 
       ],
     },
@@ -39,7 +39,7 @@ function App() {
       children: [
         { path: "/home", element: <Home /> },
         { path: "about", element: <AboutUs /> },
-        { path: "acounting1", element: <Accounting1 /> },
+        // { path: "acounting1", element: <Accounting1 /> },
         { path: "cloud", element: <CloudBussiness /> },
         { path: "final", element: <FinalBussiness /> },
         { path: "systems", element: <Systems /> },

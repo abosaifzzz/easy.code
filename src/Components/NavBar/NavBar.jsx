@@ -26,7 +26,7 @@ export default function NavBar() {
 
 
     const handleNav = () => {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 10) {
             setIsScrolled(true);
         } else {
             setIsScrolled(false);
@@ -47,13 +47,13 @@ export default function NavBar() {
             className="bg-white  z-10 shadow-lg fixed w-full rounded-b-2xl"
         >
             <div
-                className={`w-4/5 z-10 flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto ${isScrolled ? "py-1" : "py-2"} transition-all duration-300`}
+                className={`w-4/5 z-10 flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto ${isScrolled ? "py-0" : "py-2"} transition-all duration-300`}
             >
                 <Link className=" flex items-center">
                     <img
                         src={logo}
-                        className={`${isScrolled ? "lg:w-16 w-10 h-10 lg:h-16" : "lg:w-24 w-14 lg:h-20 h-14"} mr-3 transition-all duration-300`}
-                        alt="Landwind Logo"
+                        className={`${isScrolled ? "lg:w-16 w-10 h-10 lg:h-16" : "lg:w-20 w-14 lg:h-20 h-14"} mr-3 transition-all duration-300`}
+                        alt="Easy-Code Logo"
                     />
                 </Link>
 
@@ -117,16 +117,16 @@ export default function NavBar() {
                         <li
                             className="relative group"
                             onMouseEnter={handleDropdownToggle}
-                            onMouseLeave={handleDropdownToggle}
+                            onMouseLeave={closeDropdown}
                             onClick={handleDropdownToggle}
                         >
                             <Link
                                 to="/programs"
-                                className="menu text-xl cairo font-medium flex items-center cursor-pointer"
+                                className="menu text-xl cairo font-medium  flex items-center cursor-pointer"
                             >
                                 البرامج
                                 <i
-                                    className={`fas fa-chevron-down ml-2 transition-transform duration-300 ease-in-out ${isDropdownVisible ? 'rotate-180' : 'rotate-0'
+                                    className={`fas fa-chevron-down ml-2 text-sm mt-2 ms-2 transition-transform duration-300 ease-in-out ${isDropdownVisible ? 'rotate-180' : 'rotate-0'
                                         }`}
                                 ></i>
                             </Link>
