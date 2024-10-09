@@ -241,8 +241,8 @@ export default function Home() {
                     </div> */}
 
                     <div className="laptop   absolute 2xl:-bottom-40 xl:-bottom-40 lg:-bottom-40 md:-bottom-60 sm:-bottom-64 -bottom-52 ">
-                        <img className="2xl:hidden xl:hidden lg:hidden md:block" src={periods} alt="" />
-                        <div className="screen 2xl:block xl:block lg:block md:hidden  sm:hidden hidden 2xl:w-[890px] 2xl:h-[600px] xl:w-[1050px] xl:h-[600px] lg:w-[1050px] lg:h-[700px] md:w-[780px] md:h-[700px]">
+                        <img className="2xl:hidden xl:hidden lg:hidden md:block sm:block" src={periods} alt="" />
+                        <div className="screen 2xl:block xl:block lg:block md:hidden  sm:hidden hidden 2xl:w-[890px] 2xl:h-[600px] xl:w-[1050px] xl:h-[600px] lg:w-[1050px] lg:h-[700px] md:w-[780px] md:h-[700px] w-0 h-0">
                             {/* <div className="header"><img src={screen} alt="" /></div> */}
                             <img className="rounded-md" src={erp1} alt="" />
 
@@ -786,6 +786,18 @@ export default function Home() {
                         )}
                     </div>
                 </div>
+            </div>
+            <div className="ad1 w-full h-1/3">
+                <div className="ad1-content w-full flex flex-col justify-center items-center h-full bg-[#339ECC] bg-opacity-45">
+
+                    <p className="cairo text-7xl font-semibold text-white">بوابتك الأولي أرباحك المستهدفة</p>
+                    <div className="start-button w-full flex justify-center ">
+                        <button dir="rtl" className="start text-center p-2 px-4" ><span className="cairo text-lg">أبدأ الأستخدام </span></button>
+
+                    </div>
+                </div>
+
+
             </div>
             <div className="sivnth relative lg:p-12 md:p-2 bg-gray-100 ">
                 <div className="shape5  absolute  left-0 right-0 bottom-0">

@@ -50,16 +50,28 @@
 /* close home nav */
 /* Home */
 .hero{
-  height: 100vb;
   margin-top: 20px;
   background-image: url('../src/assets/suadibg5.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat; 
-  
-  background-size: cover;
+  background-size: cover; /* Ensures the image covers the container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition */
+  height: 100vh; 
  
 
+}
+.ad1{
+  background-image: url("assets/ad1.jpg");
+  height: 80vh;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 20px;
+    background-image: url('../src/assets/suadi6.jpg');
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+    height: 100vh;   }
 }
 @keyframes animate {
   0%{
