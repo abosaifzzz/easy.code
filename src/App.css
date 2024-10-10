@@ -95,7 +95,7 @@
   margin: 0;
   padding: 0;
   background: rgb(243,244,246);
-  background: linear-gradient(0deg, rgba(243,244,246,1) 0%, rgba(90,186,220,0.6559873949579832) 15%, rgba(1,127,174,0.40948879551820727) 30%);
+  background: linear-gradient(0deg, rgba(243,244,246,1) 0%, #5abadca7 15%, rgba(1,127,174,0.40948879551820727) 30%);
     overflow: hidden;
 }
 .background li {

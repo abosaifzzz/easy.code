@@ -15,6 +15,14 @@ import storagee from "../../assets/storagee.png";
 import periods from "../../assets/periods.png";
 import erp1 from "../../assets/erp1.png";
 
+import logo from "../../assets/logo@2x.png";
+import center2 from "../../assets/center2.png";
+import res2 from "../../assets/res2.png";
+import on from "../../assets/on.png";
+import control from "../../assets/control.png";
+import cor from "../../assets/cor.png";
+import tech from "../../assets/tech.png";
+
 
 
 
@@ -39,6 +47,7 @@ import man from "../../assets/man.png";
 import workers2 from "../../assets/workers2.png";
 import saudiman from "../../assets/saudiman2.png";
 // import shp from "../../assets/shp.png";
+import shapes from "../../assets/shapes.png";
 
 import devices from "../../assets/devices.png";
 // import hours from "../../assets/24.png"
@@ -557,8 +566,15 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="fourth py-7 bg-gray-100">
-                <p className="m-0 py-6 text-center lg:text-4xl md:text-3xl text-2xl font-semibold cairo text-[#339ecc] ">
+            <div className="fourth overflow-hidden relative px-20 py-7 bg-gray-100">
+
+                <div className="shapes  absolute md:-right-60 -right-32   w-1/4 bottom-0">
+                    <img className="w-44 " src={shapes} alt="" />
+                </div>
+                <div className="shapes  absolute md:-left-16 left-0  w-1/4 top-1/6">
+                    <img className="w-44" src={shapes} alt="" />
+                </div>
+                {/* <p className="m-0 py-6 text-center lg:text-4xl md:text-3xl text-2xl font-semibold cairo text-[#339ecc] ">
                     لماذا حلولنا البرمجية هي الأفضل؟
                 </p>
 
@@ -606,7 +622,134 @@ export default function Home() {
                             24 ساعة طوال ايام الاسبوع
                         </p>
                     </div>
+                </div> */}
+
+                <p className="m-0 py-6 text-center lg:text-4xl md:text-3xl text-2xl font-semibold cairo text-[#339ecc] ">
+                    لماذا حلولنا البرمجية هي الأفضل؟
+                </p>
+                <div className="first-row flex lg:flex-row flex-col gap-3">
+                    <div className="reason1  lg:w-1/3 w-full  lg:h-96  flex items-end  ">
+                        <div className="data h-fit lg:bg-transparent py-3 bg-white lg:shadow-none shadow-lg rounded-md  px-9 flex flex-col justify-center items-center w-full lg:h-60">
+
+                            <img className=" w-24 h-24  " src={center2} alt="" />
+                            <p className="text-sm cairo font-medium text-blue-400 m-0 mt-3">
+                                الدعم الفني{" "}
+                            </p>
+                            <p className=" md:text-lg text-xl cairo font-semibold m-0  text-blue-950 ">
+                                {" "}
+                                درع الدعم الفني{" "}
+                            </p>
+                            <p className=" md:text-[1rem] m-0 font-[400] text-gray-700  almarai mx-2  leading-7 text-center kufi ">
+                                فمن خلال فريق من المحترفين نتابع سير اعمال عملائنا ونوفر الدعم
+                                الفني فائق الجودة وفريق قادر علي التواصل لفهم استفساراتكم وحلها
+                            </p>
+
+                        </div>
+                    </div>
+                    <div className="reason1  lg:w-1/3 w-full  lg:h-96  flex items-center  ">
+                        <div className="data h-fit lg:bg-transparent py-3 bg-white lg:shadow-none shadow-lg rounded-md  px-9 flex flex-col justify-center items-center w-full lg:h-60">
+
+                            <img className=" w-24 h-24 " src={res2} alt="" />
+                            <p className="text-sm cairo font-medium text-blue-400 m-0 mt-3">
+                                متواجب مع الجميع{" "}
+                            </p>
+                            <p className=" md:text-lg text-xl cairo font-semibold m-0  text-blue-950 ">
+                                {" "}
+                                مناسب لجميع الأجهزة
+                            </p>
+                            <p className=" md:text-[1rem] m-0 font-[400] text-gray-700  almarai mx-2  leading-7 text-center kufi ">
+                                حلول الكود السهل البرمجية تواكب احدث التطورات اولا باول فنحن نوفر
+                                تجربة سلسله لعملائنا ويمكنهم متابعة اعمالهم من خلال الجوال واللاب
+                                توب
+                            </p>
+
+                        </div>
+                    </div>
+                    <div className="reason1  lg:w-1/3 w-full  lg:h-96  flex items-end  ">
+                        <div className="data h-fit lg:bg-transparent py-3 bg-white lg:shadow-none shadow-lg rounded-md  px-9 flex flex-col justify-center items-center w-full lg:h-60">
+
+                            <img className=" w-24 h-24 " src={on} alt="" />
+                            <p className="text-sm cairo font-medium text-blue-400 m-0 mt-3">
+                                يعمل اونلاين{" "}
+                            </p>
+                            <p className=" md:text-lg text-xl cairo font-semibold m-0  text-blue-950 ">
+                                {" "}
+                                تواصل دائم
+                            </p>
+                            <p className=" md:text-[1rem] m-0 font-[400] text-gray-700  almarai mx-2  leading-7 text-center kufi ">
+                                ميزات الكود السهل السحابية تتيح لعملائها التواصل مع بياناتهم
+                                والتفاعل معها طوال الوقت لانها متوفرة اونلاين فتمكنهم من استخدامها
+                                24 ساعة طوال ايام الاسبوع
+                            </p>
+
+                        </div>
+                    </div>
                 </div>
+                <div className="second-row relative  flex my-3 rounded-md lg:border-0 border-blue-300 border-4 lg:flex-row justify-center ">
+                    <div className="shape absolute -top-32 lg:flex hidden justify-center  z-[1] opacity-45 "><img className="w-11/12 " src={shepa} alt="" /></div>
+
+                    <div className="comp-logo  w-1/3 flex justify-center items-center h-56  ">
+                        <img src={logo} className=" z-[2]" alt="" />
+
+                    </div>
+                </div>
+                <div className="third-row flex lg:flex-row flex-col gap-3">
+                    <div className="reason1  lg:w-1/3 w-full  lg:h-96  flex items-start  ">
+                        <div className="data h-fit lg:bg-transparent py-3 bg-white lg:shadow-none shadow-lg rounded-md  px-9 flex flex-col justify-center items-center w-full lg:h-60">
+
+                            <img className=" w-24 h-24 " src={cor} alt="" />
+                            <p className="text-sm cairo font-medium text-blue-400 m-0 mt-3">
+                                تعاون مستمر
+                            </p>
+                            <p className=" md:text-lg text-xl cairo font-semibold m-0  text-blue-950 ">
+                                {" "}
+                                تحسين التعاون                            </p>
+                            <p className=" md:text-[1rem] m-0 font-[400] text-gray-700  almarai mx-2  leading-7 text-center kufi ">
+                                بفضل التكامل المركزي للبيانات والعمليات، تسهم أنظمة ERP في تعزيز التعاون بين الأقسام المتنوعة، مما يضمن توافر المعلومات نفسها للجميع، ويساعدهم على العمل معًا بفعالية أكبر.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div className="reason1  lg:w-1/3 w-full  lg:h-96  flex items-center  ">
+                        <div className="data h-fit lg:bg-transparent py-3 bg-white lg:shadow-none shadow-lg rounded-md  px-9 flex flex-col justify-center items-center w-full lg:h-60">
+
+                            <img className=" w-24 h-24 " src={tech} alt="" />
+                            <p className="text-sm cairo font-medium text-blue-400 m-0 mt-3">
+                                رقمنة الشركات                            </p>
+                            <p className=" md:text-lg text-xl cairo font-semibold m-0  text-blue-950 ">
+                                {" "}
+                                التحول الرقمي
+                            </p>
+                            <p className=" md:text-[1rem] m-0 font-[400] text-gray-700  almarai mx-2  leading-7 text-center kufi ">
+                                يُعتبر التحول الرقمي من أبرز المبادرات التي تبنتها العديد من المؤسسات أو تعمل على تنفيذها، وربما يكون الأهم بينها.
+
+                            </p>
+
+                        </div>
+                    </div>
+                    <div className="reason1  lg:w-1/3 w-full  lg:h-96  flex items-start  ">
+                        <div className="data h-fit lg:bg-transparent py-3 bg-white lg:shadow-none shadow-lg rounded-md  px-9 flex flex-col justify-center items-center w-full lg:h-60">
+
+                            <img className=" w-24 h-24 " src={control} alt="" />
+                            <p className="text-sm cairo font-medium text-blue-400 m-0 mt-3">
+                                التحكم الكامل                            </p>
+                            <p className=" md:text-lg text-xl cairo font-semibold m-0  text-blue-950 ">
+                                {" "}
+                                حساب الادمن{" "}
+                            </p>
+                            <p className=" md:text-[1rem] m-0 font-[400] text-gray-700  almarai mx-2  leading-7 text-center kufi ">
+                                كافة الصلاحيات بشكل مطلق يمكنك فتحها ومنعها والتحكم بمنتهي السلاسه والدقة ايضا.
+
+
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
             </div>
             <div className="fifth relative">
                 <div className="shape absolute left-96 top-14 z-[-1] opacity-30 "><img className="" src={shepa} alt="" /></div>
@@ -790,7 +933,7 @@ export default function Home() {
             <div className="ad1 w-full h-1/3">
                 <div className="ad1-content w-full flex flex-col justify-center items-center h-full bg-[#339ECC] bg-opacity-45">
 
-                    <p className="cairo text-7xl font-semibold text-white">بوابتك الأولي أرباحك المستهدفة</p>
+                    <p className="cairo lg:text-7xl md:text-5xl text-3xl font-semibold text-white">بوابتك الأولي لأرباحك المستهدفة</p>
                     <div className="start-button w-full flex justify-center ">
                         <button dir="rtl" className="start text-center p-2 px-4" ><span className="cairo text-lg">أبدأ الأستخدام </span></button>
 
