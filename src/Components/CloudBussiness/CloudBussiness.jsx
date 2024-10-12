@@ -61,12 +61,6 @@ import pos5 from "../../assets/pos5.png";
 import pos6 from "../../assets/pos6.png";
 import res1 from "../../assets/res1.png";
 
-
-
-
-
-
-
 import saudi from "../../assets/saudi.png";
 import factory from "../../assets/factory.png";
 import recipe from "../../assets/recipe.png";
@@ -97,10 +91,281 @@ export default function CloudBussiness() {
                     </div>
                 </div>
 
-                <div className="contains w-5/6 mb-9  mx-auto ">
-                    <p className="text-3xl font-semibold cairo">محتويات البرنامج :</p>
-                    <div className="contains-data grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                <div className="contains w-full px-20  mb-9  mx-auto ">
+                    <p className="md:text-4xl sm:text-3xl text-lg  w-full flex justify-center font-bold cairo">
+                        {" "}
+                        المميزات العامة{" "}
+                        <span className="cairo md:text-4xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                            {" "}
+                            للكلاود بيزنس{" "}
+                        </span>
+                    </p>
+                    <p className="cairo text-9xl w-full flex justify-center">
+                        <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                        <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                        <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                            .
+                        </span>{" "}
+                        <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
+                    </p>
+
+                    <div className="contains-data grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
+                            <div className="icon-side w-1/4  flex justify-center items-center">
+                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                    {" "}
+                                    <img className=" w-4/6" src={finance1} alt="" />
+                                </div>
+                            </div>
+                            <div className="card-data">
+                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                    الحسابات العامة و مراكز التكلفة{" "}
+                                </p>
+                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
+                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
+                                    برامج.
+                                </p>
+                            </div>{" "}
+                        </div>
+                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
+                            <div className="icon-side w-1/4  flex justify-center items-center">
+                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                    {" "}
+                                    <img className=" w-4/6" src={finance1} alt="" />
+                                </div>
+                            </div>
+                            <div className="card-data">
+                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                    الـعـمـلاء{" "}
+                                </p>
+                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
+                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
+                                    برامج.
+                                </p>
+                            </div>{" "}
+                        </div>
+                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
+                            <div className="icon-side w-1/4  flex justify-center items-center">
+                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                    {" "}
+                                    <img className=" w-4/6" src={finance1} alt="" />
+                                </div>
+                            </div>
+                            <div className="card-data">
+                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                    المبيــعات{" "}
+                                </p>
+                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
+                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
+                                    برامج.
+                                </p>
+                            </div>{" "}
+                        </div>
+                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
+                            <div className="icon-side w-1/4  flex justify-center items-center">
+                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                    {" "}
+                                    <img className=" w-4/6" src={finance1} alt="" />
+                                </div>
+                            </div>
+                            <div className="card-data">
+                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                    مناديب المبيــعات{" "}
+                                </p>
+                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
+                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
+                                    برامج.
+                                </p>
+                            </div>{" "}
+                        </div>{" "}
+                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
+                            <div className="icon-side w-1/4  flex justify-center items-center">
+                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                    {" "}
+                                    <img className=" w-4/6" src={finance1} alt="" />
+                                </div>
+                            </div>
+                            <div className="card-data">
+                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                    المشـتريـات{" "}
+                                </p>
+                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
+                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
+                                    برامج.
+                                </p>
+                            </div>{" "}
+                        </div>
+                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
+                            <div className="icon-side w-1/4  flex justify-center items-center">
+                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                    {" "}
+                                    <img className=" w-4/6" src={finance1} alt="" />
+                                </div>
+                            </div>
+                            <div className="card-data">
+                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                    المــورديــن{" "}
+                                </p>
+                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
+                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
+                                    برامج.
+                                </p>
+                            </div>{" "}
+                        </div>
+                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
+                            <div className="icon-side w-1/4  flex justify-center items-center">
+                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                    {" "}
+                                    <img className=" w-4/6" src={finance1} alt="" />
+                                </div>
+                            </div>
+                            <div className="card-data">
+                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                    المـخازن{" "}
+                                </p>
+                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
+                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
+                                    برامج.
+                                </p>
+                            </div>{" "}
+                        </div>
+                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
+                            <div className="icon-side w-1/4  flex justify-center items-center">
+                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                    {" "}
+                                    <img className=" w-4/6" src={finance1} alt="" />
+                                </div>
+                            </div>
+                            <div className="card-data">
+                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                    شئون الموظفين{" "}
+                                </p>
+                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
+                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
+                                    برامج.
+                                </p>
+                            </div>{" "}
+                        </div>
+                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
+                            <div className="icon-side w-1/4  flex justify-center items-center">
+                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                    {" "}
+                                    <img className=" w-4/6" src={finance1} alt="" />
+                                </div>
+                            </div>
+                            <div className="card-data">
+                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                    نقاط البيع{" "}
+                                </p>
+                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
+                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
+                                    برامج.
+                                </p>
+                            </div>{" "}
+                        </div>
+                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
+                            <div className="icon-side w-1/4  flex justify-center items-center">
+                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                    {" "}
+                                    <img className=" w-4/6" src={finance1} alt="" />
+                                </div>
+                            </div>
+                            <div className="card-data">
+                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                    المطاعم و الكافيهات{" "}
+                                </p>
+                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
+                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
+                                    برامج.
+                                </p>
+                            </div>{" "}
+                        </div>
+                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
+                            <div className="icon-side w-1/4  flex justify-center items-center">
+                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                    {" "}
+                                    <img className=" w-4/6" src={finance1} alt="" />
+                                </div>
+                            </div>
+                            <div className="card-data">
+                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                    موبايل ابليكاشن للمناديب{" "}
+                                </p>
+                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
+                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
+                                    برامج.
+                                </p>
+                            </div>{" "}
+                        </div>
+                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
+                            <div className="icon-side w-1/4  flex justify-center items-center">
+                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                    {" "}
+                                    <img className=" w-4/6" src={finance1} alt="" />
+                                </div>
+                            </div>
+                            <div className="card-data">
+                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                    موبايل ابليكاشن لأصحاب الشركات{" "}
+                                </p>
+                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
+                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
+                                    برامج.
+                                </p>
+                            </div>{" "}
+                        </div>
+                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
+                            <div className="icon-side w-1/4  flex justify-center items-center">
+                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                    {" "}
+                                    <img className=" w-4/6" src={finance1} alt="" />
+                                </div>
+                            </div>
+                            <div className="card-data">
+                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                    موبايل ابليكاشن للعملاء{" "}
+                                </p>
+                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
+                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
+                                    برامج.
+                                </p>
+                            </div>{" "}
+                        </div>
+                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
+                            <div className="icon-side w-1/4  flex justify-center items-center">
+                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                    {" "}
+                                    <img className=" w-4/6" src={finance1} alt="" />
+                                </div>
+                            </div>
+                            <div className="card-data">
+                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                    نظام الاستقدام{" "}
+                                </p>
+                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
+                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
+                                    برامج.
+                                </p>
+                            </div>{" "}
+                        </div>
+                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
+                            <div className="icon-side w-1/4  flex justify-center items-center">
+                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                    {" "}
+                                    <img className=" w-4/6" src={finance1} alt="" />
+                                </div>
+                            </div>
+                            <div className="card-data">
+                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                    نظام التزيين و الحلاقة{" "}
+                                </p>
+                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
+                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
+                                    برامج.
+                                </p>
+                            </div>{" "}
+                        </div>
+                        {/* <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={finance1} alt="" />
                             </div>
@@ -108,7 +373,7 @@ export default function CloudBussiness() {
                                 الحسابات العامة
                             </p>
                         </div>
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={client} alt="" />
                             </div>
@@ -116,7 +381,7 @@ export default function CloudBussiness() {
                                 العملاء
                             </p>
                         </div>
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={buyes} alt="" />
                             </div>
@@ -125,7 +390,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
 
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={finance1} alt="" />
                             </div>
@@ -134,7 +399,7 @@ export default function CloudBussiness() {
                                 مناديب المبيعات
                             </p>
                         </div>
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={client} alt="" />
                             </div>
@@ -142,7 +407,7 @@ export default function CloudBussiness() {
                                 المشتريات
                             </p>
                         </div>
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={buyes} alt="" />
                             </div>
@@ -150,7 +415,7 @@ export default function CloudBussiness() {
                                 المورديين
                             </p>
                         </div>
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={finance1} alt="" />
                             </div>
@@ -159,7 +424,7 @@ export default function CloudBussiness() {
                                 المخازن
                             </p>
                         </div>
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={client} alt="" />
                             </div>
@@ -168,7 +433,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
 
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={buyes} alt="" />
                             </div>
@@ -176,7 +441,7 @@ export default function CloudBussiness() {
                                 نقاط البيع
                             </p>
                         </div>
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={finance1} alt="" />
                             </div>
@@ -185,7 +450,7 @@ export default function CloudBussiness() {
                                 المطاعم و الكافيهات
                             </p>
                         </div>
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={client} alt="" />
                             </div>
@@ -193,7 +458,7 @@ export default function CloudBussiness() {
                                 M-App لمناديب المبيعات
                             </p>
                         </div>
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={buyes} alt="" />
                             </div>
@@ -201,7 +466,7 @@ export default function CloudBussiness() {
                                 M-App لأصحاب الشركات
                             </p>
                         </div>
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={finance1} alt="" />
                             </div>
@@ -209,7 +474,7 @@ export default function CloudBussiness() {
                                 M-App للعملاء
                             </p>
                         </div>
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={client} alt="" />
                             </div>
@@ -217,7 +482,7 @@ export default function CloudBussiness() {
                                 نظام الاستقدام
                             </p>
                         </div>
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={buyes} alt="" />
                             </div>
@@ -225,17 +490,17 @@ export default function CloudBussiness() {
                                 نظام التزيين و الحلاقة
                             </p>
                         </div>
-                        <div className="data-card   flex items-center gap-2 bg-slate-100   rounded-md">
+                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
                             <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
                                 <img className="w-full h-full" src={buyes} alt="" />
                             </div>
                             <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
                                 مراكز التكلفة{" "}
                             </p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
-                <div className="drayeb bg-blue-200  bg-opacity-20 p-4 flex">
+                <div className="drayeb lg:px-24 px-9 bg-blue-200  bg-opacity-20 p-4 flex">
                     <div className="drayeb-data lg:w-1/2 md:w-2/3 w-full md:p-11 p-8">
                         <p className="text-5xl m-0 cairo font-bold text-blue-500">
                             الضرائب
@@ -297,7 +562,7 @@ export default function CloudBussiness() {
                         <img src={shape6} alt="" />
                     </div>
                     <div className="public-data  ">
-                        <p className="messiri px-9 md:font-[1000] font-medium text-gray-600 md:text-lg text-base ">
+                        <p className="messiri m-0 px-60 md:font-[1000] font-medium text-gray-500 md:text-lg text-base ">
                             لا تكتمل الأنشطة التجارية دون نظام مبيعات فعال يدعم النمو ويساهم
                             في زيادة الأرباح. يُعد برنامج الكلاود بيزنس برنامج مبيعات شامل،
                             يسهل عمليات البيع ويوفر مزايا مثل قوائم الأسعار المتنوعة، وخصومات
@@ -306,7 +571,7 @@ export default function CloudBussiness() {
                             ميزات تسويقية مثل الخصومات و العروض،
                         </p>
 
-                        <div className="first px-9 w-full md:flex">
+                        <div className="first px-20 w-full md:flex">
                             <div className="img md:w-1/2 flex justify-center">
                                 <img className="w-4/5" src={windows} alt="" />
                             </div>
@@ -341,7 +606,7 @@ export default function CloudBussiness() {
                                 </p>
                             </div>
                         </div>
-                        <div className="second px-9 bg-blue-200 bg-opacity-20    w-full md:flex">
+                        <div className="second lg:px-24 px-9 bg-blue-200 bg-opacity-20    w-full md:flex">
                             <div className="img md:w-1/2 md:hidden flex justify-center">
                                 <img className="w-4/5" src={modules} alt="" />
                             </div>
@@ -385,7 +650,7 @@ export default function CloudBussiness() {
                             </div>
                         </div>
 
-                        <div className="third my-7 px-9 w-full md:flex">
+                        <div className="third my-7 lg:px-24 px-9 w-full md:flex">
                             <div className="img md:w-1/2 flex justify-start ">
                                 <img className="w-full " src={responsive} alt="" />
                             </div>
@@ -394,7 +659,7 @@ export default function CloudBussiness() {
                                     <span>
                                         <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                     </span>{" "}
-                                    البرنامج Fully Responsive حيث يمكنك التعامل معه عن طريق جميع
+                                    البرنامج متجاوب مع الشاشات حيث يمكنك التعامل معه عن طريق جميع
                                     احجام الشاشات (موبايل - تابلت - لابتوب )
                                 </p>
 
@@ -430,7 +695,7 @@ export default function CloudBussiness() {
                         </div>
                     </div>
                 </div>
-                <div className="public-accounting w-full relative overflow-hidden ">
+                <div className="public-accounting  w-full relative overflow-hidden ">
                     <div className="shapes absolute md:-right-16 -right-10 z-[-1] w-1/4 top-1/2">
                         <img src={shapes} alt="" />
                     </div>
@@ -438,7 +703,7 @@ export default function CloudBussiness() {
                         <img src={shapes} alt="" />
                     </div>
 
-                    <div className="heroo md:flex p-8 bg-blue-200 bg-opacity-20 mt-9">
+                    <div className="heroo md:flex p-8 lg:px-24 px-9 bg-blue-200 bg-opacity-20 mt-9">
                         <div className="hero-img md:w-1/2 md:hidden flex justify-center">
                             <img className="lg:w-4/5 w-3/5  " src={finance} alt="" />
                         </div>
@@ -446,7 +711,7 @@ export default function CloudBussiness() {
                             <p className="lg:text-4xl text-2xl cairo font-bold text-blue-500">
                                 الحسابات العامة و مراكز التكلفة{" "}
                             </p>
-                            <p className="lg:text-2xl text-lg messiri">
+                            <p className="lg:text-lg text-gray-600 font-bold text-lg messiri">
                                 الحسابات العامة ومراكز التكلفة يمثلان أساسًا مهمًا في أي نظام
                                 مالي متكامل. يهدف هذا الجزء إلى توفير أدوات لإدارة ومتابعة
                                 الحسابات الرئيسية والفرعية للشركة بشكل دقيق ومنظم، مع تخصيص
@@ -461,9 +726,9 @@ export default function CloudBussiness() {
                             <img className="w-4/5 " src={finance} alt="" />
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
-                        <div className="img md:w-1/2 flex justify-center ">
-                            <img className="w-1/2  " src={periods} alt="" />
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
+                        <div className="img md:w-1/3 flex justify-center ">
+                            <img className="w-2/3  " src={periods} alt="" />
                         </div>
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
@@ -510,7 +775,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="fourth my-12 px-9 w-full md:flex">
+                    <div className="fourth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
@@ -565,7 +830,7 @@ export default function CloudBussiness() {
                         </div>
 
                         <div className="data md:w-1/2 flex flex-col justify-center ">
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-sm text-base font-[750] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
@@ -573,14 +838,14 @@ export default function CloudBussiness() {
                                 الحسابات الجارية وغيرها
                             </p>
 
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-sm text-base font-[750] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
                                 إدارة العمليات المحاسبية تلقائيًا من خلال إنشاء القيود وترحيلها
                                 وتوزيعها على مراكز التكلفة المختلفة.
                             </p>
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-sm text-base font-[750] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
@@ -588,20 +853,20 @@ export default function CloudBussiness() {
                                 ديناميكي.
                             </p>
 
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-sm text-base font-[750] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
                                 تطبيق سياسة توزيع المراكز وتحديد مراكز التكلفة.
                             </p>
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-sm text-base font-[750] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
                                 إنشاء قيد واحد لجميع الحركات اليومية أو قيد لكل مستند بشكل
                                 منفصل.
                             </p>
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-sm text-base font-[750] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
@@ -610,7 +875,7 @@ export default function CloudBussiness() {
                                 ترحيل القيود)، مع إمكانية تنفيذ هذه العمليات يوميًا أو أسبوعيًا
                                 أو حسب الحاجة لتوفير الوقت والجهد.
                             </p>
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-sm text-base font-[750] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
@@ -618,13 +883,13 @@ export default function CloudBussiness() {
                                 الفواتير (مبيعات، مشتريات، سندات قبض، سندات صرف) في الصناديق أو
                                 البنوك أو الحسابات الجارية وغيرها.
                             </p>
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-sm text-base font-[750] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
                                 إنشاء قيود دورية بشكل دوري ومنظم.
                             </p>
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-sm text-base font-[750] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
@@ -632,7 +897,7 @@ export default function CloudBussiness() {
                                 والحسابات الجارية، وإنشاء سندات قبض وصرف لكل منها بدقة
                                 واحترافية.
                             </p>
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-sm text-base font-[750] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
@@ -640,7 +905,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="fourth my-12 px-9 w-full md:flex">
+                    <div className="fourth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 md:hidden flex justify-center ">
                             <img className="w-full " src={reports} alt="" />
                         </div>
@@ -709,7 +974,7 @@ export default function CloudBussiness() {
                         <img src={shapes} alt="" />
                     </div>
 
-                    <div className="clients-hero w-full lg:flex bg-blue-200 bg-opacity-20">
+                    <div className="clients-hero lg:px-24 px-9 w-full lg:flex bg-blue-200 bg-opacity-20">
                         <div className="hero-img flex justify-center lg:w-1/2">
                             <img className="lg:w-4/5" src={customers} alt="" />
                         </div>
@@ -718,7 +983,7 @@ export default function CloudBussiness() {
                             <p className="text-5xl font-semibold cairo m-0 text-blue-400">
                                 العملاء
                             </p>
-                            <p className="text-xl font-medium pe-14 kufi">
+                            <p className="text-base font-bold text-gray-600 leading-6 pe-14 kufi">
                                 في هذا القسم، سيتم تقديم نظام إدارة العملاء الذي يتيح للشركات
                                 تنظيم بيانات العملاء بسهولة وكفاءة. يشمل النظام تصنيفات العملاء،
                                 قنوات التسويق، وطرق الدفع، مع إمكانية تخصيص الضرائب وفقًا لموقع
@@ -730,7 +995,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
@@ -771,7 +1036,7 @@ export default function CloudBussiness() {
                             <img className="w-4/5  " src={supervise} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-3/5" src={qr} alt="" />
                         </div>
@@ -818,7 +1083,7 @@ export default function CloudBussiness() {
                         </div>
                     </div>
 
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
@@ -918,7 +1183,7 @@ export default function CloudBussiness() {
                     </div>
                 </div>
                 <div className="sales">
-                    <div className="sales-hero w-full lg:flex bg-blue-200 bg-opacity-20">
+                    <div className="sales-hero w-full lg:px-24 px-9 lg:flex bg-blue-200 bg-opacity-20">
                         <div className="hero-img flex justify-center lg:w-1/2">
                             <img className="lg:w-4/5" src={sales} alt="" />
                         </div>
@@ -927,7 +1192,7 @@ export default function CloudBussiness() {
                             <p className="text-5xl font-semibold cairo m-0 text-blue-400">
                                 المبيعات
                             </p>
-                            <p className="text-xl font-medium pe-14 kufi">
+                            <p className="text-base font-bold text-gray-600 pe-14 kufi">
                                 {" "}
                                 قسم المبيعات هو جزء حيوي في أي شركة، حيث يوفر حلولاً متكاملة
                                 لإدارة عمليات البيع بفعالية. يشمل القسم إعداد الفواتير
@@ -940,9 +1205,9 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4  text-base font-[700] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
@@ -951,7 +1216,7 @@ export default function CloudBussiness() {
                                 في تسهيل عمليات التدقيق والامتثال.
                             </p>
 
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4  text-base font-[700] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
@@ -959,7 +1224,7 @@ export default function CloudBussiness() {
                                 إنشاء فواتير مبيعات مخصصة بناءً على سياسات التسعير المحددة
                                 مسبقًا، مما يساعد على تحقيق مرونة في تقديم العروض للعملاء.
                             </p>
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4  text-base font-[700] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
@@ -968,7 +1233,7 @@ export default function CloudBussiness() {
                                 مركزية أو لامركزية حسب الحاجة.
                             </p>
 
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4  text-base font-[700] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
@@ -976,7 +1241,7 @@ export default function CloudBussiness() {
                                 وربط كل فاتورة بمخزن محدد أو عدة مخازن لضمان إدارة فعالة
                                 للموارد.
                             </p>
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4  text-base font-[700] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
@@ -989,13 +1254,13 @@ export default function CloudBussiness() {
                             <img className="w-4/5  " src={invoices2} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={invoices2} alt="" />
                         </div>
 
                         <div className="data md:w-1/2 flex flex-col justify-center ">
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4  text-base font-[700] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
@@ -1004,7 +1269,7 @@ export default function CloudBussiness() {
                                 المخازن.
                             </p>
 
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4  text-base font-[700] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
@@ -1012,7 +1277,7 @@ export default function CloudBussiness() {
                                 الفواتير خدمات لا تؤثر على المخزون، مثل الخدمات الاستشارية أو
                                 الصيانة.
                             </p>
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4  text-base font-[700] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
@@ -1021,14 +1286,14 @@ export default function CloudBussiness() {
                                 خارج نطاق البيع الفوري.
                             </p>
 
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4  text-base font-[700] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
                                 فواتير مبيعات من إذن صرف مخزني: تتيح هذه الفواتير إصدار المبيعات
                                 بناءً على إذن صرف مخزني مسبق، مما يعزز من تنظيم حركة المنتجات.
                             </p>
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4  text-base font-[700] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
@@ -1036,7 +1301,7 @@ export default function CloudBussiness() {
                                 تعدد طرق السداد على الفواتير، بما في ذلك النقد، الفيزا، الشبكات
                                 وغيرها..
                             </p>
-                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                            <p className="cairo  text-blue-950 m-0 mt-4  text-base font-[700] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
@@ -1046,7 +1311,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
@@ -1093,7 +1358,7 @@ export default function CloudBussiness() {
                             <img className="w-3/5  " src={barcode} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={price} alt="" />
                         </div>
@@ -1141,7 +1406,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
@@ -1209,9 +1474,9 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4 md:text-sm text-base font-[850]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1219,7 +1484,7 @@ export default function CloudBussiness() {
                                 احتياجات العمل.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4 md:text-sm text-base font-[850]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1227,7 +1492,7 @@ export default function CloudBussiness() {
                                 المنفذة.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4 md:text-sm text-base font-[850]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1235,7 +1500,7 @@ export default function CloudBussiness() {
                                 المستحقة.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4 md:text-sm text-base font-[850]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1243,7 +1508,7 @@ export default function CloudBussiness() {
                                 إلى شرائح وتطبيق نسبة عمولة مختلفة لكل شريحة.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4 md:text-sm text-base font-[850]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1251,7 +1516,7 @@ export default function CloudBussiness() {
                                 العمولات لتلبية احتياجات العمل المتنوعة.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4 md:text-sm text-base font-[850]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1259,7 +1524,7 @@ export default function CloudBussiness() {
                                 الاسماء والتفاصيل المهنية.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4 md:text-sm text-base font-[850]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1268,16 +1533,16 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                         <div className="img md:w-1/2 flex justify-center ">
-                            <img className="w-4/5  " src={sales} alt="" />
+                            <img className="w-5/6  " src={sales} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={represent} alt="" />
                         </div>
 
                         <div className="data md:w-1/2 flex flex-col justify-center ">
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4 md:text-sm text-base font-[750]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1285,14 +1550,14 @@ export default function CloudBussiness() {
                                 الجغرافي أو نطاق عملهم.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4 md:text-sm text-base font-[750]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
                                 قائمة أسعار للمندوبين: تخصيص قوائم أسعار للمندوبين وفقًا
                                 لاستراتيجيات البيع الخاصة بهم.
                             </p>
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4 md:text-sm text-base font-[750]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1300,7 +1565,7 @@ export default function CloudBussiness() {
                                 لتحقيقها خلال فترة زمنية معينة.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4 md:text-sm text-base font-[750]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1308,7 +1573,7 @@ export default function CloudBussiness() {
                                 توقيت تحقيق المبيعات أو التحصيل.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4 md:text-sm text-base font-[750]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1316,7 +1581,7 @@ export default function CloudBussiness() {
                                 وربطها ببيانات الفواتير لمتابعة الأداء.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4 md:text-sm text-base font-[750]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1328,7 +1593,7 @@ export default function CloudBussiness() {
                     </div>
                 </div>
                 <div className="suppliers">
-                    <div className="suppliers-hero w-full lg:flex bg-blue-200 bg-opacity-20">
+                    <div className="suppliers-hero lg:px-24 px-9 w-full lg:flex bg-blue-200 bg-opacity-20">
                         <div className="hero-img flex justify-center lg:w-1/2">
                             <img className="w-4/5 " src={sup} alt="" />
                         </div>
@@ -1338,7 +1603,7 @@ export default function CloudBussiness() {
                                 {" "}
                                 الموردين{" "}
                             </p>
-                            <p className="text-xl font-medium pe-14 kufi">
+                            <p className="text-sm font-bold text-gray-600x pe-14 kufi">
                                 يُعتبر قسم الموردين من الأقسام الحيوية في أي مؤسسة، حيث يلعب
                                 دورًا محوريًا في تنظيم عمليات الشراء والتوريد وضمان توفر المواد
                                 والخدمات اللازمة لاستمرارية العمليات التشغيلية. يسعى هذا القسم
@@ -1351,7 +1616,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
                                 <span>
@@ -1388,7 +1653,7 @@ export default function CloudBussiness() {
                             <img className="w-4/5  " src={sup2} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={supqr} alt="" />
                         </div>
@@ -1417,7 +1682,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
                                 <span>
@@ -1491,7 +1756,7 @@ export default function CloudBussiness() {
                     </div>
                 </div>
                 <div className="payments">
-                    <div className="payment-hero w-full lg:flex bg-blue-200 bg-opacity-20">
+                    <div className="payment-hero w-full lg:px-24 px-9 lg:flex bg-blue-200 bg-opacity-20">
                         <div className="hero-img flex justify-center lg:w-1/2">
                             <img className="w-4/5 " src={purchase} alt="" />
                         </div>
@@ -1501,7 +1766,7 @@ export default function CloudBussiness() {
                                 {" "}
                                 المشتريات{" "}
                             </p>
-                            <p className="text-xl font-medium pe-14 kufi">
+                            <p className="text-sm font-bold text-gray-600 pe-14 kufi">
                                 يُعد قسم المشتريات من الأقسام الأساسية داخل أي مؤسسة، حيث يضطلع
                                 بمسؤولية إدارة عملية شراء المواد والخدمات اللازمة لضمان سير
                                 العمليات التشغيلية بكفاءة وفعالية. يعمل هذا القسم على اختيار
@@ -1515,7 +1780,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
                                 <span>
@@ -1557,7 +1822,7 @@ export default function CloudBussiness() {
                             <img className="w-4/5  " src={purchase1} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={purchase2} alt="" />
                         </div>
@@ -1584,7 +1849,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
                                 <span>
@@ -1739,7 +2004,7 @@ export default function CloudBussiness() {
                         <img src={shapes} alt="" />
                     </div>
 
-                    <div className="payment-hero w-full lg:flex bg-blue-200 bg-opacity-20">
+                    <div className="payment-hero lg:px-24 px-9 w-full lg:flex bg-blue-200 bg-opacity-20">
                         <div className="hero-img flex justify-center lg:w-1/2">
                             <img className="w-4/5 " src={warehouse2} alt="" />
                         </div>
@@ -1749,7 +2014,7 @@ export default function CloudBussiness() {
                                 {" "}
                                 المخازن{" "}
                             </p>
-                            <p className="text-xl font-medium pe-14 kufi">
+                            <p className="text-sm  font-bold text-gray-600 pe-14 kufi">
                                 يُعد قسم المشتريات من الأقسام الأساسية داخل أي مؤسسة، حيث قسم
                                 المخازن هو القسم المسؤول عن إدارة وتنظيم عمليات التخزين والجرد
                                 والتوزيع للمواد والمنتجات داخل المؤسسة. يضمن هذا القسم توافر
@@ -1761,9 +2026,9 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4  text-base font-[700]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1772,7 +2037,7 @@ export default function CloudBussiness() {
                                 المختلفة، مع توثيق الكميات والتفاصيل بدقة.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4  text-base font-[700]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1781,7 +2046,7 @@ export default function CloudBussiness() {
                                 والبيانات بشكل منظم لضمان التتبع الفعّال.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4  text-base font-[700]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1790,7 +2055,7 @@ export default function CloudBussiness() {
                                 وإعداد عمليات الشحن أو التوزيع بشكل أكثر كفاءة.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4  text-base font-[700]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1799,7 +2064,7 @@ export default function CloudBussiness() {
                                 والاستخدام المستقبلي بناءً على متطلبات العمل.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4  text-base font-[700]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1812,13 +2077,13 @@ export default function CloudBussiness() {
                             <img className="w-4/5  " src={warehouse3} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={warehouse4} alt="" />
                         </div>
 
                         <div className="data md:w-1/2 flex flex-col justify-center ">
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4  text-base font-[700]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1828,7 +2093,7 @@ export default function CloudBussiness() {
                                 الأصلي.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4  text-base font-[700]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1837,7 +2102,7 @@ export default function CloudBussiness() {
                                 الفاتورة المتعلقة بالمرتجعات، مع التأكد من مطابقة الكميات
                                 والتفاصيل بدقة لضمان صحة المعاملات.
                             </p>
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4  text-base font-[700]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1846,7 +2111,7 @@ export default function CloudBussiness() {
                                 مما يتيح إعادة إدخالها إلى المخزن مع توثيق كل التفاصيل الخاصة
                                 بالمرتجعات لضمان تحديث المخزون بشكل صحيح.
                             </p>
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4  text-base font-[700]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1857,9 +2122,9 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4  text-base font-[700]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1868,7 +2133,7 @@ export default function CloudBussiness() {
                                 أجل تحديد أي اختلافات أو فروقات وضمان دقة البيانات المخزنية.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4  text-base font-[700]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1878,7 +2143,7 @@ export default function CloudBussiness() {
                                 إدخال البيانات يدويًا.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4  text-base font-[700]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1887,7 +2152,7 @@ export default function CloudBussiness() {
                                 سياسة أخرى، لضمان تحديد القيمة الحقيقية للمخزون بدقة وفعالية.
                             </p>
 
-                            <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
+                            <p className="cairo text-blue-950 m-0 mt-4  text-base font-[700]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
                                 </span>
@@ -1901,7 +2166,7 @@ export default function CloudBussiness() {
                             <img className="w-4/5  " src={warehouse5} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={warehouse6} alt="" />
                         </div>
@@ -1935,8 +2200,8 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
-                        <div className="data md:w-1/2 flex flex-col justify-center ">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
+                        <div className="data md:w-2/3 flex flex-col justify-center ">
                             <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
@@ -1967,7 +2232,7 @@ export default function CloudBussiness() {
                             <img className="w-4/5  " src={factory} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={recipe} alt="" />
                         </div>
@@ -2003,8 +2268,8 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
-                        <div className="data md:w-1/2 flex flex-col justify-center ">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
+                        <div className="data md:w-2/3 flex flex-col justify-center ">
                             <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
                                 <span>
                                     <i className="text-blue-600 me-2 fa-solid fa-circle-notch"></i>
@@ -2036,7 +2301,7 @@ export default function CloudBussiness() {
                             <img className="w-4/5  " src={export2} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={warehouse20} alt="" />
                         </div>
@@ -2072,7 +2337,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo text-blue-950 m-0 mt-4 md:text-lg text-base font-[650]">
                                 <span>
@@ -2108,7 +2373,7 @@ export default function CloudBussiness() {
                     </div>
                 </div>
                 <div className="hr">
-                    <div className="hr-hero w-full lg:flex bg-blue-200 bg-opacity-20">
+                    <div className="hr-hero lg:px-24 px-9 w-full lg:flex bg-blue-200 bg-opacity-20">
                         <div className="hero-img flex justify-center lg:w-1/2">
                             <img className="lg:w-4/5" src={employees} alt="" />
                         </div>
@@ -2117,7 +2382,7 @@ export default function CloudBussiness() {
                             <p className="text-5xl font-semibold cairo m-0 text-blue-400">
                                 شئون الموظفيين
                             </p>
-                            <p className="text-xl font-medium pe-14 kufi">
+                            <p className="text-sm font-bold text-gray-600 pe-14 kufi">
                                 قسم شؤون الموظفين هو أحد الأقسام الحيوية في أي منظمة أو شركة،
                                 حيث يختص بإدارة وتنظيم كافة الأمور المتعلقة بالموظفين. يتولى هذا
                                 القسم مهاماً متعددة تشمل متابعة الوثائق الرسمية، كالإقامة
@@ -2129,7 +2394,7 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
@@ -2170,7 +2435,7 @@ export default function CloudBussiness() {
                             <img className="w-4/5  " src={emp} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={emp2} alt="" />
                         </div>
@@ -2180,7 +2445,9 @@ export default function CloudBussiness() {
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
-                                إعداد قيود استحقاق الرواتب والمستحقات مثل التأمينات، الإجازات، ونهاية الخدمة.                            </p>
+                                إعداد قيود استحقاق الرواتب والمستحقات مثل التأمينات، الإجازات،
+                                ونهاية الخدمة.{" "}
+                            </p>
 
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
@@ -2205,19 +2472,19 @@ export default function CloudBussiness() {
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
-                                صرف الرواتب الشهرية والمستحقات المالية الأخرى مثل نهاية الخدمة وبدل السكن.
-
+                                صرف الرواتب الشهرية والمستحقات المالية الأخرى مثل نهاية الخدمة
+                                وبدل السكن.
                             </p>
-
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
-                                تسجيل البيانات الأساسية للموظفين مثل المؤهلات الدراسية، الأقسام، مواقع العمل، الجنسيات، والمدن.
+                                تسجيل البيانات الأساسية للموظفين مثل المؤهلات الدراسية، الأقسام،
+                                مواقع العمل، الجنسيات، والمدن.
                             </p>
 
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
@@ -2237,7 +2504,8 @@ export default function CloudBussiness() {
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
-                                تسجيل بيانات الكوادر الوظيفية مثل الإدارات، الأقسام، الكفلاء، وخطوط النقل.
+                                تسجيل بيانات الكوادر الوظيفية مثل الإدارات، الأقسام، الكفلاء،
+                                وخطوط النقل.
                             </p>
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
@@ -2250,7 +2518,7 @@ export default function CloudBussiness() {
                             <img className="w-4/5  " src={emp3} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={emp4} alt="" />
                         </div>
@@ -2260,7 +2528,8 @@ export default function CloudBussiness() {
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
-                                إدارة الإجراءات الإدارية مثل الإجازات، الانتداب، الجزاءات، المكافآت، والإنذارات.
+                                إدارة الإجراءات الإدارية مثل الإجازات، الانتداب، الجزاءات،
+                                المكافآت، والإنذارات.
                             </p>
 
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
@@ -2287,12 +2556,10 @@ export default function CloudBussiness() {
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
                                 إعداد التقارير الخاصة بشؤون الموظفين والمعاملات الإدارية.
-
                             </p>
-
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
@@ -2331,10 +2598,9 @@ export default function CloudBussiness() {
                             <img className="w-4/5  " src={emp5} alt="" />
                         </div>
                     </div>
-
                 </div>
                 <div className="pos">
-                    <div className="pos-hero w-full lg:flex bg-blue-200 bg-opacity-20">
+                    <div className="pos-hero lg:px-24 px-9 w-full lg:flex bg-blue-200 bg-opacity-20">
                         <div className="hero-img flex justify-center lg:w-1/2">
                             <img className="lg:w-4/5" src={pos1} alt="" />
                         </div>
@@ -2343,20 +2609,25 @@ export default function CloudBussiness() {
                             <p className="text-5xl font-semibold cairo m-0 text-blue-400">
                                 نقاط البيع
                             </p>
-                            <p className="text-xl font-medium pe-14 kufi">
-                                نظام نقاط البيع (POS) هو أداة حيوية لإدارة المبيعات في الشركات والمتاجر، حيث يتيح للموظفين معالجة الفواتير والمدفوعات بسرعة وفعالية. يتميز النظام بإمكانية العمل سواء عبر الإنترنت أو بدون اتصال (أوفلاين)، مما يوفر مرونة كبيرة في مختلف البيئات التشغيلية. عند توفر الاتصال، يمكن تصدير جميع البيانات بشكل تلقائي إلى السيرفر وتحديثها بشكل مستمر، مما يضمن الحفاظ على جميع العمليات والتفاصيل التجارية بأمان وسلاسة، سواء عند تنفيذ المبيعات أو مراجعة البيانات.
-
+                            <p className="text-base font-bold text-gray-600 pe-14 kufi">
+                                نظام نقاط البيع (POS) هو أداة حيوية لإدارة المبيعات في الشركات
+                                والمتاجر، حيث يتيح للموظفين معالجة الفواتير والمدفوعات بسرعة
+                                وفعالية. يتميز النظام بإمكانية العمل سواء عبر الإنترنت أو بدون
+                                اتصال (أوفلاين)، مما يوفر مرونة كبيرة في مختلف البيئات
+                                التشغيلية. عند توفر الاتصال، يمكن تصدير جميع البيانات بشكل
+                                تلقائي إلى السيرفر وتحديثها بشكل مستمر، مما يضمن الحفاظ على جميع
+                                العمليات والتفاصيل التجارية بأمان وسلاسة، سواء عند تنفيذ
+                                المبيعات أو مراجعة البيانات.
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
                                 إنشاء الفواتير المبسطة بما يتوافق مع متطلبات الهيئة.
-
                             </p>
 
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
@@ -2386,10 +2657,10 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                         <div className="img md:w-1/2 flex justify-center ">
-                            <img className="w-4/5  " src={pos2} alt="" />
+                            <img className="w-full  " src={pos2} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={pos3} alt="" />
                         </div>
@@ -2426,19 +2697,16 @@ export default function CloudBussiness() {
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
                                 تخصيص الصلاحيات لكل فرع أو مستخدم بناءً على المهام الموكلة لهم.
-
                             </p>
-
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
                                 دعم طرق دفع متعددة مثل البطاقات البنكية، الشبكات، والنقد.
-
                             </p>
 
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
@@ -2471,7 +2739,7 @@ export default function CloudBussiness() {
                             <img className="w-4/5  " src={pos4} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={pos5} alt="" />
                         </div>
@@ -2501,20 +2769,19 @@ export default function CloudBussiness() {
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
-                                إنشاء مجموعات أصناف مخصصة لكل فرع أو مستخدم وتحديد ما يظهر لكل منهم.
+                                إنشاء مجموعات أصناف مخصصة لكل فرع أو مستخدم وتحديد ما يظهر لكل
+                                منهم.
                             </p>
-
-
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
-                                استخدام الباركود أو شاشة اللمس (تاتش) لعرض المجموعات أو البحث عن المنتجات.
-
+                                استخدام الباركود أو شاشة اللمس (تاتش) لعرض المجموعات أو البحث عن
+                                المنتجات.
                             </p>
 
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
@@ -2534,18 +2801,17 @@ export default function CloudBussiness() {
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
-                                إمكانية تصدير واستيراد البيانات بين النظام والسيرفر سواء كان النظام متصلاً بالإنترنت أو يعمل بدون اتصال.
+                                إمكانية تصدير واستيراد البيانات بين النظام والسيرفر سواء كان
+                                النظام متصلاً بالإنترنت أو يعمل بدون اتصال.
                             </p>
-
                         </div>
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5  " src={pos6} alt="" />
                         </div>
                     </div>
-
                 </div>
                 <div className="resturant">
-                    <div className="resturant-hero w-full lg:flex bg-blue-200 bg-opacity-20">
+                    <div className="resturant-hero lg:px-24 px-9 w-full lg:flex bg-blue-200 bg-opacity-20">
                         <div className="hero-img flex justify-center lg:w-1/2">
                             <img className="lg:w-4/5" src={res1} alt="" />
                         </div>
@@ -2554,19 +2820,24 @@ export default function CloudBussiness() {
                             <p className="text-5xl font-semibold cairo m-0 text-blue-400">
                                 نظام المطاعم
                             </p>
-                            <p className="text-xl font-medium pe-14 kufi">
-                                نظام المطاعم الذي نقدمه هو حل شامل لإدارة عمليات المطاعم بكفاءة وسهولة. يوفر النظام إمكانيات متقدمة لتنظيم الفواتير، طرق الدفع المتعددة، وإدارة المستخدمين والصلاحيات. كما يدعم تقسيم الأصناف والمجموعات وربطها بالمطابخ، بالإضافة إلى إدارة الصالات والطاولات. يهدف النظام إلى تبسيط العمليات اليومية وتحسين تجربة العملاء من خلال تقديم حلول مبتكرة لإدارة المطاعم بشكل احترافي ومرن.
+                            <p className="text-base font-bold text-gray-600 pe-14 kufi">
+                                نظام المطاعم الذي نقدمه هو حل شامل لإدارة عمليات المطاعم بكفاءة
+                                وسهولة. يوفر النظام إمكانيات متقدمة لتنظيم الفواتير، طرق الدفع
+                                المتعددة، وإدارة المستخدمين والصلاحيات. كما يدعم تقسيم الأصناف
+                                والمجموعات وربطها بالمطابخ، بالإضافة إلى إدارة الصالات
+                                والطاولات. يهدف النظام إلى تبسيط العمليات اليومية وتحسين تجربة
+                                العملاء من خلال تقديم حلول مبتكرة لإدارة المطاعم بشكل احترافي
+                                ومرن.
                             </p>
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
                                 إصدار الفاتورة المبسطة وفقًا لاشتراطات الهيئة.
-
                             </p>
 
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
@@ -2599,7 +2870,7 @@ export default function CloudBussiness() {
                             <img className="w-4/5  " src={pos2} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={pos3} alt="" />
                         </div>
@@ -2635,20 +2906,18 @@ export default function CloudBussiness() {
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
-                                إعطاء المستخدمين خيارات الدفع المتاحة مثل الشبكة، الفيزا، أو النقد.
-
+                                إعطاء المستخدمين خيارات الدفع المتاحة مثل الشبكة، الفيزا، أو
+                                النقد.
                             </p>
-
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
                                 دعم طرق دفع متعددة مثل البطاقات البنكية، الشبكات، والنقد.
-
                             </p>
 
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
@@ -2681,7 +2950,7 @@ export default function CloudBussiness() {
                             <img className="w-4/5  " src={pos4} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={pos5} alt="" />
                         </div>
@@ -2698,7 +2967,8 @@ export default function CloudBussiness() {
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>{" "}
-                                استخدام الباركود أو شاشة اللمس (تاتش) لعرض المجموعات أو البحث عن المنتجات.
+                                استخدام الباركود أو شاشة اللمس (تاتش) لعرض المجموعات أو البحث عن
+                                المنتجات.
                             </p>
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
@@ -2719,18 +2989,15 @@ export default function CloudBussiness() {
                                 </span>{" "}
                                 استخدام الجرد المستمر لضمان إدارة المخزون.
                             </p>
-
-
                         </div>
                     </div>
-                    <div className="third my-12 px-9 w-full md:flex">
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="data md:w-1/2 flex flex-col justify-center ">
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
                                 <span>
                                     <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
                                 </span>
                                 تعريف الصالات في النظام.
-
                             </p>
 
                             <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
@@ -2763,7 +3030,7 @@ export default function CloudBussiness() {
                             <img className="w-4/5  " src={pos4} alt="" />
                         </div>
                     </div>
-                    <div className="fivth my-12 px-9 w-full md:flex">
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
                         <div className="img md:w-1/2 flex justify-center ">
                             <img className="w-4/5" src={pos5} alt="" />
                         </div>
@@ -2795,9 +3062,6 @@ export default function CloudBussiness() {
                                 </span>{" "}
                                 إدارة وتعديل الطلبات في الطاولات بناءً على احتياجات الزبائن.
                             </p>
-
-
-
                         </div>
                     </div>
                 </div>

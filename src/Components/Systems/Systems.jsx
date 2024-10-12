@@ -43,7 +43,7 @@ export default function Systems() {
         } `;
     return (<>
         <div className="systems-page mt-28">
-            <div className="fourth md:p-8 p-2 md:flex bg-blue-200 bg-opacity-20  w-full">
+            <div className="fourth md:p-8 lg:px-24 p-2 md:flex bg-blue-200 bg-opacity-20  w-full">
                 <div className="left lg:w-1/2 px-4 ">
                     <img className="lg:w-4/5" src={systems} alt="" />
                 </div>
@@ -65,7 +65,7 @@ export default function Systems() {
                     </p>
                 </div>
             </div>
-            <div className="fifth p-8 px-2 lg:px-14 md:px-3">
+            <div className="fifth p-8 px-2 lg:px-24 md:px-3">
                 <div dir="rtl" className="options md:flex  gap-7 w-full lg:p-5 p-3 lg:px-10 px-4">
                     <div className="option md:w-1/2">
                         <p className="text-white p-1 px-2 m-0 cairo w-fit lg:text-2xl md:text-xl text-lg mt-3 font-medium bg-[#339ECC] ">

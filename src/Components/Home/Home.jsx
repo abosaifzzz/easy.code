@@ -2,18 +2,19 @@ import React, { useRef, useState } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
-import budget from "../../assets/budget.png";
-import boxes from "../../assets/boxes.png";
-import receipt from "../../assets/receipt.png";
-import custom from "../../assets/customs-clearance.png";
+import pub from "../../assets/pub.png";
+import box from "../../assets/box.png";
+import inv from "../../assets/inv.png";
+import custom from "../../assets/offi.png";
 
-import exchange from "../../assets/exchange.png";
+import exchange from "../../assets/coin.png";
 import shepo from "../../assets/shepo.png";
 import chart from "../../assets/chart.png";
 import presentage from "../../assets/presentage.png";
 import storagee from "../../assets/storagee.png";
 import periods from "../../assets/periods.png";
 import erp1 from "../../assets/erp1.png";
+import sh2 from "../../assets/sh2.png";
 
 import logo from "../../assets/logo@2x.png";
 import center2 from "../../assets/center2.png";
@@ -35,7 +36,7 @@ import tree from "../../assets/tree.png";
 
 import ReactPlayer from "react-player";
 import erp from "../../assets/erp.mp4";
-import screen from "../../assets/screen.mp4";
+import screen from "../../assets/scr.mp4";
 import screen1 from "../../assets/screen.png";
 
 import arrow from "../../assets/up.png";
@@ -54,15 +55,15 @@ import devices from "../../assets/devices.png";
 // import call from "../../team1.png"
 import call from "../../assets/team1.png";
 import online from "../../assets/online.png";
-import sales from "../../assets/sales.png";
-import customer from "../../assets/customer.png";
-import truck from "../../assets/truck.png";
-import warehouse from "../../assets/warehouse.png";
-import connect from "../../assets/connect.png";
+import sales from "../../assets/sal.png";
+import customer from "../../assets/clie.png";
+import truck from "../../assets/suppp.png";
+import warehouse from "../../assets/cen.png";
+import connect from "../../assets/conn.png";
 import shape from "../../assets/shape.png";
 import shape3 from "../../assets/shape3.png";
 import shape4 from "../../assets/shape4.png";
-import shape5 from "../../assets/shape5.png";
+import bl from "../../assets/bl.png";
 export default function Home() {
     const [isOpen, setIsOpen] = useState(false);
     const [hasAnimated, setHasAnimated] = useState(false);
@@ -388,8 +389,8 @@ export default function Home() {
                         <div className=" flex justify-center h-64 items-center gap-3">
                             <div className="slide  h-full  flex justify-center items-center  rounded-lg">
                                 <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
-                                        <img className="w-fit h-fit" src={budget} alt="" />
+                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
+                                        <img className="w-full" src={pub} alt="" />
                                     </div>
                                     <p className="kufi font-bold text-lg">الحسابات العامة</p>
                                 </div>
@@ -398,8 +399,8 @@ export default function Home() {
                         <div className=" flex justify-center h-64 items-center gap-3">
                             <div className="slide  h-full  flex justify-center items-center  rounded-lg">
                                 <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
-                                        <img className="w-fit h-fit" src={boxes} alt="" />
+                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
+                                        <img className="w-full" src={box} alt="" />
                                     </div>
                                     <p className="kufi font-bold text-lg">الجرد المخزني</p>
                                 </div>
@@ -408,8 +409,8 @@ export default function Home() {
                         <div className=" flex justify-center h-64 items-center gap-3">
                             <div className="slide  h-full  flex justify-center items-center  rounded-lg">
                                 <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
-                                        <img className="w-fit h-fit" src={receipt} alt="" />
+                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
+                                        <img className="w-full" src={inv} alt="" />
                                     </div>
                                     <p className="kufi font-bold text-lg">الفاتورة الألكترونية</p>
                                 </div>
@@ -418,8 +419,8 @@ export default function Home() {
                         <div className=" flex justify-center h-64 items-center gap-3">
                             <div className="slide  h-full  flex justify-center items-center  rounded-lg">
                                 <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
-                                        <img className="w-fit h-fit" src={custom} alt="" />
+                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
+                                        <img className="w-full" src={custom} alt="" />
                                     </div>
                                     <p className="kufi font-bold text-lg">التخليص الجمركي</p>
                                 </div>
@@ -428,8 +429,8 @@ export default function Home() {
                         <div className=" flex justify-center h-64 items-center gap-3">
                             <div className="slide  h-full  flex justify-center items-center  rounded-lg">
                                 <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
-                                        <img className="w-fit h-fit" src={exchange} alt="" />
+                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
+                                        <img className="w-full" src={exchange} alt="" />
                                     </div>
                                     <p className="kufi font-bold text-lg">تعدد العملات</p>
                                 </div>
@@ -438,8 +439,8 @@ export default function Home() {
                         <div className=" flex justify-center h-64 items-center gap-3">
                             <div className="slide  h-full  flex justify-center items-center  rounded-lg">
                                 <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
-                                        <img className="w-fit h-fit" src={connect} alt="" />
+                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
+                                        <img className="w-full" src={connect} alt="" />
                                     </div>
                                     <p className="kufi font-bold text-lg">الربط مع هيئة الزكاة</p>
                                 </div>
@@ -448,8 +449,8 @@ export default function Home() {
                         <div className=" flex justify-center h-64 items-center gap-3">
                             <div className="slide  h-full  flex justify-center items-center  rounded-lg">
                                 <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
-                                        <img className="w-fit h-fit" src={warehouse} alt="" />
+                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
+                                        <img className="w-full" src={warehouse} alt="" />
                                     </div>
                                     <p className="kufi font-bold text-lg">مراكز التكلفة</p>
                                 </div>
@@ -458,8 +459,8 @@ export default function Home() {
                         <div className=" flex justify-center h-64 items-center gap-3">
                             <div className="slide  h-full  flex justify-center items-center  rounded-lg">
                                 <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
-                                        <img className="w-fit h-fit" src={customer} alt="" />
+                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
+                                        <img className="w-full" src={customer} alt="" />
                                     </div>
                                     <p className="kufi font-bold text-lg">العملاء</p>
                                 </div>
@@ -468,8 +469,8 @@ export default function Home() {
                         <div className=" flex justify-center h-64 items-center gap-3">
                             <div className="slide  h-full  flex justify-center items-center  rounded-lg">
                                 <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
-                                        <img className="w-fit h-fit" src={sales} alt="" />
+                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
+                                        <img className="w-full" src={sales} alt="" />
                                     </div>
                                     <p className="kufi font-bold text-lg">المبيعات</p>
                                 </div>
@@ -478,8 +479,8 @@ export default function Home() {
                         <div className=" flex justify-center h-64 items-center gap-3">
                             <div className="slide  h-full  flex justify-center items-center  rounded-lg">
                                 <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-blue-200 bg-opacity-60 rounded-full">
-                                        <img className="w-fit h-fit" src={truck} alt="" />
+                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
+                                        <img className="w-full" src={truck} alt="" />
                                     </div>
                                     <p className="kufi font-bold text-lg"> الموردين</p>
                                 </div>
@@ -493,8 +494,9 @@ export default function Home() {
                     </button>
                 </div>
             </div>
-            <div className="third bg-white lg:p-8 p-2">
-                <div className="what-erp lg:flex p-8">
+            <div className="third relative overflow-hidden  bg-white lg:p-8 p-2">
+                <div className="bg-shape z-[1] flex justify-end  absolute opacity-15 right-0 left-0   "><img className="w-4/6" src={sh2} alt="" /></div>
+                <div className="what-erp relative z-[2]  lg:flex p-8">
                     <div className="first-part lg:w-1/2" ref={playerRef}>
                         <ReactPlayer
                             url={erp}
@@ -760,7 +762,7 @@ export default function Home() {
                 <div className="we w-full md:flex md:p-8 px-8  pb-16 ">
 
                     <div dir="rtl" className="left md:w-1/2 md:p-5   ">
-                        <p className="cairo font-bold text-xl">عن "ايزي كود"</p>
+                        <p className="cairo font-bold text-2xl">عن " <span className="text-[#339ecc] cairo font-bold text-2xl">ايزي كود</span> "</p>
                         <p className="kufi md:text-[1.1rem] text-sm leading-7 font-medium md:w-5/6">شركة "إيزي كود" هي شركة متخصصة في تقديم حلول برمجية متكاملة وابتكارية تهدف إلى تبسيط العمليات التجارية وتحسين الكفاءة الرقمية للشركات. تسعى "إيزي كود" إلى تطوير تطبيقات برمجية تلبي احتياجات العملاء عبر توفير حلول ذكية ومرنة تساعد على تعزيز الأداء وتحقيق أهداف النمو. تتضمن خدمات الشركة تصميم وتطوير مواقع الويب، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، وغيرها من الأنظمة المخصصة التي تسهم في التحول الرقمي للمؤسسات بمختلف قطاعاتها. تعتمد الشركة على أحدث التقنيات والمعايير العالمية لضمان جودة وفعالية الحلول المقدمة.</p>
                         <button className="p-2 px-6 bg-[#339ecc] text-white rounded-md cairo font-medium">اعرف اكثر</button>
                     </div>
@@ -853,7 +855,7 @@ export default function Home() {
                 <div className="shape3 absolute left-0 md:top-1/4 top-1/2">
                     <img className="lg:w-4/5 w-1/2" src={shape3} alt="" />
                 </div>
-                <div className="shape3 absolute -bottom-10 -right-32">
+                <div className="shape3 absolute flex justify-end -bottom-10 right-0 ">
                     <img className="lg:w-4/5 w-1/2" src={shepo} alt="" />
                 </div>
 
@@ -942,11 +944,11 @@ export default function Home() {
 
 
             </div>
-            <div className="sivnth relative lg:p-12 md:p-2 bg-gray-100 ">
-                <div className="shape5  absolute  left-0 right-0 bottom-0">
-                    <img src={shape5} className="w-full z-[1]" alt="" />
+            <div className="sivnth relative lg:p-12 md:p-2 bg-white ">
+                <div className="shape5 opacity-10 flex justify-end  absolute   right-0 bottom-0 ">
+                    <img src={sh2} className="w-4/5 z-[1]" alt="" />
                 </div>
-                <div className="main-questions lg:w-4/5 md:w-full  lg:mx-auto">
+                <div className="main-questions relative z-[2] lg:w-4/5 md:w-full  lg:mx-auto">
                     <p className="m-0 py-6 text-center md:text-4xl text-2xl font-semibold cairo text-[#339ecc] ">
                         اسئلة العملاء الشائعة{" "}
                     </p>
@@ -1158,11 +1160,13 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="eaghtth md:px-7 px-1">
-                <div className="card mb-4 mt-7 flex flex-col justify-center items-center">
+            <div className="eaghtth relative md:px-7 px-1">
+                <div className="shape5 opacity-10 flex justify-center  absolute   right-0 bottom-0 ">
+                    <img src={sh2} className="w-4/5 z-[1]" alt="" />
+                </div>                <div className="card mb-4 mt-7 flex flex-col justify-center items-center">
 
 
-                    <div className="loader lg:h-20 md:h-9 h-9  mt-6">
+                    <div className="loader relative z-[2] lg:h-20 md:h-9 h-9  mt-6">
                         <div className="words">
                             <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">تجـاريـة</span>
                             <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">تجـاريـة</span>
@@ -1183,7 +1187,7 @@ export default function Home() {
                     <p className="text-blue-800 cairo cursor-pointer m-0 mt-2 lg:text-lg md:text-lg text-base font-bold underline underline-offset-8"><i className="underline underline-offset-8 fa-solid fa-arrow-left"></i> تصفح برامجنا الأن</p>
                 </div>
 
-                <img className="w-full md:h-full h-60" src={workers2} alt="" />
+                <img className="w-full relative z-[2] md:h-full h-60" src={workers2} alt="" />
 
 
 

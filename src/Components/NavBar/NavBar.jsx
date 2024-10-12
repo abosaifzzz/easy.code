@@ -121,7 +121,7 @@ export default function NavBar() {
                             onClick={handleDropdownToggle}
                         >
                             <Link
-                                to="/programs"
+                                to=""
                                 className="menu text-xl cairo font-medium  flex items-center cursor-pointer"
                             >
                                 البرامج
