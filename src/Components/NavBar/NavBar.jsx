@@ -131,7 +131,6 @@ export default function NavBar() {
                                 ></i>
                             </Link>
 
-                            {/* Dropdown Menu */}
                             <div
                                 className={`programs-drop-down absolute lg:w-48 w-72 h-fit -bottom-16  lg:-bottom-11 sm:top-full z-10 bg-white rounded-b-md shadow-lg transform transition-all duration-300 ease-in-out ${isDropdownVisible
                                     ? 'opacity-100 visible translate-y-0'
@@ -152,10 +151,7 @@ export default function NavBar() {
                                 </ul>
                             </div>
                         </li>
-
-
                         <li><Link to={'systems'} className="menu text-xl cairo font-medium ">الأنظمة</Link></li>
-                        <li><Link className="menu text-xl cairo font-medium ">اراء عملائنا </Link></li>
                         <li><Link to={'contact'} className="menu text-xl cairo font-medium ">تواصل معنا</Link></li>
 
 

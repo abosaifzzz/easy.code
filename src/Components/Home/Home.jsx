@@ -15,6 +15,8 @@ import storagee from "../../assets/storagee.png";
 import periods from "../../assets/periods.png";
 import erp1 from "../../assets/erp1.png";
 import sh2 from "../../assets/sh2.png";
+import graph2 from "../../assets/graph2.png";
+
 
 import logo from "../../assets/logo@2x.png";
 import center2 from "../../assets/center2.png";
@@ -23,6 +25,23 @@ import on from "../../assets/on.png";
 import control from "../../assets/control.png";
 import cor from "../../assets/cor.png";
 import tech from "../../assets/tech.png";
+import client1 from "../../assets/logos/1.png";
+import client2 from "../../assets/logos/2.png";
+import client3 from "../../assets/logos/3.png";
+import client4 from "../../assets/logos/4.png";
+import client5 from "../../assets/logos/5.png";
+import client6 from "../../assets/logos/6.png";
+import client7 from "../../assets/logos/7.png";
+import client8 from "../../assets/logos/8.png";
+import client9 from "../../assets/logos/9.png";
+import client10 from "../../assets/logos/10.png";
+import client11 from "../../assets/logos/11.png";
+import client12 from "../../assets/logos/12.png";
+import client13 from "../../assets/logos/13.png";
+import client14 from "../../assets/logos/14.png";
+import client15 from "../../assets/logos/15.png";
+
+
 
 
 
@@ -69,7 +88,7 @@ export default function Home() {
     const [hasAnimated, setHasAnimated] = useState(false);
     const playerRef = useRef(null);
     const playerRef2 = useRef(null); // Second video ref
-
+    const programsRef = useRef(null)
     const [isInView, setIsInView] = useState(false);
     const [isInView2, setIsInView2] = useState(false); // Second video state
     const [activeTab, setActiveTab] = useState("final-bussiness");
@@ -170,6 +189,18 @@ export default function Home() {
             },
         ],
     };
+    const slidesData = [
+        { title: "الحسابات العامة", imgSrc: pub },
+        { title: "الجرد المخزني", imgSrc: box },
+        { title: "الفاتورة الألكترونية", imgSrc: inv },
+        { title: "التخليص الجمركي", imgSrc: custom },
+        { title: "تعدد العملات", imgSrc: exchange },
+        { title: "الربط مع هيئة الزكاة", imgSrc: connect },
+        { title: "مراكز التكلفة", imgSrc: warehouse },
+        { title: "العملاء", imgSrc: customer },
+        { title: "المبيعات", imgSrc: sales },
+        { title: "الموردين", imgSrc: truck }
+    ];
 
     return (
         <div>
@@ -213,6 +244,7 @@ export default function Home() {
                             <button dir="rtl" className="start text-center p-2 px-4" ><span className="cairo text-lg">أبدأ الأستخدام </span></button>
 
                         </div>
+
 
                     </div>
                     {/* <div className="card-shape z-30 absolute top-2/3 right-64">
@@ -380,116 +412,48 @@ export default function Home() {
                     </svg>
                 </div>
             </div>
-            <div className="second pt-6 bg-gray-100">
-                <p className="m-0 py-6 text-center md:text-4xl text-2xl font-semibold cairo text-[#339ecc] ">
-                    كل هذا و اكثر بين يديك{" "}
+            <div dir="rtl" className="second pt-6 bg-gray-100">
+                <p className="md:text-4xl sm:text-3xl text-lg text-gray-700  w-full flex justify-center font-bold cairo">
+                    {" "}
+                    كل هذا واكثر
+                    <span className="cairo md:text-4xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                        {" "}
+                        بين يديك{" "}
+                    </span>
                 </p>
+                <p className="cairo text-9xl w-full flex justify-center">
+                    <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                    <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                    <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                        .
+                    </span>{" "}
+                    <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
+                </p>
+
                 <div className="slider-container py-7">
                     <Slider {...settings}>
-                        <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
-                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
-                                        <img className="w-full" src={pub} alt="" />
+                        {slidesData.map((slide, index) => (
+                            <div key={index} className="flex justify-center h-64 items-center gap-3">
+                                <div className="slide h-full flex justify-center items-center rounded-lg">
+                                    <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center rounded-lg items-center bg-white">
+                                        <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
+                                            <img className="w-full" src={slide.imgSrc} alt={slide.title} />
+                                        </div>
+                                        <p className="kufi font-bold text-lg">{slide.title}</p>
                                     </div>
-                                    <p className="kufi font-bold text-lg">الحسابات العامة</p>
                                 </div>
                             </div>
-                        </div>
-                        <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
-                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
-                                        <img className="w-full" src={box} alt="" />
-                                    </div>
-                                    <p className="kufi font-bold text-lg">الجرد المخزني</p>
-                                </div>
-                            </div>
-                        </div>{" "}
-                        <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
-                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
-                                        <img className="w-full" src={inv} alt="" />
-                                    </div>
-                                    <p className="kufi font-bold text-lg">الفاتورة الألكترونية</p>
-                                </div>
-                            </div>
-                        </div>{" "}
-                        <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
-                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
-                                        <img className="w-full" src={custom} alt="" />
-                                    </div>
-                                    <p className="kufi font-bold text-lg">التخليص الجمركي</p>
-                                </div>
-                            </div>
-                        </div>{" "}
-                        <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
-                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
-                                        <img className="w-full" src={exchange} alt="" />
-                                    </div>
-                                    <p className="kufi font-bold text-lg">تعدد العملات</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
-                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
-                                        <img className="w-full" src={connect} alt="" />
-                                    </div>
-                                    <p className="kufi font-bold text-lg">الربط مع هيئة الزكاة</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
-                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
-                                        <img className="w-full" src={warehouse} alt="" />
-                                    </div>
-                                    <p className="kufi font-bold text-lg">مراكز التكلفة</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
-                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
-                                        <img className="w-full" src={customer} alt="" />
-                                    </div>
-                                    <p className="kufi font-bold text-lg">العملاء</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
-                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
-                                        <img className="w-full" src={sales} alt="" />
-                                    </div>
-                                    <p className="kufi font-bold text-lg">المبيعات</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className=" flex justify-center h-64 items-center gap-3">
-                            <div className="slide  h-full  flex justify-center items-center  rounded-lg">
-                                <div className="slide-card shadow-lg w-2/3 h-4/5 flex flex-col justify-center   rounded-lg    items-center bg-white   ">
-                                    <div className="icon-slide p-4 w-20 h-20 bg-slate-200 bg-opacity-60 rounded-full">
-                                        <img className="w-full" src={truck} alt="" />
-                                    </div>
-                                    <p className="kufi font-bold text-lg"> الموردين</p>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </Slider>
                 </div>
                 <div className="browse-our-programs flex justify-center">
-                    <button className=" bg-[#339ecc] text-white p-2 px-4 text-lg kufi font-medium rounded-md my-5">
+                    <button onClick={() => {
+                        programsRef.current?.scrollIntoView({
+                            behavior: 'smooth'
+
+                        })
+
+                    }} className=" bg-[#339ecc] text-white p-2 px-4 text-lg kufi font-medium rounded-md my-5">
                         تصفح برامجنا
                     </button>
                 </div>
@@ -568,7 +532,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <div className="fourth overflow-hidden relative px-20 py-7 bg-gray-100">
+            <div dir="rtl" className="fourth overflow-hidden relative px-20 py-7 bg-gray-100">
 
                 <div className="shapes  absolute md:-right-60 -right-32   w-1/4 bottom-0">
                     <img className="w-44 " src={shapes} alt="" />
@@ -626,9 +590,24 @@ export default function Home() {
                     </div>
                 </div> */}
 
-                <p className="m-0 py-6 text-center lg:text-4xl md:text-3xl text-2xl font-semibold cairo text-[#339ecc] ">
-                    لماذا حلولنا البرمجية هي الأفضل؟
+                <p className="md:text-4xl sm:text-3xl text-lg text-gray-700  w-full flex justify-center font-bold cairo">
+                    {" "}
+
+                    لماذا حلولنا البرمجية
+                    <span className="cairo md:text-4xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                        {" "}
+                        هي الأفضل؟
+                    </span>
                 </p>
+                <p className="cairo text-9xl w-full flex justify-center">
+                    <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                    <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                    <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                        .
+                    </span>{" "}
+                    <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
+                </p>
+
                 <div className="first-row flex lg:flex-row flex-col gap-3">
                     <div className="reason1  lg:w-1/3 w-full  lg:h-96  flex items-end  ">
                         <div className="data h-fit lg:bg-transparent py-3 bg-white lg:shadow-none shadow-lg rounded-md  px-9 flex flex-col justify-center items-center w-full lg:h-60">
@@ -753,19 +732,29 @@ export default function Home() {
 
 
             </div>
-            <div className="fifth relative">
+            <div dir="rtl" className="fifth relative">
                 <div className="shape absolute left-96 top-14 z-[-1] opacity-30 "><img className="" src={shepa} alt="" /></div>
-                <p className="m-0 py-6 text-center lg:text-4xl md:text-3xl text-2xl font-semibold cairo text-[#339ecc] ">
-                    من نحن ؟
+                <p className="md:text-4xl sm:text-3xl text-lg text-gray-700  w-full flex justify-center font-bold cairo">
+                    {" "}
+                    من
+                    <span className="cairo md:text-4xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                        {" "}
+                        نحن؟
+                    </span>
                 </p>
+                <p className="cairo text-9xl w-full flex justify-center">
+                    <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                    <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                    <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                        .
+                    </span>{" "}
+                    <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
+                </p>
+
 
                 <div className="we w-full md:flex md:p-8 px-8  pb-16 ">
 
-                    <div dir="rtl" className="left md:w-1/2 md:p-5   ">
-                        <p className="cairo font-bold text-2xl">عن " <span className="text-[#339ecc] cairo font-bold text-2xl">ايزي كود</span> "</p>
-                        <p className="kufi md:text-[1.1rem] text-sm leading-7 font-medium md:w-5/6">شركة "إيزي كود" هي شركة متخصصة في تقديم حلول برمجية متكاملة وابتكارية تهدف إلى تبسيط العمليات التجارية وتحسين الكفاءة الرقمية للشركات. تسعى "إيزي كود" إلى تطوير تطبيقات برمجية تلبي احتياجات العملاء عبر توفير حلول ذكية ومرنة تساعد على تعزيز الأداء وتحقيق أهداف النمو. تتضمن خدمات الشركة تصميم وتطوير مواقع الويب، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، وغيرها من الأنظمة المخصصة التي تسهم في التحول الرقمي للمؤسسات بمختلف قطاعاتها. تعتمد الشركة على أحدث التقنيات والمعايير العالمية لضمان جودة وفعالية الحلول المقدمة.</p>
-                        <button className="p-2 px-6 bg-[#339ecc] text-white rounded-md cairo font-medium">اعرف اكثر</button>
-                    </div>
+
                     <div className="right md:w-1/2" ref={playerRef2}>
                         <ReactPlayer
                             url={screen}
@@ -786,7 +775,19 @@ export default function Home() {
                             style={{ pointerEvents: "none" }}
                         />
                     </div>
+                    <div dir="rtl" className="left md:w-1/2 md:p-5   ">
+                        <p className="cairo font-bold text-2xl">عن " <span className="text-[#339ecc] cairo font-bold text-2xl">ايزي كود</span> "</p>
+                        <p className="kufi md:text-[1.1rem] text-sm leading-7 font-medium md:w-5/6">شركة "إيزي كود" هي شركة متخصصة في تقديم حلول برمجية متكاملة وابتكارية تهدف إلى تبسيط العمليات التجارية وتحسين الكفاءة الرقمية للشركات. تسعى "إيزي كود" إلى تطوير تطبيقات برمجية تلبي احتياجات العملاء عبر توفير حلول ذكية ومرنة تساعد على تعزيز الأداء وتحقيق أهداف النمو. تتضمن خدمات الشركة تصميم وتطوير مواقع الويب، تطبيقات الهواتف الذكية، أنظمة تخطيط موارد المؤسسات (ERP)، وغيرها من الأنظمة المخصصة التي تسهم في التحول الرقمي للمؤسسات بمختلف قطاعاتها. تعتمد الشركة على أحدث التقنيات والمعايير العالمية لضمان جودة وفعالية الحلول المقدمة.</p>
+                        <button className="p-2 px-6 bg-[#339ecc] text-white rounded-md cairo font-medium">
 
+
+                            <Link to={"/about"} className="text-white cairo text-lg">
+                                اعرف أكثر
+                            </Link>
+
+
+                        </button>
+                    </div>
 
                 </div>
             </div>
@@ -851,7 +852,7 @@ export default function Home() {
                     />
                 </div>
             </div>
-            <div className="sixth overflow-hidden  relative md:p-12 md:px-24 p-3 flex flex-col items-center">
+            <div ref={programsRef} className="sixth overflow-hidden  relative md:p-12 md:px-24 p-3 flex flex-col items-center">
                 <div className="shape3 absolute left-0 md:top-1/4 top-1/2">
                     <img className="lg:w-4/5 w-1/2" src={shape3} alt="" />
                 </div>
@@ -859,9 +860,23 @@ export default function Home() {
                     <img className="lg:w-4/5 w-1/2" src={shepo} alt="" />
                 </div>
 
-                <p className="m-0 py-6 text-center md:text-4xl text-3xl font-semibold cairo text-[#339ecc] ">
-                    برامجنا المحاسبية{" "}
+                <p dir="rtl" className="md:text-4xl sm:text-3xl text-lg text-gray-700  w-full flex justify-center font-bold cairo">
+                    {" "}
+                    برامجنا{" "}
+                    <span className="cairo md:text-4xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                        {" "}
+                        المحاسبية{" "}
+                    </span>
                 </p>
+                <p dir="rtl" className="cairo text-9xl w-full flex justify-center">
+                    <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                    <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                    <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                        .
+                    </span>{" "}
+                    <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
+                </p>
+
                 <div dir="rtl" className="w-full">
                     <div className="flex border-b border-gray-200 py-3  ">
                         <div
@@ -897,7 +912,9 @@ export default function Home() {
                                 </p>
                                 <div className="more-details flex justify-center mt-11">
                                     <button className="bg-[#339ecc] rounded-md   p-2 px-6 text-white cairo text-lg">
-                                        تفاصيل أكثر
+                                        <Link to={"/final"} className="text-white cairo text-lg">
+                                            تفاصيل أكثر
+                                        </Link>
                                     </button>
                                 </div>
                             </div>
@@ -924,7 +941,11 @@ export default function Home() {
                                 </p>
                                 <div className="more-details flex justify-center mt-11">
                                     <button className="bg-[#339ecc] rounded-md   p-2 px-6 text-white cairo text-lg">
-                                        تفاصيل أكثر
+
+                                        <Link to={"/final"} className="text-white cairo text-lg">
+                                            تفاصيل أكثر
+                                        </Link>
+
                                     </button>
                                 </div>
                             </div>
@@ -944,14 +965,28 @@ export default function Home() {
 
 
             </div>
-            <div className="sivnth relative lg:p-12 md:p-2 bg-white ">
+            <div className="sivnth relative lg:pt-12 lg:px-12 md:p-2   ">
                 <div className="shape5 opacity-10 flex justify-end  absolute   right-0 bottom-0 ">
                     <img src={sh2} className="w-4/5 z-[1]" alt="" />
                 </div>
                 <div className="main-questions relative z-[2] lg:w-4/5 md:w-full  lg:mx-auto">
-                    <p className="m-0 py-6 text-center md:text-4xl text-2xl font-semibold cairo text-[#339ecc] ">
-                        اسئلة العملاء الشائعة{" "}
+                    <p dir="rtl" className="md:text-4xl sm:text-3xl text-lg text-gray-700 w-full flex justify-center font-bold cairo">
+                        {" "}
+                        اسئلة العملاء{" "}
+                        <span className="cairo md:text-4xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                            {" "}
+                            الشائعة{" "}
+                        </span>
                     </p>
+                    <p dir="rtl" className="cairo text-9xl w-full flex justify-center">
+                        <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                        <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                        <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                            .
+                        </span>{" "}
+                        <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
+                    </p>
+
 
                     <div dir="rtl" className="w-full">
                         <div className="flex justify-center border-b border-gray-200 py-3  ">
@@ -981,7 +1016,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="p-4 mt-4  md:pb-44 pb-20    rounded-md">
+                        <div className="p-4 mt-4  md:pb-28 pb-20    rounded-md">
                             {activeQuestion === "subscribe" && (
                                 <div className="">
                                     <div className="side-1  md:flex gap-3   ">
@@ -1159,32 +1194,124 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+                <div dir="rtl" className="e-card w-5/6 md:h-70 playing">
+                    <div className="image"></div>
+                    <div className="wave2 lg:w-[1200px] md:w-[400px] w-[200px] lg:h-[700px] md:h-[700px] h-[300px]"></div>
+                    <div className="wave2 lg:w-[1200px] md:w-[400px] w-[200px] lg:h-[700px] md:h-[700px] h-[300px]"></div>
+                    <div className="wave2 lg:w-[1200px] md:w-[400px] w-[200px] lg:h-[700px] md:h-[700px] h-[300px]"></div>
+
+                    <div className="infotop text-white">
+                        <p className="lg:text-5xl md:text-6xl text-3xl p-4 cairo font-semibold">
+                            خدمة ما بعد البيع؟
+                        </p>
+                        <p className="md:text-xl m-0  text-lg lg:w-1/2 md:w-2/3 font-medium text-slate-300 px-4 messiri">
+                            تقدم الكود السهل خدمة الزيارة الميدانية للعملاء بهدف توفير الدعم الفني والتقني لهم في مواقعهم وتحسين استخدام البرامج وتعزيز علاقتها بعملائها
+                        </p>
+                        <button className="md:text-xl border text-lg  m-4 rounded-md  p-2 font-medium text-white px-4 cairo">اطلب زيارة</button>
+                    </div>
+                </div>
+
             </div>
-            <div className="eaghtth relative md:px-7 px-1">
+            <div className="clients-logo bg-gray-50 relative overflow-hidden  lg:px-48     flex flex-col items-center pt-12">
+                <div className="shape absolute flex justify-center top-0  h-full-right-7ht-0 w-full"><img className="   opacity-20 w-4/5 h-1/3 z-[1]" src={graph2} alt="" /></div>
+                <p dir="rtl" className="md:text-4xl sm:text-3xl text-lg text-gray-700 w-full flex justify-center font-bold cairo">
+                    {" "}
+                    أكثر من +1000{" "}
+                    <span className="cairo md:text-4xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                        {" "}
+                        عميل سعيد{" "}
+                    </span>
+                </p>
+                <p dir="rtl" className="cairo text-9xl w-full flex justify-center">
+                    <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                    <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                    <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                        .
+                    </span>{" "}
+                    <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
+                </p>
+                <div className="logos pb-11 relative z-[2] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-10 ">
+                    <div className="client-logo  w-full h-40 flex items-center">
+                        <img className="w-5/6 hover:saturate-200 hover:scale-110  h-3/5" src={client1} alt="" />
+                    </div>
+                    <div className="client-logo  w-full h-40 flex items-center">
+                        <img className="w-5/6 hover:saturate-200 hover:scale-110  h-2/4" src={client2} alt="" />
+                    </div>
+                    <div className="client-logo  w-full h-40 flex items-center">
+                        <img className="w-5/6 hover:saturate-200 hover:scale-110  h-2/4" src={client3} alt="" />
+                    </div>
+                    <div className="client-logo  w-full h-40 flex items-center">
+                        <img className="w-5/6 hover:saturate-200 hover:scale-110  h-2/4" src={client4} alt="" />
+                    </div>
+                    <div className="client-logo  w-full h-40 flex items-center">
+                        <img className="w-5/6 hover:saturate-200 hover:scale-110  h-2/4" src={client5} alt="" />
+                    </div>
+                    <div className="client-logo  w-full h-40 flex items-center">
+                        <img className="w-5/6 hover:saturate-200 hover:scale-110  h-2/4" src={client6} alt="" />
+                    </div>
+                    <div className="client-logo  w-full h-40 flex items-center">
+                        <img className="w-4/5 hover:saturate-200 hover:scale-110  h-2/5" src={client7} alt="" />
+                    </div>
+                    <div className="client-logo  w-full h-40 flex items-center">
+                        <img className="w-5/6 hover:saturate-200 hover:scale-110  h-2/4" src={client8} alt="" />
+                    </div>
+                    <div className="client-logo  w-full h-40 flex items-center">
+                        <img className="w-5/6 hover:saturate-200 hover:scale-110  h-2/5" src={client9} alt="" />
+                    </div>
+                    <div className="client-logo  w-full h-40 flex items-center">
+                        <img className="w-5/6 hover:saturate-200 hover:scale-110  h-2/4" src={client10} alt="" />
+                    </div>
+                    <div className="client-logo  w-full h-40 flex items-center">
+                        <img className="w-4/5 hover:saturate-200 hover:scale-110  h-2/5" src={client11} alt="" />
+                    </div>
+                    <div className="client-logo  w-full h-40 flex items-center">
+                        <img className="w-5/6 hover:saturate-200 hover:scale-110  h-2/5" src={client12} alt="" />
+                    </div>
+                    <div className="client-logo  w-full h-40 flex items-center">
+                        <img className="w-5/6 hover:saturate-200 hover:scale-110  h-2/5" src={client13} alt="" />
+                    </div>
+                    <div className="client-logo  w-full h-40 flex items-center">
+                        <img className="w-5/6 hover:saturate-200 hover:scale-110  h-1/3" src={client14} alt="" />
+                    </div>
+                    <div className="client-logo  w-full h-40 flex items-center">
+                        <img className="w-5/6 hover:saturate-200 hover:scale-110  h-2/5" src={client15} alt="" />
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+            <div className="eaghtth relative  md:px-7 px-1">
                 <div className="shape5 opacity-10 flex justify-center  absolute   right-0 bottom-0 ">
                     <img src={sh2} className="w-4/5 z-[1]" alt="" />
-                </div>                <div className="card mb-4 mt-7 flex flex-col justify-center items-center">
+                </div>
+
+                <div className="card mb-4 z-[2] pt-7 flex flex-col justify-center items-center">
 
 
                     <div className="loader relative z-[2] lg:h-20 md:h-9 h-9  mt-6">
                         <div className="words">
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">تجـاريـة</span>
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">تجـاريـة</span>
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">تكنولوجية</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-[#346dab] font-bold cairo">تجـاريـة</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-[#346dab] font-bold cairo">تجـاريـة</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-[#346dab] font-bold cairo">تكنولوجية</span>
 
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">مقاولات</span>
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">لوجستية</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-[#346dab] font-bold cairo">مقاولات</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-[#346dab] font-bold cairo">لوجستية</span>
 
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">تجارية</span>
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">عقارات</span>
-                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-blue-400 font-[650] cairo">صناعية</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-[#346dab] font-bold cairo">تجارية</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-[#346dab] font-bold cairo">عقارات</span>
+                            <span className="word text-end me-3  flex justify-end items-end lg:text-5xl text-[1.3rem] md:text-3xl text-[#346dab] font-bold cairo">صناعية</span>
 
                         </div>
-                        <span className="lg:text-5xl text-[1.3rem] m-0 md:text-3xl font-[650] text-[#339ecc] cairo ">ايا كان مجال عمل شركتك</span>
+                        <span className="lg:text-5xl text-[1.3rem] m-0 md:text-3xl font-bold text-gray-700 cairo ">اياً كان مجال عمل شركتك</span>
+
 
                     </div>
                     <p className="lg:text-xl md:text-lg text-base text-center m-0 font-bold text-gray-500 messiri">برامج ايزي كود المحاسبية تناسب جميع مجالات العمل المختلفة</p>
-                    <p className="text-blue-800 cairo cursor-pointer m-0 mt-2 lg:text-lg md:text-lg text-base font-bold underline underline-offset-8"><i className="underline underline-offset-8 fa-solid fa-arrow-left"></i> تصفح برامجنا الأن</p>
+                    <button onClick={() => { programsRef.current?.scrollIntoView({ behavior: 'smooth' }) }} className="text-blue-800 z-[2] hover:text-blue-500 cairo cursor-pointer m-0 mt-2 lg:text-lg md:text-lg text-base font-bold underline underline-offset-8"><i className="underline underline-offset-8 fa-solid fa-arrow-left"></i> تصفح برامجنا الأن</button>
                 </div>
 
                 <img className="w-full relative z-[2] md:h-full h-60" src={workers2} alt="" />

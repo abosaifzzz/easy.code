@@ -8,6 +8,18 @@ import windows from "../../assets/windows.png";
 import reportss from "../../assets/reportss.png";
 import suppliers from "../../assets/suppliers.png";
 // import invoic from "../../assets/invoic.png";
+import fin from "../../assets/fin1.png";
+import cli from "../../assets/cli.png";
+import su from "../../assets/su.png";
+import ware from "../../assets/ware.png";
+import empl from "../../assets/empl.png";
+import store from "../../assets/store.png";
+import cafe from "../../assets/cafe.png";
+import app1 from "../../assets/app1.png";
+import app2 from "../../assets/app2.png";
+import app3 from "../../assets/app3.png";
+import estkdam from "../../assets/estkdam.png";
+import barber from "../../assets/barber.png";
 
 import sup from "../../assets/sup.png";
 import sup2 from "../../assets/sup2.png";
@@ -27,6 +39,9 @@ import warehouse4 from "../../assets/warehouse4.png";
 import warehouse5 from "../../assets/warehouse5.png";
 import warehouse6 from "../../assets/warehouse6.png";
 import sales from "../../assets/saless.png";
+import sales2 from "../../assets/sales2.png";
+import salee from "../../assets/salee.png";
+import pur from "../../assets/pur.png";
 // import  from "../../assets/.png";
 // import 2 from "../../assets/2.png";
 import price from "../../assets/price.png";
@@ -60,6 +75,16 @@ import pos4 from "../../assets/pos4.png";
 import pos5 from "../../assets/pos5.png";
 import pos6 from "../../assets/pos6.png";
 import res1 from "../../assets/res1.png";
+import vital from "../../assets/vital.png";
+import vital1 from "../../assets/vital1.png";
+import vital2 from "../../assets/vital2.png";
+import vital3 from "../../assets/vital3.png";
+import vital4 from "../../assets/vital4.png";
+
+
+import barb from "../../assets/barb.png";
+import barb1 from "../../assets/barb1.png";
+
 
 import saudi from "../../assets/saudi.png";
 import factory from "../../assets/factory.png";
@@ -70,6 +95,23 @@ import warehouse21 from "../../assets/warehouse21.png";
 import employees from "../../assets/employees.png";
 
 export default function CloudBussiness() {
+    const cardData = [
+        { title: "الحسابات العامة و مراكز التكلفة", description: "تدير المعاملات المالية وتتابع التكاليف بدقة لتحسين الأداء المالي.", imgSrc: fin },
+        { title: "الـعـمـلاء", description: "تدير العلاقات مع العملاء وتحسن تجربة العميل وتعزز ولاءهم للشركة.", imgSrc: cli },
+        { title: "المبيــعات", description: "تتابع العمليات البيعية وتحسن الإيرادات وتزيد من كفاءة الأداء التجاري.", imgSrc: sales2 },
+        { title: "مناديب المبيــعات", description: "يديرون التفاعل مع العملاء ويزيدون المبيعات ويعززون العلاقات التجارية.", imgSrc: salee },
+        { title: "المشـتريـات", description: "تنظم عمليات الشراء، تضمن توافر المواد، وتحقق أفضل الأسعار.", imgSrc: pur },
+        { title: "المــورديــن", description: "تدير العلاقات مع الموردين لضمان تدفق المواد بفعالية.", imgSrc: su },
+        { title: "المـخازن", description: "تدير المخزون بدقة، تضمن توفر المواد، وتحسن الكفاءة.", imgSrc: ware },
+        { title: "شئون الموظفين", description: "تدير شؤون الموظفين وتتابع الرواتب والإجازات وتحسن بيئة العمل.", imgSrc: empl },
+        { title: "نقاط البيع", description: "تسهل عمليات البيع، تعزز تجربة العملاء، وتدير المعاملات المالية بفعالية.", imgSrc: store },
+        { title: "المطاعم و الكافيهات", description: "تدير طلبات العملاء، تحسن الخدمة، وتتابع المخزون والعمليات اليومية بكفاءة.", imgSrc: cafe },
+        { title: "موبايل ابليكاشن للمناديب", description: "يساعد المناديب في إدارة زيارات العملاء وتتبع المبيعات بكفاءة ومرونة.", imgSrc: app1 },
+        { title: "موبايل ابليكاشن لأصحاب الشركات", description: "يمكن أصحاب الشركات من متابعة الأداء، إدارة العمليات واتخاذ القرارات بسهولة وفعالية.", imgSrc: app2 },
+        { title: "موبايل ابليكاشن للعملاء", description: "يوفر للعملاء سهولة الوصول للخدمات، متابعة الطلبات والتواصل مع الشركة بفعالية.", imgSrc: app3 },
+        { title: "نظام الاستقدام", description: "يدير عملية استقدام الموظفين، يتابع الطلبات، ويضمن الامتثال للقوانين بفعالية.", imgSrc: estkdam },
+        { title: "نظام التزيين و الحلاقة", description: "ينظم مواعيد العملاء، يدير الخدمات، ويعزز كفاءة عمليات التزيين والحلاقة.", imgSrc: barber },
+    ];
     return (
         <>
             <div dir="rtl" className="programs mt-36">
@@ -110,400 +152,37 @@ export default function CloudBussiness() {
                     </p>
 
                     <div className="contains-data grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
-                            <div className="icon-side w-1/4  flex justify-center items-center">
-                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
-                                    {" "}
-                                    <img className=" w-4/6" src={finance1} alt="" />
+                        {cardData.map((card, index) => (
+                            <div key={index} className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24">
+                                <div className="icon-side w-1/4 flex justify-center items-center">
+                                    <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
+                                        <img className="w-4/6" src={card.imgSrc} alt="" />
+                                    </div>
+                                </div>
+                                <div className="card-data">
+                                    <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
+                                        {card.title}
+                                    </p>
+                                    <p className="m-0 text-[0.9rem] text-gray-600 font-medium kufi">
+                                        {card.description}
+                                    </p>
                                 </div>
                             </div>
-                            <div className="card-data">
-                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
-                                    الحسابات العامة و مراكز التكلفة{" "}
-                                </p>
-                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
-                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
-                                    برامج.
-                                </p>
-                            </div>{" "}
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
-                            <div className="icon-side w-1/4  flex justify-center items-center">
-                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
-                                    {" "}
-                                    <img className=" w-4/6" src={finance1} alt="" />
-                                </div>
-                            </div>
-                            <div className="card-data">
-                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
-                                    الـعـمـلاء{" "}
-                                </p>
-                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
-                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
-                                    برامج.
-                                </p>
-                            </div>{" "}
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
-                            <div className="icon-side w-1/4  flex justify-center items-center">
-                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
-                                    {" "}
-                                    <img className=" w-4/6" src={finance1} alt="" />
-                                </div>
-                            </div>
-                            <div className="card-data">
-                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
-                                    المبيــعات{" "}
-                                </p>
-                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
-                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
-                                    برامج.
-                                </p>
-                            </div>{" "}
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
-                            <div className="icon-side w-1/4  flex justify-center items-center">
-                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
-                                    {" "}
-                                    <img className=" w-4/6" src={finance1} alt="" />
-                                </div>
-                            </div>
-                            <div className="card-data">
-                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
-                                    مناديب المبيــعات{" "}
-                                </p>
-                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
-                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
-                                    برامج.
-                                </p>
-                            </div>{" "}
-                        </div>{" "}
-                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
-                            <div className="icon-side w-1/4  flex justify-center items-center">
-                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
-                                    {" "}
-                                    <img className=" w-4/6" src={finance1} alt="" />
-                                </div>
-                            </div>
-                            <div className="card-data">
-                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
-                                    المشـتريـات{" "}
-                                </p>
-                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
-                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
-                                    برامج.
-                                </p>
-                            </div>{" "}
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
-                            <div className="icon-side w-1/4  flex justify-center items-center">
-                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
-                                    {" "}
-                                    <img className=" w-4/6" src={finance1} alt="" />
-                                </div>
-                            </div>
-                            <div className="card-data">
-                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
-                                    المــورديــن{" "}
-                                </p>
-                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
-                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
-                                    برامج.
-                                </p>
-                            </div>{" "}
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
-                            <div className="icon-side w-1/4  flex justify-center items-center">
-                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
-                                    {" "}
-                                    <img className=" w-4/6" src={finance1} alt="" />
-                                </div>
-                            </div>
-                            <div className="card-data">
-                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
-                                    المـخازن{" "}
-                                </p>
-                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
-                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
-                                    برامج.
-                                </p>
-                            </div>{" "}
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
-                            <div className="icon-side w-1/4  flex justify-center items-center">
-                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
-                                    {" "}
-                                    <img className=" w-4/6" src={finance1} alt="" />
-                                </div>
-                            </div>
-                            <div className="card-data">
-                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
-                                    شئون الموظفين{" "}
-                                </p>
-                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
-                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
-                                    برامج.
-                                </p>
-                            </div>{" "}
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
-                            <div className="icon-side w-1/4  flex justify-center items-center">
-                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
-                                    {" "}
-                                    <img className=" w-4/6" src={finance1} alt="" />
-                                </div>
-                            </div>
-                            <div className="card-data">
-                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
-                                    نقاط البيع{" "}
-                                </p>
-                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
-                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
-                                    برامج.
-                                </p>
-                            </div>{" "}
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
-                            <div className="icon-side w-1/4  flex justify-center items-center">
-                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
-                                    {" "}
-                                    <img className=" w-4/6" src={finance1} alt="" />
-                                </div>
-                            </div>
-                            <div className="card-data">
-                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
-                                    المطاعم و الكافيهات{" "}
-                                </p>
-                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
-                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
-                                    برامج.
-                                </p>
-                            </div>{" "}
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
-                            <div className="icon-side w-1/4  flex justify-center items-center">
-                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
-                                    {" "}
-                                    <img className=" w-4/6" src={finance1} alt="" />
-                                </div>
-                            </div>
-                            <div className="card-data">
-                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
-                                    موبايل ابليكاشن للمناديب{" "}
-                                </p>
-                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
-                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
-                                    برامج.
-                                </p>
-                            </div>{" "}
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
-                            <div className="icon-side w-1/4  flex justify-center items-center">
-                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
-                                    {" "}
-                                    <img className=" w-4/6" src={finance1} alt="" />
-                                </div>
-                            </div>
-                            <div className="card-data">
-                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
-                                    موبايل ابليكاشن لأصحاب الشركات{" "}
-                                </p>
-                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
-                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
-                                    برامج.
-                                </p>
-                            </div>{" "}
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
-                            <div className="icon-side w-1/4  flex justify-center items-center">
-                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
-                                    {" "}
-                                    <img className=" w-4/6" src={finance1} alt="" />
-                                </div>
-                            </div>
-                            <div className="card-data">
-                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
-                                    موبايل ابليكاشن للعملاء{" "}
-                                </p>
-                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
-                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
-                                    برامج.
-                                </p>
-                            </div>{" "}
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
-                            <div className="icon-side w-1/4  flex justify-center items-center">
-                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
-                                    {" "}
-                                    <img className=" w-4/6" src={finance1} alt="" />
-                                </div>
-                            </div>
-                            <div className="card-data">
-                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
-                                    نظام الاستقدام{" "}
-                                </p>
-                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
-                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
-                                    برامج.
-                                </p>
-                            </div>{" "}
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group flex gap-2 h-24  ">
-                            <div className="icon-side w-1/4  flex justify-center items-center">
-                                <div className="iconn group-hover:bg-slate-200 w-20 h-20 rounded-full flex justify-center items-center bg-slate-100 shadow-xl">
-                                    {" "}
-                                    <img className=" w-4/6" src={finance1} alt="" />
-                                </div>
-                            </div>
-                            <div className="card-data">
-                                <p className="text-lg group-hover:text-[#346dab] text-gray-700 mb-2 kufi font-semibold m-0">
-                                    نظام التزيين و الحلاقة{" "}
-                                </p>
-                                <p className="m-0 text-[0.9rem]  text-gray-600 font-medium kufi">
-                                    يمكن العمل عليه من اى مكان وبدون اى احتياج لتنزيل اى ملفات او
-                                    برامج.
-                                </p>
-                            </div>{" "}
-                        </div>
-                        {/* <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={finance1} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                الحسابات العامة
-                            </p>
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={client} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                العملاء
-                            </p>
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={buyes} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                المبيعات
-                            </p>
-                        </div>
-
-                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={finance1} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                {" "}
-                                مناديب المبيعات
-                            </p>
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={client} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                المشتريات
-                            </p>
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={buyes} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                المورديين
-                            </p>
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={finance1} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                {" "}
-                                المخازن
-                            </p>
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={client} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                شئون الموظفين
-                            </p>
-                        </div>
-
-                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={buyes} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                نقاط البيع
-                            </p>
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={finance1} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                {" "}
-                                المطاعم و الكافيهات
-                            </p>
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={client} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                M-App لمناديب المبيعات
-                            </p>
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={buyes} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                M-App لأصحاب الشركات
-                            </p>
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={finance1} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                M-App للعملاء
-                            </p>
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={client} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                نظام الاستقدام
-                            </p>
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={buyes} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                نظام التزيين و الحلاقة
-                            </p>
-                        </div>
-                        <div className="data-card hover:shadow-xl rounded-lg group   flex items-center gap-2 bg-slate-100   rounded-md">
-                            <div className="data-icon w-1/5 p-1 bg-blue-900 rounded-md ">
-                                <img className="w-full h-full" src={buyes} alt="" />
-                            </div>
-                            <p className="text-[1.1rem] m-0 p-1 font-semibold kufi">
-                                مراكز التكلفة{" "}
-                            </p>
-                        </div> */}
+                        ))}
                     </div>
                 </div>
                 <div className="drayeb lg:px-24 px-9 bg-blue-200  bg-opacity-20 p-4 flex">
                     <div className="drayeb-data lg:w-1/2 md:w-2/3 w-full md:p-11 p-8">
-                        <p className="text-5xl m-0 cairo font-bold text-blue-500">
-                            الضرائب
+                        <span className="cairo md:text-5xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                            {" "}
+                            الضرائب                        </span>
+                        <p className="cairo text-9xl w-full flex ps-2">
+                            <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                            <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                            <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                                .
+                            </span>{" "}
+                            <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
                         </p>
                         <p className="cairo text-blue-950 m-0 mt-4 lg:text-lg text-base font-bold ">
                             <span>
@@ -555,8 +234,21 @@ export default function CloudBussiness() {
                     </div>
                 </div>
                 <div className="public relative">
-                    <p className="md:text-4xl text-2xl font-semibold text-center text-blue-500 cairo">
-                        نبذة عامة عن البرنامج
+                    <p className="md:text-4xl sm:text-3xl text-lg  w-full flex justify-center font-bold cairo">
+                        {" "}
+                        لماذا برنامج الكلاود بيزنس هو
+                        <span className="cairo md:text-4xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                            {" "}
+                            الأختيار الأمثل؟{" "}
+                        </span>
+                    </p>
+                    <p className="cairo text-9xl w-full flex justify-center">
+                        <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                        <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                        <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                            .
+                        </span>{" "}
+                        <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
                     </p>
                     <div className="shape absolute -bottom-16 z-[-1]">
                         <img src={shape6} alt="" />
@@ -708,8 +400,17 @@ export default function CloudBussiness() {
                             <img className="lg:w-4/5 w-3/5  " src={finance} alt="" />
                         </div>
                         <div className="hero-data flex flex-col justify-center md:w-1/2">
-                            <p className="lg:text-4xl text-2xl cairo font-bold text-blue-500">
+                            <span className="cairo md:text-4xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                                {" "}
                                 الحسابات العامة و مراكز التكلفة{" "}
+                            </span>
+                            <p className="cairo text-9xl w-full flex ps-2">
+                                <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                                    .
+                                </span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
                             </p>
                             <p className="lg:text-lg text-gray-600 font-bold text-lg messiri">
                                 الحسابات العامة ومراكز التكلفة يمثلان أساسًا مهمًا في أي نظام
@@ -980,8 +681,16 @@ export default function CloudBussiness() {
                         </div>
 
                         <div className="hero-data flex flex-col justify-center lg:w-1/2">
-                            <p className="text-5xl font-semibold cairo m-0 text-blue-400">
-                                العملاء
+                            <span className="cairo md:text-5xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                                {" "}
+                                العملاء                        </span>
+                            <p className="cairo text-9xl w-full flex ps-2">
+                                <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                                    .
+                                </span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
                             </p>
                             <p className="text-base font-bold text-gray-600 leading-6 pe-14 kufi">
                                 في هذا القسم، سيتم تقديم نظام إدارة العملاء الذي يتيح للشركات
@@ -1189,8 +898,16 @@ export default function CloudBussiness() {
                         </div>
 
                         <div className="hero-data flex flex-col justify-center lg:w-1/2">
-                            <p className="text-5xl font-semibold cairo m-0 text-blue-400">
-                                المبيعات
+                            <span className="cairo md:text-5xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                                {" "}
+                                المبيعات                        </span>
+                            <p className="cairo text-9xl w-full flex ps-2">
+                                <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                                    .
+                                </span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
                             </p>
                             <p className="text-base font-bold text-gray-600 pe-14 kufi">
                                 {" "}
@@ -1461,9 +1178,16 @@ export default function CloudBussiness() {
                         </div>
 
                         <div className="hero-data flex flex-col justify-center lg:w-1/2">
-                            <p className="text-5xl font-semibold cairo m-0 text-blue-400">
+                            <span className="cairo md:text-5xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
                                 {" "}
-                                مناديب المبيعات{" "}
+                                مناديب المبيعات                        </span>
+                            <p className="cairo text-9xl w-full flex ps-2">
+                                <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                                    .
+                                </span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
                             </p>
                             <p className="text-xl font-medium pe-14 kufi">
                                 {" "}
@@ -1599,9 +1323,17 @@ export default function CloudBussiness() {
                         </div>
 
                         <div className="hero-data flex flex-col justify-center lg:w-1/2">
-                            <p className="text-5xl font-semibold cairo m-0 text-blue-400">
+                            <span className="cairo md:text-5xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
                                 {" "}
                                 الموردين{" "}
+                            </span>
+                            <p className="cairo text-9xl w-full flex ps-2">
+                                <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                                    .
+                                </span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
                             </p>
                             <p className="text-sm font-bold text-gray-600x pe-14 kufi">
                                 يُعتبر قسم الموردين من الأقسام الحيوية في أي مؤسسة، حيث يلعب
@@ -1762,9 +1494,16 @@ export default function CloudBussiness() {
                         </div>
 
                         <div className="hero-data flex flex-col justify-center lg:w-1/2">
-                            <p className="text-5xl font-semibold cairo m-0 text-blue-400">
+                            <span className="cairo md:text-5xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
                                 {" "}
-                                المشتريات{" "}
+                                المشتريات                        </span>
+                            <p className="cairo text-9xl w-full flex ps-2">
+                                <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                                    .
+                                </span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
                             </p>
                             <p className="text-sm font-bold text-gray-600 pe-14 kufi">
                                 يُعد قسم المشتريات من الأقسام الأساسية داخل أي مؤسسة، حيث يضطلع
@@ -2004,15 +1743,22 @@ export default function CloudBussiness() {
                         <img src={shapes} alt="" />
                     </div>
 
-                    <div className="payment-hero lg:px-24 px-9 w-full lg:flex bg-blue-200 bg-opacity-20">
+                    <div className="warehouses-hero lg:px-24 px-9 w-full lg:flex bg-blue-200 bg-opacity-20">
                         <div className="hero-img flex justify-center lg:w-1/2">
                             <img className="w-4/5 " src={warehouse2} alt="" />
                         </div>
 
                         <div className="hero-data flex flex-col justify-center lg:w-1/2">
-                            <p className="text-5xl font-semibold cairo m-0 text-blue-400">
+                            <span className="cairo md:text-5xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
                                 {" "}
-                                المخازن{" "}
+                                المخازن                        </span>
+                            <p className="cairo text-9xl w-full flex ps-2">
+                                <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                                    .
+                                </span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
                             </p>
                             <p className="text-sm  font-bold text-gray-600 pe-14 kufi">
                                 يُعد قسم المشتريات من الأقسام الأساسية داخل أي مؤسسة، حيث قسم
@@ -2379,8 +2125,17 @@ export default function CloudBussiness() {
                         </div>
 
                         <div className="hero-data flex flex-col justify-center lg:w-1/2">
-                            <p className="text-5xl font-semibold cairo m-0 text-blue-400">
+                            <span className="cairo md:text-5xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                                {" "}
                                 شئون الموظفيين
+                            </span>
+                            <p className="cairo text-9xl w-full flex ps-2">
+                                <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                                    .
+                                </span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
                             </p>
                             <p className="text-sm font-bold text-gray-600 pe-14 kufi">
                                 قسم شؤون الموظفين هو أحد الأقسام الحيوية في أي منظمة أو شركة،
@@ -2606,8 +2361,17 @@ export default function CloudBussiness() {
                         </div>
 
                         <div className="hero-data flex flex-col justify-center lg:w-1/2">
-                            <p className="text-5xl font-semibold cairo m-0 text-blue-400">
+                            <span className="cairo md:text-5xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                                {" "}
                                 نقاط البيع
+                            </span>
+                            <p className="cairo text-9xl w-full flex ps-2">
+                                <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                                    .
+                                </span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
                             </p>
                             <p className="text-base font-bold text-gray-600 pe-14 kufi">
                                 نظام نقاط البيع (POS) هو أداة حيوية لإدارة المبيعات في الشركات
@@ -2817,8 +2581,17 @@ export default function CloudBussiness() {
                         </div>
 
                         <div className="hero-data flex flex-col justify-center lg:w-1/2">
-                            <p className="text-5xl font-semibold cairo m-0 text-blue-400">
+                            <span className="cairo md:text-5xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                                {" "}
                                 نظام المطاعم
+                            </span>
+                            <p className="cairo text-9xl w-full flex ps-2">
+                                <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                                    .
+                                </span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
                             </p>
                             <p className="text-base font-bold text-gray-600 pe-14 kufi">
                                 نظام المطاعم الذي نقدمه هو حل شامل لإدارة عمليات المطاعم بكفاءة
@@ -3064,6 +2837,333 @@ export default function CloudBussiness() {
                             </p>
                         </div>
                     </div>
+                </div>
+                <div className="vital-assets">
+                    <div className="vital-hero lg:px-24 px-9 w-full lg:flex bg-blue-200 bg-opacity-20">
+                        <div className="hero-img flex justify-center lg:w-1/2">
+                            <img className="lg:w-4/5" src={vital} alt="" />
+                        </div>
+
+                        <div className="hero-data flex flex-col justify-center lg:w-1/2">
+                            <span className="cairo md:text-5xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                                {" "}
+                                نظام الاصول الحيوية
+                            </span>
+                            <p className="cairo text-9xl w-full flex ps-2">
+                                <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                                    .
+                                </span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
+                            </p>
+                            <p className="text-base font-bold text-gray-600 pe-14 kufi">
+                                نظام الأصول الحيوية هو برنامج متكامل لإدارة المزارع والحسابات المالية بشكل فعّال، يهدف إلى متابعة جميع العمليات المتعلقة بتربية وإدارة الأصول الحيوية مثل (العجول، الماعز، الخراف، وغيرها). يعمل النظام على تنظيم عمليات الشراء، حساب التكاليف، مراقبة مراحل النمو والتغذية، وصولًا إلى حساب الأرباح والخسائر لكل أصل أو دفعة بشكل تفصيلي.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
+                        <div className="data md:w-1/2 flex flex-col justify-center ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                يتابع النظام جميع المعاملات المالية من إيرادات، مصروفات، وأرباح.
+                            </p>
+
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                يقدم تقارير مالية شاملة تشمل الميزانية، قائمة الدخل، التدفقات النقدية، وحسابات العملاء والموردين.
+                            </p>
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                الربط مع الفاتورة الإلكترونية والتكامل مع الهيئة المالية لإصدار الفواتير بشكل تلقائي.
+                            </p>
+
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                يتيح النظام إدارة عمليات شراء الأصول الحيوية بكفاءة.
+                            </p>
+
+                        </div>
+                        <div className="img md:w-1/2 flex justify-center ">
+                            <img className="w-4/5  " src={vital1} alt="" />
+                        </div>
+                    </div>
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
+                        <div className="img md:w-1/2 flex justify-center ">
+                            <img className="w-4/5" src={vital2} alt="" />
+                        </div>
+
+                        <div className="data md:w-1/2 flex flex-col justify-center ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>{" "}
+                                يتابع حالة الأصول (العجول، الماعز، الخراف) لحظة بلحظة من دخولها المزرعة وحتى عملية البيع.
+                            </p>
+
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>{" "}
+                                يحسب تكلفة كل أصل بدءًا من تاريخ دخوله المزرعة حتى وقت البيع، ويشمل ذلك التكلفة المباشرة وغير المباشرة.
+                            </p>
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>{" "}
+                                يقوم بحساب تكلفة الأعلاف، الأدوية، والتحصينات لكل أصل أو دفعة، بالإضافة إلى حساب تكلفة العمالة، الكهرباء، والصيانة.
+                            </p>
+
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>{" "}
+                                متابعة دفعات الشراء والنتائج المترتبة عليها مثل حالات النفوق، معدلات النمو، والأرباح النهائية.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
+                        <div className="data md:w-1/2 flex flex-col justify-center ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                تقسيم الأصول إلى مراحل تغذية مختلفة (أعمار، أوزان) ومتابعة نموها.
+                            </p>
+
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                تحديد التوقيت الأمثل لانتقال الأصول من مرحلة إلى أخرى بناءً على الوزن والعمر.
+                            </p>
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                متابعة صرف الأعلاف اليومية وانتقالها من المخزن إلى مراحل الإنتاج.
+                            </p>
+
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                إدارة شاملة للمستودعات تشمل صرف الأدوية والتحصينات في مواعيد محددة.                            </p>
+
+                        </div>
+                        <div className="img md:w-1/2 flex justify-center ">
+                            <img className="w-4/5  " src={vital3} alt="" />
+                        </div>
+                    </div>
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
+                        <div className="img md:w-1/2 flex justify-center ">
+                            <img className="w-4/5" src={vital4} alt="" />
+                        </div>
+
+                        <div className="data md:w-1/2 flex flex-col justify-center ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>{" "}
+                                يتابع النظام حركة الأصول والمواد من مخزن لآخر ومن فرع لآخر.
+                            </p>
+
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>{" "}
+                                تقارير مفصلة عن كل دفعة تشمل التكاليف، النمو، الأرباح، والخسائر.
+                                .
+                            </p>
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>{" "}
+                                تقارير حول حالة الأصول، كميات المخزون، وحركة الأصناف بين المستودعات.
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div className="beauty-salon">
+                    <div className="salon-hero lg:px-24 p-9 w-full lg:flex bg-blue-200 bg-opacity-20">
+                        <div className="hero-img flex justify-center lg:w-1/2">
+                            <img className="lg:w-4/5" src={barb} alt="" />
+                        </div>
+
+                        <div className="hero-data flex flex-col justify-center lg:w-1/2">
+                            <span className="cairo md:text-4xl sm:text-3xl text-lg  ps-2 text-[#346dab] font-bold">
+                                {" "}
+                                نظام صالونات الحلاقة والمشاغل النسائية
+
+                            </span>
+                            <p className="cairo text-9xl w-full flex ps-2">
+                                <span className="h-1.5 w-10 bg-black me-1 rounded-lg">.</span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">
+                                    .
+                                </span>{" "}
+                                <span className="h-1.5 w-2 bg-[#346dab] rounded-lg ms-1">.</span>{" "}
+                            </p>
+                            <p className="text-base font-bold text-gray-600 pe-14 kufi">
+                                نظام إدارة صالونات الحلاقة والمشاغل النسائية هو برنامج متكامل مصمم لتسهيل إدارة الأعمال اليومية في الصالونات والمشاغل. يهدف النظام إلى تحسين كفاءة العمليات الحسابية، تنظيم المواعيد، وتتبع الإيرادات والمصروفات، مع تقديم تقارير شاملة تساهم في اتخاذ القرارات الإدارية الصحيحة.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
+                        <div className="data md:w-1/2 flex flex-col justify-center ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                يتابع النظام الإيرادات والمصروفات والأرباح بشكل دوري (يومي، أسبوعي، شهري، أو سنوي).
+                            </p>
+
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                إعداد تقارير مالية شاملة تتضمن الميزانية، قائمة الدخل، وحسابات العملاء والموردين.
+                                .
+                            </p>
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                متابعة حركة التدفقات النقدية وحسابات البنوك والصناديق.
+                            </p>
+
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                الربط مع الفاتورة الإلكترونية والتكامل مع الهيئة المالية لإصدار الفواتير بشكل تلقائي.
+                            </p>
+
+                        </div>
+                        <div className="img md:w-1/2 flex justify-center ">
+                            <img className="w-4/5  " src={barb1} alt="" />
+                        </div>
+                    </div>
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
+                        <div className="img md:w-1/2 flex justify-center ">
+                            <img className="w-4/5" src={vital2} alt="" />
+                        </div>
+
+                        <div className="data md:w-1/2 flex flex-col justify-center ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>{" "}
+                                يتيح النظام إدارة شاملة للمستودعات، بما في ذلك تتبع المخزون، حركة الأصناف بين الفروع والمستودعات.
+                            </p>
+
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>{" "}
+                                إدارة عمليات الشراء ومتابعة الموردين لتلبية احتياجات الصالونات من المستلزمات.
+                            </p>
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>{" "}
+                                تقارير دقيقة عن المصروفات والمشتريات لكل فرع أو على مستوى المؤسسة بالكامل.
+                                والصيانة.
+                            </p>
+
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>{" "}
+                                تقارير مفصلة عن المصروفات، الرواتب، الموردين، العمولات، والبدلات.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div className="third my-12 lg:px-24 px-9 w-full md:flex">
+                        <div className="data md:w-1/2 flex flex-col justify-center ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                متابعة العمولات وصرفها بشكل يومي، أسبوعي، شهري، أو سنوي للموظفين والفنيين والمديرين.
+                            </p>
+
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                إدارة الرواتب، العهد، الإجازات، تذاكر السفر، وبدل السكن وغيرها من المستحقات.
+                                .
+                            </p>
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                حساب العهد والمستحقات الخاصة بالموظفين مع القدرة على إصدار تقارير مفصلة عن الرواتب والبدلات.
+                            </p>
+
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>
+                                تقارير حول أداء الفروع والموظفين مما يساعد في تحسين الأداء واتخاذ قرارات إدارية مدروسة.
+                            </p>
+
+                        </div>
+                        <div className="img md:w-1/2 flex justify-center ">
+                            <img className="w-4/5  " src={vital1} alt="" />
+                        </div>
+                    </div>
+                    <div className="fivth my-12 lg:px-24 px-9 w-full md:flex">
+                        <div className="img md:w-1/2 flex justify-center ">
+                            <img className="w-4/5" src={vital2} alt="" />
+                        </div>
+
+                        <div className="data md:w-1/2 flex flex-col justify-center ">
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>{" "}
+                                إدخال بيانات العملاء وتنظيم مواعيدهم في الصالات، مع متابعة وقت انتظارهم والخدمات المطلوبة.
+                                .
+                            </p>
+
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>{" "}
+                                إدارة شاملة للأسعار والخدمات المقدمة، مع إمكانية تعديلها حسب الحاجة.
+                            </p>
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>{" "}
+                                تقديم تقارير تفصيلية عن العملاء والخدمات المقدمة.
+                            </p>
+
+                            <p className="cairo  text-blue-950 m-0 mt-4 md:text-lg text-base font-[650] ">
+                                <span>
+                                    <i className="text-blue-600 me-2  fa-solid fa-circle-notch"></i>{" "}
+                                </span>{" "}
+                                تقارير مفصلة عن المصروفات، الرواتب، الموردين، العمولات، والبدلات.
+                            </p>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </>
